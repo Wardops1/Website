@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="./src/input.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <title>Ward IT</title>
+  </head>
+  <body>
+      <!-- nav bar -->
+      <nav class="bg-wardGreen dark:bg-gray-900 border-b-2 border-b-gray-200">
+        <div
+          class="flex items-center w-11/12 m-auto justify-between 2xl:w-9/12"
+        >
+          <div class="flex items-center gap-12">
+            <div class="flex items-center gap-4">
+              <a href="intro.html" class="flex items-center">
+                <img src="img/main-img/Logo.png" alt="Ward IT Logo" />
+              </a>
+              <a href="intro.html">
+                <img src="img/main-img/logo_text.png" alt="" />
+              </a>
+            </div>
+            <div
+              class="items-center hidden lg:flex md:w-auto"
+              id="navbar-sticky"
+            >
+              <ul class="flex font-[Roboto] font-normal text-lg leading-6">
+                <div
+                  class=" flex py-4 hover:bg-wardSilver hover:border-x hover:font-bold"
+                >
+                  <div>
+                    <li class="mx-4 capitalize"><a>services</a></li>
+                  </div>
+                  <div><img src="img/main-img/downward-arrow .png" alt=""></div>
+                </div>
+                <div
+                  class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold"
+                >
+                  <li class="mx-4 capitalize"><a>team</a></li>
+                </div>
+                <div
+                  class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold"
+                >
+                  <li class="mx-4 capitalize"><a>career</a></li>
+                </div>
+                <div
+                  class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold"
+                >
+                  <li class="mx-4 capitalize"><a>blog</a></li>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="flex sm:py-1 max-sm:py-0">
+            <a
+              href="https://www.linkedin.com/in/nikoloz-tsulukidze-12a812230/"
+              target="_blank"
+            >
+              <button
+                type="button"
+                class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2 md:mr-0 max-md:text-xs max-sm:px-2 max-sm:py-1 max-sm:hidden"
+              >
+                book consultation
+              </button>
+            </a>
+            <button
+              data-collapse-toggle="navbar-sticky"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <span class="sr-only">Dropdown List</span>
+              <img src="img/main-img/navbar-sticky.png" alt="navbar-sticky">
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    <!-- init main -->
+    <section
+      class="w-full h-[58rem] bg-wardGreen py-20 border-b-2 relative max-lg:h-full max-lg:py-0 max-lg:pt-20"
+    >
+      <div class="flex w-11/12 m-auto bg-wardGreen 2xl:w-9/12">
+        <div class="font-[Roboto] font-normal">
+          <!-- init list -->
+          <h4
+            class="inline-block text-[80px] font-[Policemen] max-lg:text-6xl max-md:text-4xl max-sm:text-3xl max-sm:whitespace-normal"
+          >
+            Augmented your Staff using <br class="max-xl:hidden" />
+            On Demand IT Services
+          </h4>
+
+          <!-- landing block for mobile -->
+          <div class="flex   flex-row lg:hidden">
+            <div class="">
+              <img src="img/landing-img/block_1.png" alt="block" />
+            </div>
+
+            <div class="">
+              <img src="img/landing-img/block_2.png" alt="block" />
+            </div>
+          </div>
+
+          <ul class="flex items-center gap-4 py-2 mt-8 text-2xl">
+            <img src="img/main-img/ramboe.svg" alt="rhambus" />
+            <li
+              class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"
+            >
+              An All-In-One IT Outsourcing Solution
+            </li>
+          </ul>
+          <ul class="flex items-center gap-4 py-2 text-2xl">
+            <img src="img/main-img/ramboe.svg" alt="rhambus" />
+            <li
+              class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"
+            >
+              24/7 Support And Availability
+            </li>
+          </ul>
+          <ul class="flex items-center gap-4 py-2 text-2xl">
+            <img src="img/main-img/ramboe.svg" alt="rhambus" />
+            <li
+              class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"
+            >
+              Managed Services
+            </li>
+          </ul>
+          <ul class="flex items-center gap-4 py-2 text-2xl">
+            <img src="img/main-img/ramboe.svg" alt="rhambus" />
+            <li
+              class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"
+            >
+              Automated Business Processes
+            </li>
+          </ul>
+          <ul class="flex items-center gap-4 py-2 text-2xl">
+            <img src="img/main-img/ramboe.svg" alt="rhambus" />
+            <li
+              class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"
+            >
+              Implementation and Administration
+            </li>
+          </ul>
+        </div>
+
+        <!-- landing blocks -->
+        <div class="max-lg:hidden">
+          <div class="absolute left-[52%] top-[24%] max-2xl:top-[30%]">
+            <img
+              class=""
+              src="img/landing-img/block_1.png "
+              alt="block"
+            />
+          </div>
+          <div class="absolute left-[75%] top-[5%] max-xl:hidden">
+            <img src="img/landing-img/block_2.png" alt="block" />
+          </div>
+          <div class="absolute left-[91%] top-[30%] max-sm:top-[40%]">
+            <img src="img/landing-img/block_3.png" alt="block" />
+          </div>
+        </div>
+      </div>
+      <div class="hidden max-sm:flex max-sm:justify-center max-sm:py-5" >
+        <a
+              href="https://www.linkedin.com/in/nikoloz-tsulukidze-12a812230/"
+              target="_blank"
+            >
+              <button
+                type="button"
+                class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2   "
+              >
+                book consultation
+              </button>
+            </a>
+      </div>
+      <div class="flex mt-12 max-sm:mt-2">
+        <div
+          class="w-full flex items-baseline py-3 gap-4 justify-center border-y-2 rotate-[-7.77deg] max-lg:rotate-0"
+        >
+          <img
+            class="max-lg:hidden"
+            src="img/main-img/Frame.png"
+            alt="frame"
+          />
+          <span 
+            class= " block font-[Policemen] whitespace-nowrap text-[43px]  max-2xl:text-[35px] max-xl:text-[30px] max-lg:text-[24px] max-md:text-[18px] max-sm:text-[12px]"
+            >Get started in no time, scale up with no limit, for any team, at
+            any level
+          </span>
+          <img
+            class="max-lg:hidden"
+            src="img/main-img/Frame.png"
+            alt="frame"
+          />
+        </div>
+      </div>
+      <div
+        class="flex m-auto flex-col gap-2 absolute top-[84%] left-[80%]  max-sm:left-[75%] max-sm:top-[80%] max-lg:hidden"
+      >
+        <div>
+          <img src="img/main-img/service sign.png" alt="" />
+        </div>
+        <div class="whitespace-nowrap"><p>Our Services</p></div>
+      </div>
+    </section>
+    <section class="bg-wardSilver">
+      <div class="">
+        <div class="flex justify-center pt-20 py-10">
+          <h1
+          class="uppercase text-8xl font-[Policemen] bg-wardGreen max-md:text-6xl max-sm:text-3xl p-6 bg-wardLight"
+        >
+        Our partner
+        </h1>
+        </div>
+        <div class="w-full">
+          <div class=" border-2  m-auto py-10 max-lg:hidden ">
+            <div class="flex  justify-center  gap-16 items-center">
+              <div class=" ">
+                <div class="flex ">
+                  <img src="img/services-img/grafana.png" alt="Grafana">
+                </div>
+              </div>
+              <div class="">
+                <img src="img/services-img/kibana.png " alt="kibana">
+              </div>
+              <div class="">
+                <img src="img/services-img/graylog.png" alt="gralog">
+              </div>
+              <div class="">
+                <img src="img/services-img/zabbix.png" alt="zabbix">
+              </div>
+              <div class="">  
+                  <img src="img/services-img/new relic.png" alt="New Relic">
+              </div>
+              <div class="">
+                  <img src="img/services-img/prometheus.png" alt="Prometheus">
+              </div>
+              <div class="">
+                <img src="img/services-img/jagere.png" alt="Jagere">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:hidden  ">
+          <div class="swiper mySwiper_1 border-2">
+            <div class="swiper-wrapper flex items-center py-10  gap-2">
+              <div class="swiper-slide">
+                <div>
+                  <img src="img/services-img/grafana.png" alt="Grafana">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="img/services-img/kibana.png " alt="kibana">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="img/services-img/graylog.png" alt="gralog">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="img/services-img/new relic.png" alt="New Relic">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <img src="img/services-img/jagere.png" alt="jagere">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- service section -->
+    <section class="bg-wardSilver">
+      <div class="w-10/12 m-auto 2xl:w-9/12">
+        <!-- service-header -->
+        <div class="border-b-[2px]">
+          <div
+            class="flex w-11/12 m-auto justify-between gap-10 max-sm:border-0 max-sm:gap-2"
+          >
+            <div class="flex item-center py-16">
+              <h5
+                class="uppercase text-8xl font-[Policemen] max-md:text-6xl max-sm:text-3xl"
+              >
+                Services
+              </h5>
+            </div>
+            <div class="flex items-center gap-10 max-sm:gap-2">
+              <div class="w-[2px] h-full bg-[#000]"></div>
+              <div class="">
+                <button
+                  class="work_together text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1 max-sm:px-[4px] max-sm:text-sm max-sm:py-[2px]"
+                >
+                  Let's work together
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- services divisions -->
+        <div class="w-11/12 m-auto">
+          <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
+            <!-- service-inner-1 -->
+            <div
+              class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full"
+            >
+              <div class="flex items-center gap-10">
+                <img src="img/services-img/Product service.png" alt="" />
+                <h6
+                  class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"
+                >
+                  Product & Service Operational <br />Center
+                </h6>
+              </div>
+              <div class="flex flex-col py-10">
+                <div>
+                  <p
+                    class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"
+                  >
+                    Collect metrics about the operations of an IT environment's
+                    hardware and software to ensure everything functions as
+                    expected.
+                  </p>
+                </div>
+                <div class="flex justify-end pt-4">
+                  <a href="#"
+                    ><span class="font-semibold read_more">Read More</span></a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end service-inner-1 -->
+            <div class="w-[2px] h-[full] bg-[#000]"></div>
+            <!-- service-inner-2 -->
+            <div
+              class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full"
+            >
+              <div class="flex items-center gap-10">
+                <img src="img/services-img/incident management.png" alt="" />
+                <h6
+                  class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"
+                >
+                  Incident Management
+                </h6>
+              </div>
+              <div class="flex flex-col py-5">
+                <div>
+                  <p
+                    class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"
+                  >
+                    Respond to an unplanned event or service interruption and
+                    restore the service to its operational state as quickly as
+                    possible.
+                  </p>
+                </div>
+                <div class="flex justify-end pt-4">
+                  <a href="#"
+                    ><span class="font-semibold hover:bg-wardGreen"
+                      >Read More</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
+            <!-- service-inner-3 -->
+            <div
+              class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full"
+            >
+              <div class="flex items-center gap-10">
+                <img src="img/services-img/sowftware-QA.png" alt="" />
+                <h6
+                  class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"
+                >
+                  Software QA
+                </h6>
+              </div>
+              <div class="flex flex-col py-5">
+                <div>
+                  <p
+                    class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"
+                  >
+                    Software testing could be the fastest, easiest, and exact
+                    part of your SDLC. Optimize the software testing process and
+                    get measurable results.
+                  </p>
+                </div>
+                <div class="flex justify-end pt-4">
+                  <a href="#"
+                    ><span
+                      class="font-semibold hover:bg-wardGreen hover:transition-transform"
+                      >Read More</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end service-inner-3 -->
+            <div class="w-[2px] h-[full] bg-[#000]"></div>
+            <!-- service-inner-4 -->
+            <div
+              class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full"
+            >
+              <div class="flex items-center gap-10">
+                <img src="img/services-img/robotic-process.png" alt="" />
+                <h6
+                  class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"
+                >
+                  Robotic Process Automation
+                </h6>
+              </div>
+              <div class="flex flex-col py-5">
+                <div>
+                  <p
+                    class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"
+                  >
+                    A technology that mimics and automates the way humans
+                    interact with software to perform high-volume, repeatable
+                    tasks.
+                  </p>
+                </div>
+                <div class="flex justify-end pt-4">
+                  <a href="#"
+                    ><span class="font-semibold hover:bg-wardGreen"
+                      >Read More</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
+            <!-- service-inner-5 -->
+            <div
+              class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full"
+            >
+              <div class="flex items-center gap-10">
+                <img src="img/services-img/change-management.png" alt="" />
+                <h6
+                  class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"
+                >
+                  change managment
+                </h6>
+              </div>
+              <div class="flex flex-col py-5">
+                <div>
+                  <p
+                    class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"
+                  >
+                    Collect metrics about the operations of an IT environment's
+                    hardware and software to ensure everything functions as
+                    expected.
+                  </p>
+                </div>
+                <div class="flex justify-end pt-4">
+                  <a href="#"
+                    ><span class="font-semibold hover:bg-wardGreen"
+                      >Read More</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end service-inner-5 -->
+            <div class="w-[2px] h-[full] bg-[#000]"></div>
+            <!-- service-inner-6 -->
+            <div
+              class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full"
+            >
+              <div class="flex items-center gap-10">
+                <img src="img/services-img/problem-management.png" alt="" />
+                <h6
+                  class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"
+                >
+                  promblem managment
+                </h6>
+              </div>
+              <div class="flex flex-col py-5">
+                <div>
+                  <p
+                    class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"
+                  >
+                    Respond to an unplanned event or service interruption and
+                    restore the service to its operational state as quickly as
+                    possible.
+                  </p>
+                </div>
+                <div class="flex justify-end pt-4">
+                  <a href="#"
+                    ><span class="font-semibold hover:bg-wardGreen"
+                      >Read More</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-between gap-10 max-md:flex-col">
+            <!-- service-inner-7 -->
+            <div
+              class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full"
+            >
+              <div class="flex items-center gap-10">
+                <img src="img/services-img/deployment.png" alt="" />
+                <h6
+                  class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"
+                >
+                  deployment and release managment
+                </h6>
+              </div>
+              <div class="flex flex-col py-5">
+                <div>
+                  <p
+                    class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"
+                  >
+                    Software testing could be the fastest, easiest, and exact
+                    part of your SDLC. Optimize the software testing process and
+                    get measurable results.
+                  </p>
+                </div>
+                <div class="flex justify-end pt-4">
+                  <a href="#"
+                    ><span class="font-semibold hover:bg-wardGreen"
+                      >Read More</span
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- end service-inner-7 -->
+            <div class="w-[2px] h-[full] bg-[#000]"></div>
+            <!-- service-inner-8 -->
+            <div
+              class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full"
+            >
+              <div class="flex items-center gap-10">
+                <img src="" alt="" />
+                <h6
+                  class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"
+                ></h6>
+              </div>
+              <div class="flex flex-col py-5">
+                <div>
+                  <p
+                    class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"
+                  ></p>
+                </div>
+                <div class="flex justify-end pt-4">
+                  <a href="#"><span class="font-semibold"></span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- product inner -->
+      <div
+        class="flex w-10/12 m-auto border-t-[2px] border-b-[2px] max-lg:flex-col max-lg:border-b-0"
+      >
+        <div
+          class="flex w-[40%] items-center justify-center bg-wardGreen max-lg:w-full max-lg:py-5 max-lg:border-b-2"
+        >
+          <h4 class="uppercase font-[Policemen] text-8xl max-xl:text-4xl">
+            Product
+          </h4>
+        </div>
+        <div class="flex flex-col p-10 gap-2 border-l-[2px] max-lg:border-l-0 max-lg:border-b-2">
+          <h5 class="font-normal text-[22px]">
+            Partnership and Experise Monitoring and Incident Management Tools.
+          </h5>
+          <ul class="flex items-center gap-5">
+            <img src="img/main-img/ramboe-green.png" alt="rambue" />
+            <h6 class="text-[18px]">Implemenetraton and Integrations</h6>
+          </ul>
+          <ul class="flex items-center gap-5">
+            <img src="img/main-img/ramboe-green.png" alt="rambue" />
+            <h6 class="text-[18px]">Open Source and Enterprise Souliutons</h6>
+          </ul>
+          <ul class="flex items-center gap-5">
+            <img src="img/main-img/ramboe-green.png" alt="rambue" />
+            <h6 class="text-[18px]">Data ​Visualization</h6>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="bg-wardSilver">
+      <div class="flex w-9/12 m-auto py-10  2xl:w-8/12 max-lg:flex-col">
+        <div class="w-1/2">
+          <ul class="flex flex-col gap-5">
+            <li class="flex items-center gap-6">
+              <img src="img/products/Pagerduty.png" alt="pagerduty">
+              <span class="block text-2xl capitalize ">pager duty</span>
+            </li>
+            <li class="flex items-center gap-6">
+              <img src="img/products/Grafana.png" alt="pagerduty">
+              <span class="block text-2xl capitalize ">grafana</span>
+            </li>
+            <li class="flex items-center gap-6">
+              <img src="img/products/rundesk.png" alt="pagerduty">
+              <span class="block text-2xl capitalize ">run desk</span>
+            </li>
+            <li class="flex items-center gap-6">
+              <img src="img/products/Grafana.png" alt="pagerduty">
+              <span class="block text-2xl capitalize ">grafana</span>
+            </li>
+            <li class="flex items-center gap-6">
+              <img src="img/products/Pagerduty.png" alt="pagerduty">
+              <span class="block text-2xl capitalize ">pager duty</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w-1/2">
+          <div class="swiper mySwiper_2 w-[295px] h-[340px]">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                 <div class="flex flex-col gap-5 p-4   w-full h-full items-center justify-center text-center bg-wardSilver border-2" >
+                  <img src="img/products/pager-slider.png" alt="pager duty">
+                  <h5 class="capitalize text-2xl">Pager Duty</h5>
+                  <p class="font-light">Uptime is money. For better digital operations. For faster issue resolutions.
+                     For keeping your business always on.
+                  </p>
+                  <span class="font-semibold">Read More</span>
+                 </div>
+              </div>  
+              <div class="swiper-slide">
+                <div class="flex flex-col gap-5 p-4 w-full h-full items-center justify-center text-center bg-wardSilver border-2" >
+                  <img src="img/products/rundesk-slider.png" alt="pager duty">
+                  <h5 class="capitalize text-2xl">Rundesk</h5>
+                  <p class="font-light">S​horter Incidents. Fewer Escalations. 
+                    Runbook Automation enableS anyone to safely execute self-service operations tasks.
+                  </p>
+                  <span class="font-semibold">Read More</span>
+                 </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col gap-5 p-4 w-full h-full items-center justify-center text-center bg-wardSilver border-2" >
+                  <img src="img/products/grafana-slider.png" alt="pager duty">
+                  <h5 class="capitalize text-2xl">Grafana</h5>
+                  <p class="font-light">An open-source general-purpose operational dashboards 
+                    for your data here, there, or anywhere. Compose and scale observability.
+                  </p>
+                  <span class="font-semibold">Read More</span>
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- solution operations section -->
+
+    <!-- header -->
+    <section class="bg-wardSilver">
+      <div class="w-2/3 m-auto flex flex-col gap-8 pt-20">
+        <div class="flex justify-center">
+          <h3
+            class="font-[Policemen] text-8xl whitespace-nowrap max-lg:text-4xl"
+          >
+            our approach to solution
+          </h3>
+        </div>
+        <div class="flex justify-center">
+          <h3
+            class="font-[Policemen] text-8xl whitespace-nowrap max-lg:text-4xl"
+          >
+            operations services
+          </h3>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="px-8 py-2 bg-wardGreen text-2xl whitespace-nowrap max-lg:text-sm max-lg:px-4"
+          >
+            Learning is something we do almost every day
+          </button>
+        </div>
+      </div>
+
+      <!-- solution operation inner -->
+      <!-- operation 01 -->
+      <div class="w-9/12 m-auto flex flex-col gap-12 py-16 2xl:w-8/12">
+        <div class="flex items-center  max-lg:flex-col max-md:gap-10 ">
+          <div class=" flex flex-col gap-5 w-1/2 max-lg:w-full ">
+            <div class="flex gap-5">
+              <img src="img/operation-solution/01.png" alt="01">
+              <img class="lg:hidden" src="img/operation-solution/Rambue.png" alt="rambue">
+            </div>
+            <h5 class="capitalize font-normal text-2xl max-md:text-xl">Build an Roadmap</h5>
+            <p class="text-lg max-md:text-sm">We start with reviewing the current state of IT operations services within
+               your organization and defining a tailored strategy to ramp up sustainable 
+               changes for optimal use of technology resources.
+            </p>
+          </div>
+          <div class="flex justify-center items-center w-1/2 max-lg:hidden">
+            <img src="img/operation-solution/Rambue.png" alt="rembue">
+          </div>
+        </div>
+        <!-- end -->
+        <!-- operation 02 -->
+        <div class="flex items-center  max-lg:flex-col max-md:gap-10">
+          <div class="flex justify-center items-center w-1/2 max-lg:hidden ">
+            <img src="img/operation-solution/Rambue.png" alt="rembue">
+          </div>
+          <div class=" flex flex-col  gap-5 w-1/2 max-lg:w-full ">
+            <div class="flex gap-5 justify-end">
+              <img class="lg:hidden" src="img/operation-solution/Rambue.png" alt="rambue">
+              <img src="img/operation-solution/02.png" alt="01">
+            </div>
+            <h5 class="text-right capitalize font-normal text-2xl max-md:text-xl ">Design and Develop</h5>
+            <p class=" text-lg max-md:text-sm ">Once we’ve finalized the initial IT audit, 
+              we start to implement highly resilient and robust operational services, applying 
+              best practices in DevOps, cloud,
+               and SRE to automate processes and minimize potential risks and errors
+            </p>
+          </div>
+        </div>
+        <!-- end -->
+        <!-- operation 03 -->
+        <div class="flex items-center  max-lg:flex-col max-md:gap-10 ">
+          <div class=" flex flex-col gap-5 w-1/2 max-lg:w-full ">
+            <div class="flex gap-5">
+              <img src="img/operation-solution/03.png" alt="03">
+              <img class="lg:hidden" src="img/operation-solution/Rambue.png" alt="rambue">
+            </div>
+            <h5 class="capitalize font-normal text-2xl max-md:text-xl">Verify and Fine-tune</h5>
+            <p class="text-lg max-md:text-sm">After strategically optimizing operation solutions,
+               we continue to improve your internal IT organization by setting up release management processes,
+               monitoring post-deployment errors, and supporting overall security.
+            </p>
+          </div>
+          <div class="flex justify-center items-center w-1/2 max-lg:hidden">
+            <img src="img/operation-solution/Rambue.png" alt="rembue">
+          </div>
+        </div>
+         
+        <!-- end -->
+        <!-- operation 04 -->
+        <div class="flex items-center  max-lg:flex-col max-md:gap-10">
+          <div class="flex justify-center items-center w-1/2 max-lg:hidden ">
+            <img src="img/operation-solution/Rambue.png" alt="rembue">
+          </div>
+          <div class=" flex flex-col  gap-5 w-1/2 max-lg:w-full ">
+            <div class="flex gap-5 justify-end">
+              <img class="lg:hidden" src="img/operation-solution/Rambue.png" alt="rambue">
+              <img src="img/operation-solution/04.png" alt="04">
+            </div>
+            <h5 class="text-right capitalize font-normal text-2xl max-md:text-xl ">Resources</h5>
+            <p class=" text-lg max-md:text-sm ">We start with reviewing the current state of IT operations services within your
+               organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.
+            </p>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+    <!-- section end   -->
+    <section class="w-full h-full bg-wardSilver ">
+      <div class=" flex flex-col  gap-10 w-10/12 m-auto py-5 border-b-2 ">
+        <div class="flex justify-center items-center   gap-5 border-t-2 border-b-2 max-lg:flex-col">
+          <div class="flex w-1/2 items-center justify-center py-4"><h5 class="uppercase font-[Policemen] whitespace-nowrap text-8xl p-1 max-xl:text-6xl">who we are</h5></div>
+          <div class="w-1/2 bg-wardGreen p-10 border-l-2 max-lg:border-t-2 max-lg:border-l-0 max-lg:w-full"> 
+            <p class="text-1xl max-xl:text-sm" >"We are a WARD IT team, with various backgrounds and cultures yet,
+               with 10 + years of experience in IT and management, with the common
+                desire to help make better software easier and managed services available 
+                for our clients. We work with the community to truly understand obstacles 
+                and roadblocks in IT and then collaborate with others to create innovative and 
+                practical solutions."</p>
+          </div>
+        </div>
+
+        <!-- avatar slider -->
+        <div class="w-full">
+          <div class="swiper mySwiper_1">
+            <div class="swiper-wrapper  py-10">
+              <div class="swiper-slide border-2 p-1">
+                <div class="flex flex-col">
+                  <div class="flex items-center justify-center">
+                    <img src="img/avatar/lasha-3.png" alt="lasha">
+                  </div>
+                  <div class="flex  text-center items-center justify-center">
+                    <p class="max-md:text-[7px]">lasha is the best teacher lasha is the  </p>
+                  </div>                       
+                </div>
+              </div>
+              <div class="swiper-slide border-2 p-1">
+                <div class="flex flex-col">
+                  <div class="flex items-center justify-center">
+                    <img src="img/avatar/lasha-4.png" alt="lasha">
+                  </div>
+                  <div class="flex  text-center items-center justify-center">
+                    <p class="max-md:text-[7px]">lasha is the best teacher lasha is the  </p>
+                  </div>                       
+                </div>
+              </div>
+              <div class="swiper-slide border-2 p-1">
+                <div class="flex flex-col">
+                  <div class="flex items-center justify-center">
+                    <img src="img/avatar/lasha-4.png" alt="lasha">
+                  </div>
+                  <div class="flex  text-center items-center justify-center">
+                    <p class="max-md:text-[7px]">lasha is the best teacher lasha is the  </p>
+                  </div>                       
+                </div>
+              </div>
+              <div class="swiper-slide  border-2 p-1">
+                <div class="flex flex-col">
+                  <div class=" flex items-center justify-center">
+                    <img src="img/avatar/lasha-2.png" alt="lasha">
+                  </div>
+                  <div class="flex  text-center items-center justify-center">
+                    <p class="max-md:text-[7px]">lasha is the best teacher lasha is the  </p>
+                  </div>                       
+                </div>
+              </div>
+              <div class="swiper-slide border-2 p-1">
+                <div class="flex flex-col">
+                  <div class="flex items-center justify-center">
+                    <img src="img/avatar/lasha-2.png" alt="lasha">
+                  </div>
+                  <div class="flex  text-center items-center justify-center">
+                    <p class="max-md:text-[7px]">lasha is the best teacher lasha is the  </p>
+                  </div>                       
+                </div>
+              </div>
+              <div class="swiper-slide border-2 p-1">
+                <div class="flex flex-col">
+                  <div class="flex items-center justify-center">
+                    <img src="img/avatar/lasha-2.png" alt="lasha">
+                  </div>
+                  <div class="flex  text-center items-center justify-center">
+                    <p class="max-md:text-[7px]">lasha is the best teacher lasha is the  </p>
+                  </div>                       
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination  "></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- blog section -->
+    <section class="w-full h-full bg-wardSilver">
+      <div class="w-10/12 m-auto flex flex-col gap-10 py-5">
+        <div class="flex items-center justify-center">
+          <h5 class="font-[Policemen] uppercase text-8xl py-5 ">blog post</h5>
+        </div>
+        <div class="flex justify-center items-center gap-5 max-lg:flex-col ">
+          <div class="flex flex-col  gap-5 w-1/3  border-2 p-7 max-lg:w-full">
+            <div class="flex justify-center items-center "> 
+              <img src="img/blog-img/blog-1.png" alt="blog">
+            </div>
+            <div>
+              <h6 class="text-lg font-medium">Blog post long Title Here Blog post long Title Here Blog post long Title Here</h6>
+              <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.
+                Uptime is money. For better digital operations. For faster issue resolutions. 
+                For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
+            </div>
+            <div class="flex flex-row ">
+              <div class=" w-1/2 flex justify-start">
+                <span >november 13, 2022</span>
+              </div>
+              <div class=" w-1/2 flex justify-end">
+                <span >Read More</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col  gap-5 w-1/3  border-2 p-7 max-lg:w-full">
+            <div class="flex justify-center items-center "> 
+              <img src="img/blog-img/blog-2.png" alt="blog">
+            </div>
+            <div>
+              <h6 class="text-lg font-medium">Blog post long Title Here Blog post long Title Here Blog post long Title Here</h6>
+              <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.
+                Uptime is money. For better digital operations. For faster issue resolutions. 
+                For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
+            </div>
+            <div class="flex flex-row ">
+              <div class=" w-1/2 flex justify-start">
+                <span >november 13, 2022</span>
+              </div>
+              <div class=" w-1/2 flex justify-end">
+                <span >Read More</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col  gap-5 w-1/3  border-2 p-7 max-lg:w-full">
+            <div class="flex justify-center items-center "> 
+              <img src="img/blog-img/blog-2.png" alt="blog">
+            </div>
+            <div>
+              <h6 class="text-lg font-medium">Blog post long Title Here Blog post long Title Here Blog post long Title Here</h6>
+              <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.
+                Uptime is money. For better digital operations. For faster issue resolutions. 
+                For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
+            </div>
+            <div class="flex flex-row ">
+              <div class=" w-1/2 flex justify-start">
+                <span >november 13, 2022</span>
+              </div>
+              <div class=" w-1/2 flex justify-end">
+                <span >Read More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <button class="border-2 px-12 py-2 bg-wardGreen">See all blog</button>
+        </div>
+      </div>
+    </section>
+
+
+   
+
+    <!-- end blog section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper_1", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+    
+    var swiper = new Swiper(".mySwiper_2", {
+      effect: "cards",
+      grabCursor: false,
+    });
+    
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </body>
+</html>

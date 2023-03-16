@@ -1,0 +1,8 @@
+.consultation:hover {
+  filter: drop-shadow(2px 2px 0px #262626) drop-shadow(4px 4px 0px #262626);
+  transform: translateY(-2%);
+}
+.work_together:hover {
+  filter: drop-shadow(2px 2px 0px #262626) drop-shadow(4px 4px 0px #262626);
+  transform: translateY(-2%);
+}

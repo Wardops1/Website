@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="stylesheet" href="./src/input.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>WARD IT</title>
+  </head>
+  <body class="bg-wardSilver">
+    <nav class="bg-wardGreen dark:bg-gray-900 border-b-2 border-b-gray-200">
+      <div class="flex items-center w-11/12 m-auto justify-between 2xl:w-9/12">
+          <div class="flex items-center gap-12">
+              <div class="flex items-center gap-4">
+                  <a href="index.html" class="flex items-center">
+                      <img src="img/main-img/logo.svg" alt="Ward IT Logo" />
+                  </a>
+              </div>
+              <div class="items-center hidden lg:flex md:w-auto" id="navbar-sticky">
+                  <ul class="flex font-[Roboto] font-normal text-lg leading-6">
+                      <div class=" dropdown relative hover:bg-wardSilver flex py-4 px-2 hover:border-x hover:font-bold">
+                          <div>
+                              <div class="flex gap-1 items-end">
+                                  <button class=" capitalize"><a href="#">services</a></button>
+                                  <img src="img/main-img/downward-arrow .png" alt="">
+                              </div>
+                              <div class="dropdown-content hidden absolute z-10 top-[100%] left-[-1%] bg-wardSilver w-[740px]">
+                                  <div class="flex gap-4 p-2 border-x border-b">
+                                    <div >
+                                      <ul class="font-thin capitalize">
+                                        <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3 ">
+                                          <a href="#">Product & Service Operational Center</a>
+                                          <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                        </li>
+                                        <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="#">Incident Managment</a>
+                                          <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                        </li>
+                                        <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="#">Software QA</a>
+                                          <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                        </li>
+                                        <li class="flex gap-2 py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="#">Robotic Process Automation </a>
+                                          <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                        </li>
+                                      </ul>
+                                    </div>
+                                    <div>
+                                      <ul class="font-thin capitalize">
+                                        <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="#">problem managment</a>
+                                          <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                        </li>
+                                        <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="#">change managment</a>
+                                          <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                        </li>
+                                        <li class="flex gap-2  py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="#">deployment and release managment</a>
+                                          <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
+                          <li class="mx-4 capitalize"><a>team</a></li>
+                      </div>
+                      <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
+                          <li class="mx-4 capitalize"><a>career</a></li>
+                      </div>
+                      <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
+                          <li class="mx-4 capitalize"><a>blog</a></li>
+                      </div>
+                  </ul>
+              </div>
+          </div>
+          <div class="flex sm:py-1 max-sm:py-0 gap-4">
+              <a href="https://www.linkedin.com/in/nikoloz-tsulukidze-12a812230/" target="_blank">
+                  <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2 md:mr-0 max-md:text-xs max-sm:px-2 max-sm:py-1 max-lg:hidden"> book consultation </button>
+              </a>
+              <div class="flex items-center justify-center lg:hidden">
+                  <div class="flex flex-col  relative">
+                      <div class="relative">
+                          <div class="flex items-baseline cursor-pointer" id="navDrop">
+                              <img src="img/main-img/navbar-sticky.png" alt="">
+                              <path fill-rule="evenodd" d="M10 13.333l6.667-6.666h-13.334L10 13.333zM10 16.667l-6.667-6.666h13.334L10 16.667z"/>
+                            </svg>
+                          </div>
+                          <ul class="hidden absolute z-50 text-center bg-wardSilver w-[150px] capitalize border-2 p-2 text-xl top-full right-0 mt-2" id="navDropInner">
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Career</a></li>
+                            <li><a href="#">Blog</a></li>
+                          </ul>
+                      </div>   
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
+    <section
+      class="bg-wardSilver pt-28 max-sm:pt-16 border-t-2 border-t-gray-200 bg-cover border-b-gray-200"
+    >
+      <div
+        class="w-10/12 m-auto 2xl:w-9/12 2xl:m-auto relative max-sm:w-11/12 max-sm:m-auto"
+      >
+        <div class="w-4/12 m-auto max-sm:w-full">
+          <div class="flex flex-col justify-center items-center">
+            <div>
+              <img src="img/test/404 error.png" alt="" />
+            </div>
+            <div class="flex flex-col text-center whitespace-nowrap mt-8 gap-2">
+              <h2 class="font-[Noto Sans] font-medium text-2xl">Error</h2>
+              <h2 class="font-[Noto Sans] font-medium text-2xl">
+                Page Not Found
+              </h2>
+            </div>
+            <button
+              class="work_together bg-wardGreen text-lg capitalize border-2 py-[12px] px-[48px]  whitespace-nowrap max-md:text-sm max-md:border-1 mt-5"
+            >
+              Go to Main Page
+            </button>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="lg:hidden pt-32">
+          <div
+        class="flex w-11/12 m-auto border-t-[2px] border-b-[2px] max-lg:flex-col max-lg:border-b-0"
+      >
+        <div
+          class=" w-[50%] items-center  bg-wardSilver max-lg:w-full"
+        >
+          <h4 class="flex justify-center py-28  uppercase font-[Policemen] text-8xl max-xl:text-4xl max-lg:py-6">
+            Tell Us About <br />
+            Your Project
+          </h4>
+          <div class=" border-solid border-t-2 bg-wardLight p-14 max-sm:p-4 max-sm:w-full">
+            <p>
+              "We are a WARD IT team, with various backgrounds and cultures yet, with 10 + years of experience in IT and management, with the common desire to help make better software easier and managed services available for our clients. 
+            </p>
+            <p>
+              We work with the community to truly understand obstacles and roadblocks in IT and then collaborate with others to create innovative and practical solutions."
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex w-1/2 items-center  flex-col gap-2 border-l-[2px] max-lg:border-l-0 max-lg:w-full " 
+        >
+        <div class="pt-24 max-sm:w-full flex justify-center items-center gap-6 ">
+          
+          <div class="max-sm:w-11/12 max-sm:m-auto">
+            <h3 class="flex justify-center  text-3xl ">
+              Send Us message
+            </h3>
+            <form class="flex flex-col gap-8 "
+              id="contact_form"
+              action="#"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <div class="border-b-2 h-[32px] border-wardGray mt-12">
+                <input 
+                  class="bg-wardSilver outline-none w-full"
+                  type="email"
+                  placeholder="Email"
+                  
+                />
+              </div>
+              <div class="border-b-2 h-[32px] border-wardGray">
+                <input
+                  class="bg-wardSilver outline-none w-full"
+                  type="name"
+                  id="name"
+                  placeholder="Name"
+                  size="35"
+                  maxlength="256"
+                  required
+                  minlength="4"
+                  maxlength="16"
+                />
+              </div>
+              <div class="border-b-2 h-[32px] border-wardGray">
+                <input
+                  class="bg-wardSilver outline-none w-full"
+                  type="tel"
+                  id="phone"
+                  placeholder="Phone"
+                  size="35"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
+              </div>
+              <div class="border-b-2 border-wardGray">
+                <textarea
+                  class="bg-wardSilver outline-none w-full"
+                  placeholder="Text"
+                  name="Text"
+                  rows="7"
+                  cols="40"
+                ></textarea>
+              </div>
+              <div class="flex justify-center ">
+                <input
+                class="consultation text-white bg-wardLight capitalize whitespace-nowrap font-medium border-2 text-sm px-12 py-3 text-center mr-2 md:mr-0 max-md:text-xs"
+                  type="submit"
+                  value="Submit"
+                >
+              </input>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+      </div>
+        </div>
+      </section>
+    </section>
+    <section class="bg-wardSilver pt-28">
+      <footer class=" w-11/12 m-auto border-t-[2px]  max-lg:pt-10">
+        <div class="w-11/12 m-auto flex gap-10  2xl:gap-20  py-8 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
+            <div class="w-1/4 flex-col max-lg:w-[30%] max-sm:w-auto">
+                <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Contact US</h2>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 flex gap-4 max-lg:justify-center max-md:justify-center max-sm:justify-center items-center">
+                          <img class="w-[21px] h-[21px]" src="img/footer/footer-email.png" alt="">
+                          wardit@gmail.com</a>
+                    </li>
+                </ul>
+                <div class="">
+                  <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Address</h2>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 max-lg:justify-center max-md:justify-center  flex gap-4 max-sm:justify-center items-center">
+                          <img class="w-[21px] h-[21px]" src="img/footer/footer-map.png" alt="">
+                          4/4 Ertso St. 0194, Tbilisi</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <div class="w-1/4 flex-col max-sm:w-2/4">
+                <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Services</h2>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <a href="#" class="2xl:hover:bg-wardGreen 2xl:hover:p-2">Network and Service Ops</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Incident Management</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Software Quality Assurance</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Robotic Process Automation</a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">IT Consulting</a>
+                  </li>
+                </ul>
+            </div>
+            <div class="w-1/4 max-lg:hidden">
+                <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Products</h2>
+                <ul class="text-gray-500 dark:text-gray-400">
+                    <li class="mb-4">
+                        <span href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Pager Duty</span>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">grafana</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Pager Duty</a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">randeck</a>
+                    </li>
+                    <li class="mb-4">
+                      <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">grafana</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-1/4 flex-col max-sm:w-2/4">
+              <div class="flex justify-center">
+                <a class="flex-col" href="">
+                  <img src="img/footer/footer-logo.svg" alt="warditLogo" class="">
+                  
+                </a>
+              </div>
+              <div class="flex flex-col justify-center items-center mt-6">
+                <img class="" src="img/footer/footer-sign.svg" alt="">
+                <button
+                  class="work_together text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
+                >
+                  Let's work together
+                </button>
+              </div>
+          </div>
+          </div>
+        </div>
+        <div class="items-center px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between border-t-2 max-lg:">
+            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center flex justify-center">© 2022 <a href=""> WARD IT</a>. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0 items-center justify-center">
+                <a href="https://www.linkedin.com/in/vako-gogatishvili-972951220/" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <img src="img/footer/linkedln.png" alt="">
+                    <span class="sr-only">Linkedin page</span>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <img src="img/footer/twitter .png" alt="">
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <img src="img/footer/facebook .png" alt="">
+                    <span class="sr-only">Facebook page</span>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <img src="img/footer/instagram.png" alt="">
+                    <span class="sr-only">Instagram page</span>
+                </a>  
+            </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+  </body>
+</html>

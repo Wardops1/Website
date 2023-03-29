@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Roboto:wght@400;500&display=swap");
-<<<<<<< HEAD
-@font-face {
+
+/* @font-face {
   font-family: "Policemen";
   src: url("../fonts/policemen/Policemen-3D.ttf") format("truetype"),
     url("../fonts/policemen/Policemen-3D.woff") format("woff"),
@@ -16,5 +16,4 @@
   font-family: "Policemen";
   src: url("../fonts/policemen/Policemen-3D.ttf");
 }
-
->>>>>>> 70d3c69c359220afb9b28924a1d10d1f4c281c57
+ */

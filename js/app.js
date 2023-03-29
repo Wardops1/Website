@@ -14,10 +14,10 @@ var swiper = new Swiper(".mySwiper_avatar", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
   breakpoints: {
     "@0.00": {
       slidesPerView: 1,
@@ -32,7 +32,38 @@ var swiper = new Swiper(".mySwiper_avatar", {
       spaceBetween: 20,
     },
     "@1.50": {
-      slidesPerView: 4,
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
+
+var swiper = new Swiper(".blog_swiper", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // loop: true,
+  // autoplay: {
+  //   delay: 1000,
+  // },
+  breakpoints: {
+    "@0.00": {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    "@0.75": {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    "@1.00": {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    "@1.50": {
+      slidesPerView: 1,
       spaceBetween: 30,
     },
   },
@@ -68,13 +99,36 @@ const avatarDivs = document.querySelectorAll(".avatar_swiper");
 avatarDivs.forEach((avatarDiv) => {
   const myHiddenDiv = avatarDiv.querySelector(".avatar_text");
 
-  avatarDiv.addEventListener("mouseover", () => {
+  avatarDiv.addEventListener("click", () => {
     myHiddenDiv.classList.remove("hidden");
     avatarDiv.classList.add("border-2");
   });
 
-  avatarDiv.addEventListener("mouseout", () => {
-    myHiddenDiv.classList.add("hidden");
-    avatarDiv.classList.remove("border-2");
+  document.addEventListener("click", (event) => {
+    if (!avatarDiv.contains(event.target)) {
+      myHiddenDiv.classList.add("hidden");
+      avatarDiv.classList.remove("border-2");
+    }
   });
 });
+
+// scroling tamp
+function scrollBlog() {
+  const targetElement = document.getElementById("blog_sc");
+  targetElement.scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollCareer() {
+  const targetElement = document.getElementById("career_sc");
+  targetElement.scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollAvatar() {
+  const targetElement = document.getElementById("avatar_sc");
+  targetElement.scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollServices() {
+  const targetElement = document.getElementById("services_sc");
+  targetElement.scrollIntoView({ behavior: "smooth" });
+}

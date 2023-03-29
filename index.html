@@ -19,8 +19,8 @@
         <div class="flex items-center w-11/12 m-auto justify-between 2xl:w-9/12">
             <div class="flex items-center gap-12">
                 <div class="flex items-center gap-4">
-                    <a href="gg.html" class="flex items-center">
-                        <img src="img/main-img/logo.svg" alt="Ward IT Logo" />
+                    <a href="index.html" class="flex items-center">
+                        <img src="img/common-img/logo.svg" alt="Ward IT Logo" />
                     </a>
                 </div>
                 <div class="items-center hidden lg:flex md:w-auto" id="navbar-sticky">
@@ -28,44 +28,44 @@
                         <div class=" dropdown relative hover:bg-wardSilver flex py-4 px-2 hover:border-x hover:font-bold">
                             <div>
                                 <div class="flex gap-1 items-end">
-                                    <button class=" capitalize"><a href="#">services</a></button>
-                                    <img src="img/main-img/downward-arrow .png" alt="">
+                                    <button class="capitalize cursor-pointer"  onclick="scrollServices()"><a>services</a></button>
+                                    <img src="img/common-img/downward-arrow.svg" alt="">
                                 </div>
                                 <div class="dropdown-content hidden absolute z-10 top-[100%] left-[-1%] bg-wardSilver w-[740px]">
                                     <div class="flex gap-4 p-2 border-x border-b">
                                       <div >
                                         <ul class="font-thin capitalize">
                                           <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3 ">
-                                            <a href="404.html">Product & Service Operational Center</a>
-                                            <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                            <a href="network-service.html">Product & Service Operational Center</a>
+                                            <img src="img/common-img/right_sign.svg" alt="right-sign">
                                           </li>
                                           <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                            <a href="404.html">Incident Managment</a>
-                                            <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                            <a href="incident-management.html">Incident Managment</a>
+                                            <img src="img/common-img/right_sign.svg" alt="right-sign">
                                           </li>
                                           <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                            <a href="404.html">Software QA</a>
-                                            <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                            <a href="software-qa.html">Software QA</a>
+                                            <img src="img/common-img/right_sign.svg" alt="right-sign">
                                           </li>
                                           <li class="flex gap-2 py-2 hover:text-wardGreen hover:gap-3">
-                                            <a href="404.html">Robotic Process Automation </a>
-                                            <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                            <a href="robotic-process.html">Robotic Process Automation </a>
+                                            <img  src="img/common-img/right_sign.svg" alt="right-sign">
                                           </li>
                                         </ul>
                                       </div>
                                       <div>
                                         <ul class="font-thin capitalize">
                                           <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                            <a href="404.html">problem managment</a>
-                                            <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                            <a href="problem-management.html">problem managment</a>
+                                            <img src="img/common-img/right_sign.svg" alt="right-sign">
                                           </li>
                                           <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                            <a href="404.html">change managment</a>
-                                            <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                            <a href="change-management.html">change managment</a>
+                                            <img src="img/common-img/right_sign.svg" alt="right-sign">
                                           </li>
                                           <li class="flex gap-2  py-2 hover:text-wardGreen hover:gap-3">
-                                            <a href="404.html">deployment and release managment</a>
-                                            <img class=""  src="img/main-img/right_sign.svg" alt="right-sign">
+                                            <a href="realease-deployment-managment.html">deployment and release managment</a>
+                                            <img src="img/common-img/right_sign.svg" alt="right-sign">
                                           </li>
                                         </ul>
                                       </div>
@@ -74,13 +74,13 @@
                             </div>
                         </div>
                         <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
-                           <a href="404.html"><li class="mx-4 capitalize">team</li></a>
+                            <li class="mx-4 capitalize cursor-pointer" onclick="scrollAvatar()"><a>team </a></li>
                         </div>
                         <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
-                            <li class="mx-4 capitalize"><a>career</a></li>
+                            <li class="mx-4 capitalize cursor-pointer" onclick="scrollCareer()"><a>career</a></li>
                         </div>
                         <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
-                            <li class="mx-4 capitalize"><a>blog</a></li>
+                            <li class="mx-4 capitalize blog-scroll cursor-pointer" onclick="scrollBlog()"><a>blog</a></li>
                         </div>
                     </ul>
                 </div>
@@ -93,15 +93,15 @@
                     <div class="flex flex-col  relative">
                         <div class="relative">
                             <div class="flex items-baseline cursor-pointer" id="navDrop">
-                                <img src="img/main-img/navbar-sticky.png" alt="">
+                                <img src="img/common-img/menu-drop.svg" alt="">
                                 <path fill-rule="evenodd" d="M10 13.333l6.667-6.666h-13.334L10 13.333zM10 16.667l-6.667-6.666h13.334L10 16.667z"/>
                               </svg>
                             </div>
                             <ul class="hidden absolute z-50 text-center bg-wardSilver w-[150px] capitalize border-2 p-2 text-xl top-full right-0 mt-2" id="navDropInner">
-                              <li><a href="404.html">Services</a></li>
-                              <li><a href="404.html">Team</a></li>
-                              <li><a href="404.html">Career</a></li>
-                              <li><a href="404.html">Blog</a></li>
+                              <li class="capitalize cursor-pointer" onclick="scrollServices()">Services</li>
+                              <li class="capitalize cursor-pointer" onclick="scrollAvatar()">Team</li>
+                              <li class="capitalize cursor-pointer" onclick="scrollCareer()">Career</li>
+                              <li class="capitalize cursor-pointer" onclick="scrollBlog()">Blog</li>
                             </ul>
                         </div>   
                     </div>
@@ -118,43 +118,43 @@
                 <!-- landing block for mobile -->
                 <div class="flex   flex-row lg:hidden">
                     <div class="">
-                        <img src="img/landing-img/block_1.png" alt="block" />
+                        <img src="img/big-block/block_1.png" alt="block" />
                     </div>
                     <div class="">
-                        <img src="img/landing-img/block_2.png" alt="block" />
+                        <img src="img/big-block/block_2.png" alt="block" />
                     </div>
                 </div>
                 <ul class="flex items-center gap-4 py-2 mt-8 text-2xl">
-                    <img src="img/main-img/ramboe.svg" alt="rhambus" />
+                    <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
                     <li class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"> An All-In-One IT Outsourcing Solution </li>
                 </ul>
                 <ul class="flex items-center gap-4 py-2 text-2xl">
-                    <img src="img/main-img/ramboe.svg" alt="rhambus" />
+                    <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
                     <li class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"> 24/7 Support And Availability </li>
                 </ul>
                 <ul class="flex items-center gap-4 py-2 text-2xl">
-                    <img src="img/main-img/ramboe.svg" alt="rhambus" />
+                    <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
                     <li class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"> Managed Services </li>
                 </ul>
                 <ul class="flex items-center gap-4 py-2 text-2xl">
-                    <img src="img/main-img/ramboe.svg" alt="rhambus" />
+                    <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
                     <li class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"> Automated Business Processes </li>
                 </ul>
                 <ul class="flex items-center gap-4 py-2 text-2xl">
-                    <img src="img/main-img/ramboe.svg" alt="rhambus" />
+                    <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
                     <li class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"> Implementation and Administration </li>
                 </ul>
             </div>
             <!-- landing blocks -->
             <div class="max-lg:hidden">
                 <div class="absolute left-[52%] top-[24%] max-2xl:top-[30%]">
-                    <img class="" src="img/landing-img/block_1.png " alt="block" />
+                    <img class="" src="img/big-block/block_1.png " alt="block" />
                 </div>
                 <div class="absolute left-[75%] top-[5%] max-xl:hidden">
-                    <img src="img/landing-img/block_2.png" alt="block" />
+                    <img src="img/big-block/block_2.png" alt="block" />
                 </div>
                 <div class="absolute left-[91%] top-[30%] max-sm:top-[40%]">
-                    <img src="img/landing-img/block_3.png" alt="block" />
+                    <img src="img/big-block/block_3.png" alt="block" />
                 </div>
             </div>
         </div>
@@ -166,22 +166,23 @@
         <div class="flex mt-16 max-sm:mt-2">
             <div class="w-full flex items-center mt-10 py-2 gap-10 justify-center border-y-2 rotate-[-7.77deg] max-lg:rotate-0">
               <div class="text-slider flex gap-6 items-center">
-                <img class="w-10 h-full max-md:hidden" src="img/main-img/Frame.png" alt="frame"/>
+                <img class="w-10 h-full max-md:hidden" src="img/common-img/frame-rhombus.svg" alt="frame"/>
                 <span class="font-[Policemen] whitespace-nowrap text-[44px]  max-2xl:text-[35px] max-xl:text-[30px] max-lg:text-[24px] max-md:text-[18px] max-sm:text-[12px]">Get started in no time, scale up with no limit, for any team, at any level </span>
-                <img class="w-10 h-full max-md:hidden" src="img/main-img/Frame.png" alt="frame"/>
+                <img class="w-10 h-full max-md:hidden" src="img/common-img/frame-rhombus.svg" alt="frame"/>
               </div>
               
             </div>
         </div>
-        <div class="flex m-auto flex-col gap-2 absolute top-[84%] left-[80%]  max-sm:left-[75%] max-sm:top-[80%] max-lg:hidden">
+        <div class="flex m-auto items-center flex-col gap-2 absolute top-[84%] left-[75%]  max-sm:left-[75%] max-sm:top-[80%] max-lg:hidden">
             <div class="animate-bounce">
-                <img src="img/main-img/service sign.png" alt="" />
+                <img src="img/common-img/service sign.png" alt="" />
             </div>
             <div class="whitespace-nowrap text-xl font-[Noto Sans] ">
                 <a href="#"><p>Our Services</p></a>
             </div>
         </div>
     </section>
+    <!-- partners -->
     <section class="bg-wardSilver">
         <div>
             <div class="flex justify-center pt-20 py-10">
@@ -191,57 +192,66 @@
                 <div class=" border-2  m-auto py-10 max-lg:hidden ">
                     <div class="flex  justify-center  gap-16 items-center">
                         <div>
-                            <div class="flex ">
-                                <img src="img/services-img/grafana.png" alt="Grafana">
-                            </div>
+                            <img src="img/partners/grafana.png" alt="grafana">
                         </div>
-                        <div class="">
-                            <img src="img/services-img/kibana.png " alt="kibana">
+                        <div>
+                            <img src="img/partners/kibana.png" alt="kibana">
                         </div>
-                        <div class="">
-                            <img src="img/services-img/graylog.png" alt="gralog">
+                        <div>
+                            <img src="img/partners/graylog.png" alt="graylog">
                         </div>
-                        <div class="">
-                            <img src="img/services-img/zabbix.png" alt="zabbix">
+                        <div>
+                            <img src="img/partners/zabbix.png" alt="zabbix">
                         </div>
-                        <div class="">
-                            <img src="img/services-img/new relic.png" alt="New Relic">
+                        <div>
+                            <img src="img/partners/newrelic.png" alt="newrelic">
                         </div>
-                        <div class="">
-                            <img src="img/services-img/prometheus.png" alt="Prometheus">
+                        <div>
+                            <img src="img/partners/prometheus.png" alt="prometheus">
                         </div>
-                        <div class="">
-                            <img src="img/services-img/jagere.png" alt="Jagere">
+                        <div>
+                            <img src="img/partners/jagere.png" alt="jagere">
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- partner mobile slider -->
             <div class="w-full lg:hidden ">
                 <div class="swiper mySwiper_1 border-2">
                     <div class="swiper-wrapper flex items-center py-10  gap-2">
                         <div class="swiper-slide">
                             <div>
-                                <img src="img/services-img/grafana.png" alt="Grafana">
+                                <img src="img/partners/grafana.png" alt="Grafana">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <img src="img/services-img/kibana.png " alt="kibana">
+                                <img src="img/partners/kibana.png" alt="kibana">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <img src="img/services-img/graylog.png" alt="gralog">
+                                <img src="img/partners/graylog.png" alt="gralog">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <img src="img/services-img/new relic.png" alt="New Relic">
+                                <img src="img/partners/zabbix.png" alt="zabbix">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                                <img src="img/services-img/jagere.png" alt="jagere">
+                                <img src="img/partners/newrelic.png" alt="newrelic">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img src="img/partners/prometheus.png" alt="prometheus">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <img  src="img/partners/jagere.png" alt="jagere">
                             </div>
                         </div>
                     </div>
@@ -250,7 +260,7 @@
         </div>
     </section>
     <!-- service section -->
-    <section class="bg-wardSilver">
+    <section class="bg-wardSilver" id="services_sc">
         <div class="w-10/12 m-auto 2xl:w-9/12">
             <!-- service-header -->
             <div class="border-b-[2px]">
@@ -278,7 +288,7 @@
                                 <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Collect metrics about the operations of an IT environment's hardware and software to ensure everything functions as expected. </p>
                             </div>
                             <div class="flex justify-end pt-4">
-                                <a href="#"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                <a href="network-service.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                             </div>
                         </div>
                     </div>
@@ -295,7 +305,7 @@
                                 <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly as possible. </p>
                             </div>
                             <div class="flex justify-end pt-4">
-                                <a href="#"><span class="font-semibold py-2 px-1  md:hover:bg-wardGreen  ">Read More</span></a>
+                                <a href="incident-management.html"><span class="font-semibold py-2 px-1  md:hover:bg-wardGreen  ">Read More</span></a>
                             </div>
                         </div>
                     </div>
@@ -312,7 +322,7 @@
                                 <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Software testing could be the fastest, easiest, and exact part of your SDLC. Optimize the software testing process and get measurable results. </p>
                             </div>
                             <div class="flex justify-end pt-4">
-                                <a href="#"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                <a href="software-qa.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                             </div>
                         </div>
                     </div>
@@ -329,7 +339,7 @@
                                 <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> A technology that mimics and automates the way humans interact with software to perform high-volume, repeatable tasks. </p>
                             </div>
                             <div class="flex justify-end pt-4">
-                                <a href="#"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                <a href="robotic-process.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                             </div>
                         </div>
                     </div>
@@ -346,7 +356,7 @@
                                 <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly Respond to an. </p>
                             </div>
                             <div class="flex justify-end pt-4">
-                                <a href="#"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                <a href="problem-management.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                             </div>
                         </div>
                     </div>
@@ -363,7 +373,7 @@
                                 <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly as possible. </p>
                             </div>
                             <div class="flex justify-end pt-4">
-                                <a href="#"><span class="font-semibold  py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                <a href="change-management.html"><span class="font-semibold  py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                             </div>
                         </div>
                     </div>
@@ -380,7 +390,7 @@
                                 <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Software testing  could be the fastest, easiest, and exact part of your SDLC. Optimize the software testing process and get measurable results. </p>
                             </div>
                             <div class="flex justify-end pt-4">
-                                <a href="#"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                <a href="realease-deployment-managment.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                             </div>
                         </div>
                     </div>
@@ -416,15 +426,15 @@
             <div class="flex flex-col p-10 gap-2 border-l-[2px] max-lg:border-l-0 max-lg:border-b-2">
                 <h5 class="font-normal text-[22px]"> Partnership and Experise Monitoring and Incident Management Tools. </h5>
                 <ul class="flex items-center gap-5">
-                    <img src="img/main-img/ramboe-green.png" alt="rambue" />
+                    <img src="img/common-img/green-rhombus.svg" alt="rhombus" />
                     <h6 class="text-[18px]">Implemenetraton and Integrations</h6>
                 </ul>
                 <ul class="flex items-center gap-5">
-                    <img src="img/main-img/ramboe-green.png" alt="rambue" />
+                    <img src="img/common-img/green-rhombus.svg" alt="rambue" />
                     <h6 class="text-[18px]">Open Source and Enterprise Souliutons</h6>
                 </ul>
                 <ul class="flex items-center gap-5">
-                    <img src="img/main-img/ramboe-green.png" alt="rambue" />
+                    <img src="img/common-img/green-rhombus.svg" alt="rambue" />
                     <h6 class="text-[18px]">Data ​Visualization</h6>
                 </ul>
             </div>
@@ -509,152 +519,192 @@
             </div>
         </div>
     </section>
+    <!-- operation section -->
     <section class="bg-wardSilver">
         <div class="w-2/3 m-auto flex flex-col gap-8 pt-10 max-md:pt-5">
-          <div class="flex justify-center">
-            <h3 class="font-[Policemen] text-8xl whitespace-nowrap max-lg:text-4xl max-sm:text-2xl">our approach to solution</h3>
-          </div>
-          <div class="flex justify-center">
-            <h3 class="font-[Policemen] text-8xl whitespace-nowrap max-lg:text-4xl max-sm:text-2xl">operations services</h3>
-          </div>
-          <div class="flex justify-center">
-            <button class="px-8 py-2 bg-wardGreen text-2xl whitespace-nowrap max-lg:text-sm max-lg:px-2">Learning is something we do almost every day</button>
-          </div>
+           <div class="flex justify-center">
+              <h3 class="font-[Policemen] text-8xl whitespace-nowrap max-lg:text-4xl max-sm:text-2xl">our approach to solution</h3>
+           </div>
+           <div class="flex justify-center">
+              <h3 class="font-[Policemen] text-8xl whitespace-nowrap max-lg:text-4xl max-sm:text-2xl">operations services</h3>
+           </div>
+           <div class="flex justify-center">
+              <button class="px-8 py-2 bg-wardGreen text-2xl whitespace-nowrap max-lg:text-sm max-lg:px-2">Learning is something we do almost every day</button>
+           </div>
         </div>
-        <!-- solution operation inner -->
+        <!--  operation solution inner -->
         <!-- operation 01 and 02 desktop -->
-        
+        <div class="w-9/12 m-auto flex flex-col py-8 max-md:py-4 2xl:w-8/12 max-md:hidden">
+            <div class="max-md:hidden">
+               <div class="flex items-center max-md:flex-col max-md:gap-10 pt-10">
+                  <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
+                     <div class="flex gap-5 items-stretch max-md:gap-2 max-md:h-[150px]">
+                        <p class="mymove font-[Roboto] text-9xl font-extrabold max-md:text-8xl max-md:pt-3">01</p>
+                     </div>
+                     <h5 class="capitalize font-normal text-2xl max-md:text-xl">Build an Roadmap</h5>
+                     <p class="text-lg max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
+                  </div>
+                  <div class="flex justify-center items-center w-1/2 max-md:hidden">
+                     <div class="relative w-6/12 m-auto h-[200px] ramboues">
+                        <div class="absolute z-0"><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                        <div class="absolute z-0 left-2 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                        <div class="absolute z-0 left-4 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                        <div class="absolute z-0 left-6 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                        <div class="absolute z-0 left-8 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                        <div class="absolute z-0 left-10 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex items-center max-md:flex-col max-md:gap-10 pt-10 max-md:hidden">
+                  <div class="flex justify-center items-center w-1/2 max-md:hidden">
+                    <div class="relative w-6/12 m-auto h-[200px] ramboues">
+                        <div class="absolute z-0"><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                        <div class="absolute z-0 left-2 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                        <div class="absolute z-0 left-4 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                        <div class="absolute z-0 left-6 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                        <div class="absolute z-0 left-8 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                        <div class="absolute z-0 left-10 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
+                    </div>
+                  </div>
+                  <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
+                     <p class="w-full mymove text-right font-[Roboto] text-9xl font-extrabold max-md:text-8xl max-md:pt-3">02</p>
+                     <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Design and Develop</h5>
+                     <p class="text-lg text-right max-md:text-sm">Once we’ve finalized the initial IT audit, we start to implement highly resilient and robust operational services, applying best practices in DevOps, cloud, and SRE to automate processes and minimize potential risks and errors</p>
+                  </div>
+               </div>
+            </div>
+        </div>
         <!-- end -->
         <!-- operation 01 and 02 mobile -->
         <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
-            <div class="flex  w-full ">
-                <div class="w-1/2  flex pt-3">
-                    <p class="mymove font-[Roboto] text-8xl font-extrabold">01</p>
+           <div class="flex  w-full ">
+              <div class="w-1/2  flex pt-3">
+                 <p class="mymove font-[Roboto] text-8xl font-extrabold">01</p>
+              </div>
+              <div class="w-1/2 h-[120px] ">
+                <div class="relative  ramboues left-0 right-0">
+                    <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                    <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                    <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                    <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                    <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                    <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
                 </div>
-                <div class="w-1/2 h-[120px] ">
-                    <div class="relative  ramboues left-0 right-0">
-                        <div class="absolute z-0 left-6 "><img src="img/test/line-6.svg" alt="line-6"></div>
-                        <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/test/line-5.svg" alt="line-5"></div>
-                        <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/test/line-4.svg" alt="line-4"></div>
-                        <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/test/line-3.svg" alt="line-3"></div>
-                        <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/test/line-2.svg" alt="line-2"></div>
-                        <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/test/line-1.svg" alt="line-1"></div>
-                    </div> 
-                </div>
-            </div>
-            <div>
-                <h5 class="capitalize text-left font-normal text-2xl max-md:text-xl">Build an Roadmap</h5>
-                <p class="text-lg text-left max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
-            </div>
+              </div>
+           </div>
+           <div>
+              <h5 class="capitalize text-left font-normal text-2xl max-md:text-xl">Build an Roadmap</h5>
+              <p class="text-lg text-left max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
+           </div>
         </div>
         <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
-            <div class="flex   w-full ">
-                <div class="w-1/2 h-[120px] ">
-                    <div class="relative  ramboues left-0 right-0">
-                        <div class="absolute z-0 left-6 "><img src="img/test/line-6.svg" alt="line-6"></div>
-                        <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/test/line-5.svg" alt="line-5"></div>
-                        <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/test/line-4.svg" alt="line-4"></div>
-                        <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/test/line-3.svg" alt="line-3"></div>
-                        <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/test/line-2.svg" alt="line-2"></div>
-                        <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/test/line-1.svg" alt="line-1"></div>
-                    </div> 
+           <div class="flex   w-full ">
+              <div class="w-1/2 h-[120px] ">
+                <div class="relative  ramboues left-0 right-0">
+                    <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                    <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                    <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                    <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                    <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                    <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
                 </div>
-                <div class="w-1/2  flex justify-end pt-3">
-                    <p class="mymove  text-right font-[Roboto] text-8xl font-extrabold">02</p>
-                </div>
-            </div>
-            <div>
-                <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Design and Develop</h5>
-                <p class="text-lg text-right max-md:text-sm">Once we’ve finalized the initial IT audit, we start to implement highly resilient and robust operational services, applying best practices in DevOps, cloud, and SRE to automate processes and minimize potential risks and errors</p>
-            </div>
+              </div>
+              <div class="w-1/2  flex justify-end pt-3">
+                 <p class="mymove  text-right font-[Roboto] text-8xl font-extrabold">02</p>
+              </div>
+           </div>
+           <div>
+              <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Design and Develop</h5>
+              <p class="text-lg text-right max-md:text-sm">Once we’ve finalized the initial IT audit, we start to implement highly resilient and robust operational services, applying best practices in DevOps, cloud, and SRE to automate processes and minimize potential risks and errors</p>
+           </div>
         </div>
         <!-- operation 03 and 04 desktop -->
         <div class="w-9/12 m-auto flex flex-col py-8 max-md:py-4 2xl:w-8/12 max-md:hidden">
-            <div class="max-md:hidden">
+           <div class="max-md:hidden">
               <div class="flex items-center max-md:flex-col max-md:gap-10 pt-10">
-                <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
-                  <div class="flex gap-5 items-stretch max-md:gap-2 max-md:h-[150px]">
-                    <p class="mymove font-[Roboto] text-9xl font-extrabold max-md:text-8xl max-md:pt-3">03</p>
-                  </div>
-                  <h5 class="capitalize font-normal text-2xl max-md:text-xl">Verify and Fine-tune</h5>
-                  <p class="text-lg max-md:text-sm">After strategically optimizing operation solutions, we continue to improve your internal IT organization by setting up release management processes, monitoring post-deployment errors, and supporting overall security.</p>
-                </div>
-                <div class="flex justify-center items-center w-1/2 max-md:hidden">
-                  <div class="relative w-6/12 m-auto h-[200px] ramboues">
-                    <div class="absolute z-0"><img src="img/test/line-6.svg" alt="line-6"></div>
-                    <div class="absolute z-0 left-2 top-[10px] stage-5"><img src="img/test/line-5.svg" alt="line-5"></div>
-                    <div class="absolute z-0 left-4 top-[20px] stage-4"><img src="img/test/line-4.svg" alt="line-4"></div>
-                    <div class="absolute z-0 left-6 top-[30px] stage-3"><img src="img/test/line-3.svg" alt="line-3"></div>
-                    <div class="absolute z-0 left-8 top-[40px] stage-2"><img src="img/test/line-2.svg" alt="line-2"></div>
-                    <div class="absolute z-0 left-10 top-[50px] stage-1"><img src="img/test/line-1.svg" alt="line-1"></div>
-                  </div>
-                </div>
+                 <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
+                    <div class="flex gap-5 items-stretch max-md:gap-2 max-md:h-[150px]">
+                       <p class="mymove font-[Roboto] text-9xl font-extrabold max-md:text-8xl max-md:pt-3">03</p>
+                    </div>
+                    <h5 class="capitalize font-normal text-2xl max-md:text-xl">Verify and Fine-tune</h5>
+                    <p class="text-lg max-md:text-sm">After strategically optimizing operation solutions, we continue to improve your internal IT organization by setting up release management processes, monitoring post-deployment errors, and supporting overall security.</p>
+                 </div>
+                 <div class="flex justify-center items-center w-1/2 max-md:hidden">
+                    <div class="relative w-6/12 m-auto h-[200px] ramboues">
+                        <div class="absolute z-0"><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                        <div class="absolute z-0 left-2 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                        <div class="absolute z-0 left-4 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                        <div class="absolute z-0 left-6 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                        <div class="absolute z-0 left-8 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                        <div class="absolute z-0 left-10 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
+                    </div>
+                 </div>
               </div>
               <div class="flex items-center max-md:flex-col max-md:gap-10 pt-10 max-md:hidden">
-                <div class="flex justify-center items-center w-1/2 max-md:hidden">
-                  <div class="relative w-6/12 m-auto h-[200px] ramboues">
-                    <div class="absolute z-0"><img src="img/test/line-6.svg" alt="line-6"></div>
-                    <div class="absolute z-0 left-2 top-[10px] stage-5"><img src="img/test/line-5.svg" alt="line-5"></div>
-                    <div class="absolute z-0 left-4 top-[20px] stage-4"><img src="img/test/line-4.svg" alt="line-4"></div>
-                    <div class="absolute z-0 left-6 top-[30px] stage-3"><img src="img/test/line-3.svg" alt="line-3"></div>
-                    <div class="absolute z-0 left-8 top-[40px] stage-2"><img src="img/test/line-2.svg" alt="line-2"></div>
-                    <div class="absolute z-0 left-10 top-[50px] stage-1"><img src="img/test/line-1.svg" alt="line-1"></div>
-                  </div>
+                 <div class="flex justify-center items-center w-1/2 max-md:hidden">
+                    <div class="relative w-6/12 m-auto h-[200px] ramboues">
+                        <div class="absolute z-0"><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                        <div class="absolute z-0 left-2 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                        <div class="absolute z-0 left-4 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                        <div class="absolute z-0 left-6 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                        <div class="absolute z-0 left-8 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                        <div class="absolute z-0 left-10 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
+                    </div>
+                 </div>
+                 <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
+                    <p class="w-full mymove text-right font-[Roboto] text-9xl font-extrabold max-md:text-8xl max-md:pt-3">04</p>
+                    <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Resources</h5>
+                    <p class="text-lg text-right max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
+                 </div>
+              </div>
+           </div>
+        </div>
+        <!-- end -->
+        <!-- operation 03 and 04 mobile -->
+        <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
+           <div class="flex  w-full ">
+              <div class="w-1/2  flex pt-3">
+                 <p class="mymove font-[Roboto] text-8xl font-extrabold">03</p>
+              </div>
+              <div class="w-1/2 h-[120px] ">
+                <div class="relative  ramboues left-0 right-0">
+                    <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                    <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                    <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                    <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                    <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                    <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
                 </div>
-                <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
-                  <p class="w-full mymove text-right font-[Roboto] text-9xl font-extrabold max-md:text-8xl max-md:pt-3">04</p>
-                  <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Resources</h5>
-                  <p class="text-lg text-right max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
+              </div>
+           </div>
+           <div>
+              <h5 class="capitalize text-left font-normal text-2xl max-md:text-xl">Verify and Fine-tune</h5>
+              <p class="text-lg text-left max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
+           </div>
+        </div>
+        <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
+           <div class="flex   w-full ">
+              <div class="w-1/2 h-[120px] ">
+                <div class="relative  ramboues left-0 right-0">
+                    <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                    <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                    <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                    <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                    <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                    <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- end -->
-          <!-- operation 03 and 04 mobile -->
-          <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
-              <div class="flex  w-full ">
-                  <div class="w-1/2  flex pt-3">
-                      <p class="mymove font-[Roboto] text-8xl font-extrabold">03</p>
-                  </div>
-                  <div class="w-1/2 h-[120px] ">
-                      <div class="relative  ramboues left-0 right-0">
-                          <div class="absolute z-0 left-6 "><img src="img/test/line-6.svg" alt="line-6"></div>
-                          <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/test/line-5.svg" alt="line-5"></div>
-                          <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/test/line-4.svg" alt="line-4"></div>
-                          <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/test/line-3.svg" alt="line-3"></div>
-                          <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/test/line-2.svg" alt="line-2"></div>
-                          <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/test/line-1.svg" alt="line-1"></div>
-                      </div> 
-                  </div>
+              <div class="w-1/2  flex justify-end pt-3">
+                 <p class="mymove  text-right font-[Roboto] text-8xl font-extrabold">04</p>
               </div>
-              <div>
-                  <h5 class="capitalize text-left font-normal text-2xl max-md:text-xl">Verify and Fine-tune</h5>
-                  <p class="text-lg text-left max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
-              </div>
-          </div>
-          <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
-              <div class="flex   w-full ">
-                  <div class="w-1/2 h-[120px] ">
-                      <div class="relative  ramboues left-0 right-0">
-                          <div class="absolute z-0 left-6 "><img src="img/test/line-6.svg" alt="line-6"></div>
-                          <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/test/line-5.svg" alt="line-5"></div>
-                          <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/test/line-4.svg" alt="line-4"></div>
-                          <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/test/line-3.svg" alt="line-3"></div>
-                          <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/test/line-2.svg" alt="line-2"></div>
-                          <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/test/line-1.svg" alt="line-1"></div>
-                      </div> 
-                  </div>
-                  <div class="w-1/2  flex justify-end pt-3">
-                      <p class="mymove  text-right font-[Roboto] text-8xl font-extrabold">04</p>
-                  </div>
-              </div>
-              <div>
-                  <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Resources</h5>
-                  <p class="text-lg text-right max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
-              </div>
-            </div>
-    </section>   
-    <section class="w-full h-full bg-wardSilver ">
+           </div>
+           <div>
+              <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Resources</h5>
+              <p class="text-lg text-right max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
+           </div>
+        </div>
+     </section>   
+    <section class="w-full h-full bg-wardSilver "  id="avatar_sc">
         <div class=" flex flex-col  gap-10 w-11/12 m-auto py-5 border-b-2 2xl:w-9/12">
             <div class="flex justify-center items-center   gap-5 border-t-2 border-b-2 max-lg:flex-col">
                 <div class="flex w-1/2 items-center justify-center py-4">
@@ -775,7 +825,7 @@
         </div>
     </section>
     <!-- blog section -->
-    <section class="w-full h-full bg-wardSilver">
+    <section class="w-full h-full bg-wardSilver" id="blog_sc">
         <div class="w-10/12 m-auto flex flex-col gap-10 py-5 max-lg:hidden">
             <div class="flex items-center justify-center">
                 <h5 class="font-[Policemen] uppercase text-8xl py-5 ">blog post</h5>
@@ -851,12 +901,12 @@
             <div class="flex w-full items-center justify-center ">
                 <h5 class="font-[Policemen] whitespace-nowrap text-center uppercase text-4xl py-5 ">blog post</h5>
             </div>
-            <div class="swiper mySwiper_avatar">
+            <div class="swiper blog_swiper">
                 <div class="swiper-wrapper  py-5 mb-4">
                     <div class="swiper-slide ">
                         <div class="border-2 flex flex-col gap-5 justify-center items-center p-4">
                             <div class="relative flex  items-center justify-center">
-                                <span class="absolute capitalize  text-sm left-[35%] top-4 p-1 bg-wardGreen  max-xl:text-[10px]">Product & Service ops Center</span>
+                                <span class="absolute capitalize  left-[35%] top-4 p-1 bg-wardGreen  max-xl:text-[10px]">Product & Service ops Center</span>
                                 <img src="img/blog-img/blog-2.png" alt="blog">
                             </div>
                             <div class="flex flex-col">
@@ -918,6 +968,8 @@
             </div>
         </div>
     </section>
+
+    <!-- about project  -->
     <section class="bg-wardSilver">
         <div >
           <div
@@ -930,7 +982,7 @@
             Tell Us About <br />
             Your Project
           </h4>
-          <div class=" border-solid border-t-2 bg-wardLight p-14 max-sm:p-4 max-sm:w-full">
+          <div class="bg-wardGreen border-solid border-t-2 bg-wardLight p-14 max-sm:p-4 max-sm:w-full">
             <p>
               "We are a WARD IT team, with various backgrounds and cultures yet, with 10 + years of experience in IT and management, with the common desire to help make better software easier and managed services available for our clients. 
             </p>
@@ -1012,111 +1064,111 @@
     </section>
 
     <!-- footer -->
-    <section class="bg-wardSilver pt-28">
+    <section class="bg-wardSilver pt-28 " id="career_sc" >
         <footer class=" w-11/12 m-auto border-t-[2px]  max-lg:pt-10">
-          <div class="w-11/12 m-auto flex gap-10  2xl:gap-20  py-8 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
-              <div class="w-1/4 flex-col max-lg:w-[30%] max-sm:w-auto">
-                  <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Contact US</h2>
-                  <ul class="text-gray-500 dark:text-gray-400">
-                      <li class="mb-4">
-                          <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 flex gap-4 max-lg:justify-center max-md:justify-center max-sm:justify-center items-center">
-                            <img class="w-[21px] h-[21px]" src="img/footer/footer-email.png" alt="">
-                            wardit@gmail.com</a>
+            <div class="w-11/12 m-auto flex gap-10  2xl:gap-20  py-8 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
+                <div class="w-1/4 flex-col max-lg:w-[30%] max-sm:w-auto">
+                    <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Contact US</h2>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 flex gap-4 max-lg:justify-center max-md:justify-center max-sm:justify-center items-center">
+                              <img class="w-[21px] h-[21px]" src="img/footer/footer-email.png" alt="">
+                              wardit@gmail.com</a>
+                        </li>
+                    </ul>
+                    <div class="">
+                      <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Address</h2>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 max-lg:justify-center max-md:justify-center  flex gap-4 max-sm:justify-center items-center">
+                              <img class="w-[21px] h-[21px]" src="img/footer/footer-map.png" alt="">
+                              4/4 Ertso St. 0194, Tbilisi</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="w-1/4 flex-col max-sm:w-2/4">
+                    <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Services</h2>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="#" class="2xl:hover:bg-wardGreen 2xl:hover:p-2">Network and Service Ops</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Incident Management</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Software Quality Assurance</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Robotic Process Automation</a>
+                        </li>
+                        <li class="mb-4">
+                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">IT Consulting</a>
                       </li>
-                  </ul>
-                  <div class="">
-                    <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Address</h2>
-                  <ul class="text-gray-500 dark:text-gray-400">
-                      <li class="mb-4">
-                          <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 max-lg:justify-center max-md:justify-center  flex gap-4 max-sm:justify-center items-center">
-                            <img class="w-[21px] h-[21px]" src="img/footer/footer-map.png" alt="">
-                            4/4 Ertso St. 0194, Tbilisi</a>
-                      </li>
-                  </ul>
+                    </ul>
+                </div>
+                <div class="w-1/4 max-lg:hidden">
+                    <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Products</h2>
+                    <ul class="text-gray-500 dark:text-gray-400">
+                        <li class="mb-4">
+                            <span href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Pager Duty</span>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">grafana</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Pager Duty</a>
+                        </li>
+                        <li class="mb-4">
+                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">randeck</a>
+                        </li>
+                        <li class="mb-4">
+                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">grafana</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-1/4 flex-col max-sm:w-2/4">
+                  <div class="flex justify-center">
+                    <a class="flex-col" href="">
+                      <img src="img/footer/footer-logo.svg" alt="warditLogo" class="">
+                      
+                    </a>
+                  </div>
+                  <div class="flex flex-col justify-center items-center mt-6">
+                    <img class="" src="img/footer/footer-sign.svg" alt="">
+                    <button
+                      class="work_together text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
+                    >
+                      Let's work together
+                    </button>
                   </div>
               </div>
-              <div class="w-1/4 flex-col max-sm:w-2/4">
-                  <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Services</h2>
-                  <ul class="text-gray-500 dark:text-gray-400">
-                      <li class="mb-4">
-                          <a href="#" class="2xl:hover:bg-wardGreen 2xl:hover:p-2">Network and Service Ops</a>
-                      </li>
-                      <li class="mb-4">
-                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Incident Management</a>
-                      </li>
-                      <li class="mb-4">
-                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Software Quality Assurance</a>
-                      </li>
-                      <li class="mb-4">
-                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Robotic Process Automation</a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">IT Consulting</a>
-                    </li>
-                  </ul>
               </div>
-              <div class="w-1/4 max-lg:hidden">
-                  <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Products</h2>
-                  <ul class="text-gray-500 dark:text-gray-400">
-                      <li class="mb-4">
-                          <span href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Pager Duty</span>
-                      </li>
-                      <li class="mb-4">
-                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">grafana</a>
-                      </li>
-                      <li class="mb-4">
-                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Pager Duty</a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">randeck</a>
-                      </li>
-                      <li class="mb-4">
-                        <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">grafana</a>
-                      </li>
-                  </ul>
-              </div>
-              <div class="w-1/4 flex-col max-sm:w-2/4">
-                <div class="flex justify-center">
-                  <a class="flex-col" href="">
-                    <img src="img/footer/footer-logo.svg" alt="warditLogo" class="">
-                    
-                  </a>
-                </div>
-                <div class="flex flex-col justify-center items-center mt-6">
-                  <img class="" src="img/footer/footer-sign.svg" alt="">
-                  <button
-                    class="work_together text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
-                  >
-                    Let's work together
-                  </button>
+            </div>
+            <div class="items-center px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between border-t-2 max-lg:">
+                <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center flex justify-center">© 2022 <a href=""> WARD IT</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0 items-center justify-center">
+                    <a href="https://www.linkedin.com/in/vako-gogatishvili-972951220/" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <img src="img/footer/linkedln.png" alt="">
+                        <span class="sr-only">Linkedin page</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <img src="img/footer/twitter .png" alt="">
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <img src="img/footer/facebook .png" alt="">
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <img src="img/footer/instagram.png" alt="">
+                        <span class="sr-only">Instagram page</span>
+                      </a>  
                 </div>
             </div>
-            </div>
           </div>
-          <div class="items-center px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between border-t-2 max-lg:">
-              <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center flex justify-center">© 2022 <a href=""> WARD IT</a>. All Rights Reserved.
-              </span>
-              <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0 items-center justify-center">
-                  <a href="https://www.linkedin.com/in/vako-gogatishvili-972951220/" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                      <img src="img/footer/linkedln.png" alt="">
-                      <span class="sr-only">Linkedin page</span>
-                  </a>
-                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                      <img src="img/footer/twitter .png" alt="">
-                      <span class="sr-only">Twitter</span>
-                  </a>
-                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                      <img src="img/footer/facebook .png" alt="">
-                      <span class="sr-only">Facebook page</span>
-                  </a>
-                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                      <img src="img/footer/instagram.png" alt="">
-                      <span class="sr-only">Instagram page</span>
-                  </a>  
-              </div>
-          </div>
-        </div>
-      </footer>
+        </footer>
     </section>
       
     <!-- end blog section -->

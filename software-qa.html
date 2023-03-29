@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="dist/output.css" />
+      <link rel="stylesheet" href="src/style.css" />
+      <link rel="stylesheet" href="./src/input.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Roboto&display=swap"
+         rel="stylesheet">
+      <meta>
+   </head>
+   <body>
+      <nav class="bg-wardGreen dark:bg-gray-900 border-b-2 border-b-gray-200">
+         <div class="flex items-center w-11/12 m-auto justify-between 2xl:w-9/12">
+             <div class="flex items-center gap-12">
+                 <div class="flex items-center gap-4">
+                     <a href="index.html" class="flex items-center">
+                         <img src="img/common-img/logo.svg" alt="Ward IT Logo" />
+                     </a>
+                 </div>
+                 <div class="items-center hidden lg:flex md:w-auto" id="navbar-sticky">
+                     <ul class="flex font-[Roboto] font-normal text-lg leading-6">
+                         <div class=" dropdown relative hover:bg-wardSilver flex py-4 px-2 hover:border-x hover:font-bold">
+                             <div>
+                                 <div class="flex gap-1 items-end">
+                                     <button class="capitalize"  onclick="scrollServices()"><a>services</a></button>
+                                     <img src="img/common-img/downward-arrow.svg" alt="">
+                                 </div>
+                                 <div class="dropdown-content hidden absolute z-10 top-[100%] left-[-1%] bg-wardSilver w-[740px]">
+                                     <div class="flex gap-4 p-2 border-x border-b">
+                                       <div >
+                                         <ul class="font-thin capitalize">
+                                           <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3 ">
+                                             <a href="network-service.html">Product & Service Operational Center</a>
+                                             <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                           </li>
+                                           <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                             <a href="incident-management.html">Incident Managment</a>
+                                             <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                           </li>
+                                           <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                             <a href="software-qa.html">Software QA</a>
+                                             <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                           </li>
+                                           <li class="flex gap-2 py-2 hover:text-wardGreen hover:gap-3">
+                                             <a href="robotic-process.html">Robotic Process Automation </a>
+                                             <img  src="img/common-img/right_sign.svg" alt="right-sign">
+                                           </li>
+                                         </ul>
+                                       </div>
+                                       <div>
+                                         <ul class="font-thin capitalize">
+                                           <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                             <a href="problem-management.html">problem managment</a>
+                                             <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                           </li>
+                                           <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                             <a href="change-management.html">change managment</a>
+                                             <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                           </li>
+                                           <li class="flex gap-2  py-2 hover:text-wardGreen hover:gap-3">
+                                             <a href="realease-deployment-managment.html">deployment and release managment</a>
+                                             <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                           </li>
+                                         </ul>
+                                       </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
+                             <li class="mx-4 capitalize" onclick="scrollAvatar()"><a>team </a></li>
+                         </div>
+                         <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
+                             <li class="mx-4 capitalize" onclick="scrollCareer()"><a>career</a></li>
+                         </div>
+                         <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
+                             <li class="mx-4 capitalize blog-scroll" onclick="scrollBlog()"><a>blog</a></li>
+                         </div>
+                     </ul>
+                 </div>
+             </div>
+             <div class="flex sm:py-1 max-sm:py-0 gap-4">
+                 <a href="https://www.linkedin.com/in/nikoloz-tsulukidze-12a812230/" target="_blank">
+                     <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2 md:mr-0 max-md:text-xs max-sm:px-2 max-sm:py-1 max-lg:hidden"> book consultation </button>
+                 </a>
+                 <div class="flex items-center justify-center lg:hidden">
+                     <div class="flex flex-col  relative">
+                         <div class="relative">
+                             <div class="flex items-baseline cursor-pointer" id="navDrop">
+                                 <img src="img/common-img/menu-drop.svg" alt="">
+                                 <path fill-rule="evenodd" d="M10 13.333l6.667-6.666h-13.334L10 13.333zM10 16.667l-6.667-6.666h13.334L10 16.667z"/>
+                               </svg>
+                             </div>
+                             <ul class="hidden absolute z-50 text-center bg-wardSilver w-[150px] capitalize border-2 p-2 text-xl top-full right-0 mt-2" id="navDropInner">
+                               <li class="capitalize" onclick="scrollServices()">Services</li>
+                               <li class="capitalize" onclick="scrollAvatar()">Team</li>
+                               <li class="capitalize" onclick="scrollCareer()">Career</li>
+                               <li class="capitalize" onclick="scrollBlog()">Blog</li>
+                             </ul>
+                         </div>   
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </nav>
+      <section class="w-full h-[44rem]  m-auto bg-wardGreen bg-cover max-lg:h-auto bg-[url('/img/network-and-service-bg.svg')] border-b-2 border-b-gray-200">
+         <div class="w-11/12 flex items-center m-auto justify-between  pt-24  max-lg:pt-12 max-lg:flex-col max-lg:justify-center max-lg:items-center  max-lg:pb-44 max-lg:gap-10  2xl:w-9/12">
+            <div class=" w-1/2 flex flex-col gap-10 max-lg:w-full ">
+               <h3 class="font-[Policemen] uppercase whitespace-nowrap text-8xl max-sm:whitespace-pre-wrap max-xl:text-6xl max-md:text-4xl ">Software Qa</h3>
+               <p class="font-[Roboto] text-lg font-thin capitalize">At WARD IT, we specialize in modernizing quality assurance-related activities to ensure that they are fit for use or purpose. Our team achieves this by applying innovative quality engineering practices to all processes, tools, and approaches related to the specific project or solution we deliver. With on-demand QA resources and expertise, we help you achieve your quality goals quickly and efficiently.</p> 
+            </div>
+            <div class="w-1/3  max-lg:hidden">
+               <img src="img/review-pages/software-qa-infrastruqture.png" alt="server">
+            </div>
+            <div class="flex w-1/2 justify-center items-center max-md:w-1/2 max-sm:w-full lg:hidden ">
+               <img src="img/review-pages/software-qa-infrastruqture.png" alt="server">
+            </div>
+            
+         </div>
+      </section>
+      <!-- for mobile -->
+      <section class="w-full">
+         <div class="relative bg-wardSilver">
+            <div class="w-11/12  -translate-y-[15%]  right-0 left-0 m-auto 2xl:w-9/12 bottom-0  lg:hidden ">
+               <div class="w-full  relative  flex flex-col items-center justify-center  gap-5 ">
+                  <!-- div-1 -->
+                  <div class="w-11/12    bg-wardSilver p-4  gap-4 flex flex-col border-2">
+                     <div class="flex gap-4 items-center">
+                        <img src="img/review-pages/Test-Planing.svg" alt="protective-monitoring">
+                        <h5>Test Planing</h5>
+                     </div>
+                     <div>
+                        <p>
+                           Our software quality assurance process begins with detailed planning, including creating and reviewing plans, developing QA strategies, and defining test requirements, conditions, and approaches. Our team ensures a comprehensive testing plan is in place before moving forward with the project.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- div-2 -->
+                  <div class="w-11/12  bg-wardSilver p-4  gap-4 flex flex-col border-2">
+                     <div class="flex gap-4 items-center ">
+                        <img src="img/review-pages/Designing-and-Build.svg" alt="Customized-Observability">
+                        <h5>Designing and Build</h5>
+                     </div>
+                     <div>
+                        <p>
+                           We focus on design review, test case and script development, capacity planning, identifying SLOs, and preparing test environments and data requirements. During this phase, we execute automatic test scripts, perform manual checks, and validate release candidates.
+                        </p>
+                     </div>
+                  </div>
+                  <!-- div-3 -->
+                  <div class="w-11/12 top-[80%] bg-wardSilver p-4  gap-4 flex flex-col border-2">
+                     <div class="flex gap-4 items-center">
+                        <img src="img/review-pages/Testing-and-Reporting.svg" alt="Solutions">
+                        <h5>Testing and Reporting</h5>
+                     </div>
+                     <div>
+                        <p>
+                           We deploy the software for on-site operation after conducting extensive testing, performance management, and monitoring. WARD QA team reviews testing results, analyzes metrics, trends and risks, and continuously improves processes. Calculating the cost of quality, optimizing, updating automation plans and scripts.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="order-1  bg-wardSilver">
+         <div class="w-11/12 m-auto 2xl:w-9/12 max-lg:hidden relative -translate-y-[40%]">
+            <div class="w-full relative  flex  gap-5  ">
+               <!-- div-1 -->
+               <div class="w-1/3 bg-wardSilver p-4  gap-4 flex flex-col border-2">
+                  <div class="flex gap-4 items-center">
+                     <img src="img/review-pages/Test-Planing.svg" alt="protective-monitoring">
+                        <h5>Test Planing</h5>
+                  </div>
+                  <div>
+                     <p>
+                        Our software quality assurance process begins with detailed planning, including creating and reviewing plans, developing QA strategies, and defining test requirements, conditions, and approaches. Our team ensures a comprehensive testing plan is in place before moving forward with the project.
+                     </p>
+                  </div>
+               </div>
+               <!-- div-2 -->
+               <div class="w-1/3  bg-wardSilver p-4  gap-4 flex flex-col border-2">
+                  <div class="flex gap-4 items-center">
+                     <img src="img/review-pages/Designing-and-Build.svg" alt="Customized-Observability">
+                     <h5>Designing and Build</h5>
+                  </div>
+                  <div>
+                     <p>
+                        We focus on design review, test case and script development, capacity planning, identifying SLOs, and preparing test environments and data requirements. During this phase, we execute automatic test scripts, perform manual checks, and validate release candidates.
+                     </p>
+                  </div>
+               </div>
+               <!-- div-3 -->
+               <div class="w-1/3  bg-wardSilver p-4  gap-4 flex flex-col border-2">
+                  <div class="flex gap-4 items-center">
+                     <img src="img/review-pages/Testing-and-Reporting.svg" alt="Solutions">
+                     <h5>Testing and Reporting</h5>
+                  </div>
+                  <div>
+                     <p>
+                        We deploy the software for on-site operation after conducting extensive testing, performance management, and monitoring. WARD QA team reviews testing results, analyzes metrics, trends and risks, and continuously improves processes. Calculating the cost of quality, optimizing, updating automation plans and scripts.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="bg-wardSilver">
+         <div>
+            <div class="flex justify-center pt-20 py-10">
+               <h1 class="uppercase text-8xl font-[Policemen] bg-wardGreen max-md:text-6xl max-sm:text-3xl p-6 bg-wardLight"> Our partner </h1>
+            </div>
+            <div class="w-full">
+               <div class=" border-2  m-auto py-10 max-xl:hidden ">
+                  <div class="flex   justify-center  gap-24 items-center">
+                     <div>
+                        <img src="img/review-pages/Selenium_logo.png" alt="Selenium_logo">
+                     </div>
+                     <div>
+                        <img src="img/review-pages/jmeter.png" alt="jmeter">
+                     </div>
+                     <div>
+                        <img src="img/review-pages/robot-frame-work.png" alt="robot-frame-work">
+                     </div>
+                     <div>
+                        <img src="img/review-pages/soapUI.png" alt="soapUI">
+                     </div>
+                     <div>
+                        <img src="img/review-pages/postman.png" alt="postman">
+                     </div>
+                     <div>
+                        <img src="img/review-pages/load-runner.png" alt="load-runner">
+                     </div>
+                     <div>
+                        <img src="img/review-pages/appium.png" alt="appium">
+                     </div>
+                     <div>
+                        <img src="img/review-pages/keptn.png" alt="keptn">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- partner mobile slider -->
+            <div class="w-full xl:hidden ">
+               <div class="swiper mySwiper_1 border-2">
+                  <div class="swiper-wrapper flex items-center py-10  gap-20">
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/review-pages/Selenium_logo.png" alt="Selenium_logo">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/review-pages/jmeter.png" alt="jmeter">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/review-pages/robot-frame-work.png" alt="robot-frame-work">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/review-pages/soapUI.png" alt="soapUI">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/review-pages/postman.png" alt="postman">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/review-pages/load-runner.png" alt="load-runner">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div> 
+                           <img src="img/review-pages/appium.png" alt="appium">
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/review-pages/keptn.png" alt="keptn">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="bg-wardSilver ">
+         <section class="bg-wardSilver" id="services_sc">
+            <div class="w-10/12 m-auto 2xl:w-9/12">
+                <!-- service-header -->
+                <div class="border-b-[2px]">
+                    <div class="flex w-11/12 m-auto justify-between gap-10 max-sm:border-0 max-sm:gap-2">
+                        <div class="flex item-center py-8 max-md:justify-center max-md:w-full">
+                            <h5 class="uppercase text-8xl font-[Policemen] max-md:text-6xl max-sm:text-4xl">Other Services </h5>
+                        </div>
+                        <div class="flex items-center gap-10 max-md:hidden">
+                            <div class="w-[2px] h-full bg-[#000]"></div>           
+                            <button class="hover_button text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1 max-sm:px-[4px] max-sm:text-sm max-sm:py-[2px]"> Let's work together </button>   
+                        </div>
+                    </div>
+                </div>
+                <!-- services divisions -->
+                <div class="w-11/12 m-auto 2xl:w-10/12">
+                    <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
+                        <!-- service-inner-1 -->
+                        <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
+                            <div class="flex items-center gap-10">
+                                <img src="img/services-img/Product service.png" alt="" />
+                                <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Product & Service Operational <br />Center </h6>
+                            </div>
+                            <div class="flex flex-col py-5">
+                                <div>
+                                    <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Collect metrics about the operations of an IT environment's hardware and software to ensure everything functions as expected. </p>
+                                </div>
+                                <div class="flex justify-end pt-4">
+                                    <a href="network-service.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end service-inner-1 -->
+                        <div class="w-[2px] h-[full] bg-[#000]"></div>
+                        <!-- service-inner-2 -->
+                        <div class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full">
+                            <div class="flex items-center gap-10">
+                                <img src="img/services-img/incident management.png" alt="" />
+                                <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Incident Management </h6>
+                            </div>
+                            <div class="flex flex-col py-5">
+                                <div>
+                                    <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly as possible. </p>
+                                </div>
+                                <div class="flex justify-end pt-4">
+                                    <a href="incident-management.html"><span class="font-semibold py-2 px-1  md:hover:bg-wardGreen  ">Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
+                        <!-- service-inner-3 -->
+                        <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
+                            <div class="flex items-center gap-10">
+                                <img src="img/services-img/sowftware-QA.png" alt="" />
+                                <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Software QA </h6>
+                            </div>
+                            <div class="flex flex-col py-5">
+                                <div>
+                                    <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Software testing could be the fastest, easiest, and exact part of your SDLC. Optimize the software testing process and get measurable results. </p>
+                                </div>
+                                <div class="flex justify-end pt-4">
+                                    <a href="software-qa.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end service-inner-3 -->
+                        <div class="w-[2px] h-[full] bg-[#000]"></div>
+                        <!-- service-inner-4 -->
+                        <div class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full">
+                            <div class="flex items-center gap-10">
+                                <img src="img/services-img/robotic-process.png" alt="" />
+                                <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Robotic Process Automation </h6>
+                            </div>
+                            <div class="flex flex-col py-5">
+                                <div>
+                                    <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> A technology that mimics and automates the way humans interact with software to perform high-volume, repeatable tasks. </p>
+                                </div>
+                                <div class="flex justify-end pt-4">
+                                    <a href="robotic-process.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
+                        <!-- service-inner-5 -->
+                        <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
+                            <div class="flex items-center gap-10">
+                                <img src="img/services-img/idea.png" alt="" />
+                                <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> problem managment </h6>
+                            </div>
+                            <div class="flex flex-col py-5">
+                                <div>
+                                    <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly Respond to an. </p>
+                                </div>
+                                <div class="flex justify-end pt-4">
+                                    <a href="problem-management.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end service-inner-5 -->
+                        <div class="w-[2px] h-[full] bg-[#000]"></div>
+                        <!-- service-inner-6 -->
+                        <div class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full">
+                            <div class="flex items-center gap-10">
+                                <img src="img/services-img/change .png" alt="" />
+                                <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> change managment </h6>
+                            </div>
+                            <div class="flex flex-col py-5">
+                                <div>
+                                    <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly as possible. </p>
+                                </div>
+                                <div class="flex justify-end pt-4">
+                                    <a href="change-management.html"><span class="font-semibold  py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between gap-10 max-md:gap-2 max-md:flex-col">
+                        <!-- service-inner-7 -->
+                        <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
+                            <div class="flex items-center gap-10">
+                                <img src="img/services-img/rocket.png" alt="" />
+                                <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> deployment and release managment </h6>
+                            </div>
+                            <div class="flex flex-col py-5">
+                                <div>
+                                    <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Software testing  could be the fastest, easiest, and exact part of your SDLC. Optimize the software testing process and get measurable results. </p>
+                                </div>
+                                <div class="flex justify-end pt-4">
+                                    <a href="realease-deployment-managment.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end service-inner-7 -->
+                        <div class="w-[2px] h-[full] bg-[#000]"></div>
+                        <!-- service-inner-8 -->
+                        <div class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full">
+                            <div class="flex items-center gap-10">
+                                <img src="" alt="" />
+                                <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"></h6>
+                            </div>
+                            <div class="flex flex-col py-5">
+                                <div>
+                                    <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"></p>
+                                </div>
+                                <div class="flex justify-end pt-4">
+                                    <a href="#"><span class="font-semibold"></span></a>
+                                </div>
+                            </div>
+                        </div>             
+                    </div>
+                </div>
+                <div class=" flex justify-center  md:hidden mb-16">
+                  <div class="  bg-[#000]"></div>           
+                  <button class=" text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1 max-sm:px-[6px] max-sm:text-sm max-sm:py-2 "> Let's work together </button>   
+                </div>
+            </div>
+            <!-- product inner -->
+            <div class="flex w-11/12 m-auto border-t-[2px] border-b-[2px] max-lg:flex-col max-lg:border-b-0 2xl:w-9/12">
+                <div class="flex w-[40%] items-center justify-center bg-wardGreen max-lg:w-full max-lg:py-5 max-lg:border-b-2">
+                    <h4 class="uppercase font-[Policemen] text-8xl max-xl:text-6xl max-sm:text-4xl"> Product </h4>
+                </div>
+                <div class="flex flex-col p-10 gap-2 border-l-[2px] max-lg:border-l-0 max-lg:border-b-2">
+                    <h5 class="font-normal text-[22px]"> Partnership and Experise Monitoring and Incident Management Tools. </h5>
+                    <ul class="flex items-center gap-5">
+                        <img src="img/common-img/green-rhombus.svg" alt="rhombus" />
+                        <h6 class="text-[18px]">Implemenetraton and Integrations</h6>
+                    </ul>
+                    <ul class="flex items-center gap-5">
+                        <img src="img/common-img/green-rhombus.svg" alt="rambue" />
+                        <h6 class="text-[18px]">Open Source and Enterprise Souliutons</h6>
+                    </ul>
+                    <ul class="flex items-center gap-5">
+                        <img src="img/common-img/green-rhombus.svg" alt="rambue" />
+                        <h6 class="text-[18px]">Data ​Visualization</h6>
+                    </ul>
+                </div>
+            </div>
+        </section>
+      <!-- product inner -->
+      <section>
+         <div class="">
+            <div
+               class="flex w-10/12 m-auto border-t-[2px] border-b-[2px] max-lg:flex-col max-lg:border-b-0"
+               >
+               <div
+                  class=" w-[50%] items-center  bg-wardSilver max-lg:w-full"
+                  >
+                  <h4 class="flex justify-center py-28 border-b-2  uppercase font-[Policemen] text-8xl max-xl:text-4xl max-lg:py-6">
+                     Tell Us About <br />
+                     Your Project
+                  </h4>
+                  <div class=" border-solid max-lg:border-b-2 bg-wardGreen p-14 max-sm:p-4 max-sm:w-full">
+                     <p>
+                        "We are a WARD IT team, with various backgrounds and cultures yet, with 10 + years of experience in IT and management, with the common desire to help make better software easier and managed services available for our clients. 
+                     </p>
+                     <p>
+                        We work with the community to truly understand obstacles and roadblocks in IT and then collaborate with others to create innovative and practical solutions."
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="flex w-1/2 items-center  flex-col gap-2 border-l-[2px] max-lg:border-l-0 max-lg:w-full " 
+                  >
+                  <div class="pt-24 max-sm:w-full flex justify-center items-center gap-6 ">
+                     <div class="max-sm:w-11/12 max-sm:m-auto">
+                        <h3 class="flex justify-center  text-3xl ">
+                           Send Us message
+                        </h3>
+                        <form class="flex flex-col gap-8 "
+                           id="contact_form"
+                           action="#"
+                           method="POST"
+                           enctype="multipart/form-data"
+                           >
+                           <div class="border-b-2 h-[32px] border-wardGray mt-12">
+                              <input 
+                                 class="bg-wardSilver outline-none w-full"
+                                 type="email"
+                                 placeholder="Email"
+                                 />
+                           </div>
+                           <div class="border-b-2 h-[32px] border-wardGray">
+                              <input
+                                 class="bg-wardSilver outline-none w-full"
+                                 type="name"
+                                 id="name"
+                                 placeholder="Name"
+                                 size="35"
+                                 maxlength="256"
+                                 required
+                                 minlength="4"
+                                 maxlength="16"
+                                 />
+                           </div>
+                           <div class="border-b-2 h-[32px] border-wardGray">
+                              <input
+                                 class="bg-wardSilver outline-none w-full"
+                                 type="tel"
+                                 id="phone"
+                                 placeholder="Phone"
+                                 size="35"
+                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                 required
+                                 />
+                           </div>
+                           <div class="border-b-2 border-wardGray">
+                              <textarea
+                                 class="bg-wardSilver outline-none w-full"
+                                 placeholder="Text"
+                                 name="Text"
+                                 rows="7"
+                                 cols="40"
+                                 ></textarea>
+                           </div>
+                           <div class="flex justify-center ">
+                              <input
+                                 class="consultation text-white bg-wardGreen capitalize whitespace-nowrap font-medium border-2 text-sm px-12 py-3 text-center mr-2 md:mr-0 max-md:text-xs"
+                                 type="submit"
+                                 value="Submit"
+                                 >
+                              </input>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- about project & input fields -->
+      <section class="bg-wardSilver pt-28">
+        <footer class=" w-11/12 m-auto border-t-[2px]  max-lg:pt-10">
+          <div class="w-11/12 m-auto flex gap-10  2xl:gap-20  py-8 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
+              <div class="w-1/4 flex-col max-lg:w-[30%] max-sm:w-auto">
+                  <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Contact US</h2>
+                  <ul class="text-gray-500 dark:text-gray-400">
+                      <li class="mb-4">
+                          <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 flex gap-4 max-lg:justify-center max-md:justify-center max-sm:justify-center items-center">
+                            <img class="w-[21px] h-[21px]" src="img/footer/footer-email.png" alt="">
+                            wardit@gmail.com</a>
+                      </li>
+                  </ul>
+                  <div class="">
+                    <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Address</h2>
+                  <ul class="text-gray-500 dark:text-gray-400">
+                      <li class="mb-4">
+                          <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 max-lg:justify-center max-md:justify-center  flex gap-4 max-sm:justify-center items-center">
+                            <img class="w-[21px] h-[21px]" src="img/footer/footer-map.png" alt="">
+                            4/4 Ertso St. 0194, Tbilisi</a>
+                      </li>
+                  </ul>
+                  </div>
+              </div>
+              <div class="w-1/4 flex-col max-sm:w-2/4">
+                  <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Services</h2>
+                  <ul class="text-gray-500 dark:text-gray-400">
+                      <li class="mb-4">
+                          <a href="#" class="2xl:hover:bg-wardGreen 2xl:hover:p-2">Network and Service Ops</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Incident Management</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Software Quality Assurance</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Robotic Process Automation</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">IT Consulting</a>
+                    </li>
+                  </ul>
+              </div>
+              <div class="w-1/4 max-lg:hidden">
+                  <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Products</h2>
+                  <ul class="text-gray-500 dark:text-gray-400">
+                      <li class="mb-4">
+                          <span href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Pager Duty</span>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">grafana</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">Pager Duty</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">randeck</a>
+                      </li>
+                      <li class="mb-4">
+                        <a href="#" class="2xl:hover:bg-wardLight 2xl:hover:p-2">grafana</a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="w-1/4 flex-col max-sm:w-2/4">
+                <div class="flex justify-center">
+                  <a class="flex-col" href="">
+                    <img src="img/footer/footer-logo.svg" alt="warditLogo" class="">
+                    
+                  </a>
+                </div>
+                <div class="flex flex-col justify-center items-center mt-6">
+                  <img class="" src="img/footer/footer-sign.svg" alt="">
+                  <button
+                    class="work_together text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
+                  >
+                    Let's work together
+                  </button>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="items-center px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between border-t-2 max-lg:">
+              <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center flex justify-center">© 2022 <a href=""> WARD IT</a>. All Rights Reserved.
+              </span>
+              <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0 items-center justify-center">
+                  <a href="https://www.linkedin.com/in/vako-gogatishvili-972951220/" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                      <img src="img/footer/linkedln.png" alt="">
+                      <span class="sr-only">Linkedin page</span>
+                  </a>
+                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                      <img src="img/footer/twitter .png" alt="">
+                      <span class="sr-only">Twitter</span>
+                  </a>
+                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                      <img src="img/footer/facebook .png" alt="">
+                      <span class="sr-only">Facebook page</span>
+                  </a>
+                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                      <img src="img/footer/instagram.png" alt="">
+                      <span class="sr-only">Instagram page</span>
+                    </a>  
+              </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- end blog section -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+   </body>
+</html>

@@ -10,7 +10,7 @@
     url("../fonts/policemen/Policemen-3D.woff") format("woff"),
     url("../fonts/policemen/Policemen-3D.woff2") format("woff2");
 }
-======= @font-face {
+@font-face {
   font-family: "Policemen";
   src: url("../fonts/policemen/Policemen-3D.ttf");
 }

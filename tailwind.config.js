@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       cursor: {
-        'fancy': 'url(hand.cur), pointer',
-      }
+        fancy: "url(hand.cur), pointer",
+      },
     },
   },
   plugins: [],
@@ -34,6 +34,13 @@ module.exports = {
             from: { opacity: 1 },
             to: { opacity: 0 },
           },
+        },
+      },
+    },
+    theme: {
+      extend: {
+        backgroundImage: {
+          "business-grow": "url('img/big-block/block_2.png')",
         },
       },
     },

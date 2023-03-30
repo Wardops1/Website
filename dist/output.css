@@ -577,6 +577,10 @@ video {
   left: -1%;
 }
 
+.left-\[-10\%\] {
+  left: -10%;
+}
+
 .left-\[35\%\] {
   left: 35%;
 }
@@ -595,6 +599,10 @@ video {
 
 .right-0 {
   right: 0px;
+}
+
+.right-\[-10\%\] {
+  right: -10%;
 }
 
 .top-4 {
@@ -637,6 +645,10 @@ video {
   top: 50px;
 }
 
+.top-\[60\%\] {
+  top: 60%;
+}
+
 .top-\[80\%\] {
   top: 80%;
 }
@@ -647,62 +659,6 @@ video {
 
 .top-full {
   top: 100%;
-}
-
-.left-20 {
-  left: 5rem;
-}
-
-.right-6 {
-  right: 1.5rem;
-}
-
-.left-\[-20\%\] {
-  left: -20%;
-}
-
-.left-\[-10\%\] {
-  left: -10%;
-}
-
-.right-\[-10\%\] {
-  right: -10%;
-}
-
-.top-3 {
-  top: 0.75rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-\[50\%\] {
-  top: 50%;
-}
-
-.top-\[20\%\] {
-  top: 20%;
-}
-
-.top-\[35\%\] {
-  top: 35%;
-}
-
-.top-\[38\%\] {
-  top: 38%;
-}
-
-.top-\[40\%\] {
-  top: 40%;
-}
-
-.top-\[4\%\] {
-  top: 4%;
-}
-
-.top-\[60\%\] {
-  top: 60%;
 }
 
 .z-0 {
@@ -838,22 +794,6 @@ video {
   height: 100%;
 }
 
-.h-\[20rem\] {
-  height: 20rem;
-}
-
-.h-\[30rem\] {
-  height: 30rem;
-}
-
-.h-\[0rem\] {
-  height: 0rem;
-}
-
-.h-\[25rem\] {
-  height: 25rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -896,6 +836,10 @@ video {
 
 .w-9\/12 {
   width: 75%;
+}
+
+.w-\[1\%\] {
+  width: 1%;
 }
 
 .w-\[150px\] {
@@ -1045,6 +989,10 @@ video {
   gap: 6rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-4 {
   gap: 1rem;
 }
@@ -1059,10 +1007,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-3 {
-  gap: 0.75rem;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -1136,21 +1080,12 @@ video {
   background-color: rgb(223 223 223 / var(--tw-bg-opacity));
 }
 
-.bg-\[\'business-grow\'\] {
-  background-color: 'business-grow';
-}
-
-.bg-\[business-grow\] {
-  background-color: business-grow;
-}
-
-.bg-silver {
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 235 255 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\/img\/network-and-service-bg\.svg\'\)\] {
   background-image: url('/img/network-and-service-bg.svg');
+}
+
+.bg-\[url\(\'\.\/img\/review-pages\/bg-ovarlay\.png\'\)\] {
+  background-image: url('./img/review-pages/bg-ovarlay.png');
 }
 
 .bg-cover {
@@ -1248,6 +1183,11 @@ video {
   padding-bottom: 0.625rem;
 }
 
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -1288,11 +1228,6 @@ video {
   padding-bottom: 6px;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1325,16 +1260,16 @@ video {
   padding-top: 1rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .pt-7 {
   padding-top: 1.75rem;
 }
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
 }
 
 .text-left {
@@ -1421,11 +1356,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
 .font-extrabold {
   font-weight: 800;
 }
@@ -1462,44 +1392,8 @@ video {
   line-height: 1.5rem;
 }
 
-.text-opacity-5 {
-  --tw-text-opacity: 0.05;
-}
-
-.opacity-0 {
-  opacity: 0;
-}
-
-.opacity-10 {
-  opacity: 0.1;
-}
-
-.opacity-20 {
-  opacity: 0.2;
-}
-
-.opacity-50 {
-  opacity: 0.5;
-}
-
-.opacity-5 {
-  opacity: 0.05;
-}
-
-.opacity-100 {
-  opacity: 1;
-}
-
 .opacity-90 {
   opacity: 0.9;
-}
-
-.opacity-80 {
-  opacity: 0.8;
-}
-
-.opacity-70 {
-  opacity: 0.7;
 }
 
 .outline-none {
@@ -2039,10 +1933,6 @@ video {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:left-\[70\%\] {
-    left: 70%;
-  }
-
   .\32xl\:m-auto {
     margin: auto;
   }

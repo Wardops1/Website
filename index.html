@@ -16,7 +16,7 @@
 <body>
     <!-- nav bar -->
     <nav class="bg-wardGreen dark:bg-gray-900 border-b-2 border-b-gray-200">
-        <div class="flex items-center w-11/12 m-auto justify-between 2xl:w-9/12">
+        <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12">
             <div class="flex items-center gap-12">
                 <div class="flex items-center gap-4">
                     <a href="index.html" class="flex items-center">
@@ -25,12 +25,12 @@
                 </div>
                 <div class="items-center hidden lg:flex md:w-auto" id="navbar-sticky">
                     <ul class="flex font-[Roboto] font-normal text-lg leading-6">
-                        <div class=" dropdown relative hover:bg-wardSilver flex py-4 px-2 hover:border-x hover:font-bold">
+                        <div class=" dropdown relative hover:bg-wardSilver flex   hover:border-x hover:font-bold">
                             <div>
-                                <div class="flex gap-1 items-end">
-                                    <button class="capitalize cursor-pointer"  onclick="scrollServices()"><a>services</a></button>
+                                <button class=" flex gap-1 items-end py-6 px-4 capitalize cursor-pointer"  onclick="scrollServices()">
+                                    <a>services</a>
                                     <img src="img/common-img/downward-arrow.svg" alt="">
-                                </div>
+                                </button>  
                                 <div class="dropdown-content hidden absolute z-10 top-[100%] left-[-1%] bg-wardSilver w-[740px]">
                                     <div class="flex gap-4 p-2 border-x border-b">
                                       <div >
@@ -73,14 +73,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
-                            <li class="mx-4 capitalize cursor-pointer" onclick="scrollAvatar()"><a>team </a></li>
+                        <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
+                            <li class="mx-4 py-6 capitalize cursor-pointer" onclick="scrollAvatar()"><a>team </a></li>
                         </div>
-                        <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
-                            <li class="mx-4 capitalize cursor-pointer" onclick="scrollCareer()"><a>career</a></li>
+                        <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
+                            <li class="mx-4 py-6 capitalize cursor-pointer" onclick="scrollCareer()"><a>career</a></li>
                         </div>
-                        <div class="py-4 hover:bg-wardSilver hover:border-x hover:font-bold">
-                            <li class="mx-4 capitalize blog-scroll cursor-pointer" onclick="scrollBlog()"><a>blog</a></li>
+                        <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
+                            <li class="mx-4  py-6 capitalize blog-scroll cursor-pointer" onclick="scrollBlog()"><a>blog</a></li>
                         </div>
                     </ul>
                 </div>
@@ -116,7 +116,7 @@
                 <!-- init list -->
                 <h4 class="inline-block text-[80px] font-[Policemen] max-lg:text-6xl max-md:text-4xl max-sm:text-3xl max-sm:whitespace-normal"> Augmented your Staff using <br class="max-xl:hidden" /> On Demand IT Services </h4>
                 <!-- landing block for mobile -->
-                <div class="flex   flex-row lg:hidden">
+                <div class="flex flex-row lg:hidden">
                     <div class="">
                         <img src="img/big-block/block_1.png" alt="block" />
                     </div>
@@ -124,26 +124,32 @@
                         <img src="img/big-block/block_2.png" alt="block" />
                     </div>
                 </div>
-                <ul class="flex items-center gap-4 py-2 mt-8 text-2xl">
-                    <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
-                    <li class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"> An All-In-One IT Outsourcing Solution </li>
-                </ul>
-                <ul class="flex items-center gap-4 py-2 text-2xl">
-                    <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
-                    <li class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"> 24/7 Support And Availability </li>
-                </ul>
-                <ul class="flex items-center gap-4 py-2 text-2xl">
-                    <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
-                    <li class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"> Managed Services </li>
-                </ul>
-                <ul class="flex items-center gap-4 py-2 text-2xl">
-                    <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
-                    <li class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"> Automated Business Processes </li>
-                </ul>
-                <ul class="flex items-center gap-4 py-2 text-2xl">
-                    <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
-                    <li class="whitespace-nowrap max-sm:whitespace-normal max-sm:text-sm"> Implementation and Administration </li>
-                </ul>
+                <div class="flex flex-col gap-3">
+                    <ul class="flex items-center gap-4 py-2 mt-8 text-2xl">
+                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> An All-In-One IT Outsourcing Solution </li>
+                    </ul>
+                    <ul class="flex items-center gap-4 py-2 text-2xl">
+                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> 24/7 Support And Availability </li>
+                    </ul>
+                    <ul class="flex items-center gap-4 py-2 text-2xl">
+                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Uninterrupted Business Continuity </li>
+                    </ul>
+                    <ul class="flex items-center gap-4 py-2 text-2xl">
+                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Advanced Automation of Business Processes </li>
+                    </ul>
+                    <ul class="flex items-center gap-4 py-2 text-2xl">
+                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Proactive approach to risk management </li>
+                    </ul>
+                    <ul class="flex items-center gap-4 py-2 text-2xl">
+                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Streamlined IT operations</li>
+                    </ul>
+                </div>
             </div>
             <!-- landing blocks -->
             <div class="max-lg:hidden">
@@ -163,7 +169,7 @@
                 <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2   "> book consultation </button>
             </a>
         </div>
-        <div class="flex mt-16 max-sm:mt-2">
+        <div class="flex mt-8 max-sm:mt-2">
             <div class="w-full flex items-center mt-10 py-2 gap-10 justify-center border-y-2 rotate-[-7.77deg] max-lg:rotate-0">
               <div class="text-slider flex gap-6 items-center">
                 <img class="w-10 h-full max-md:hidden" src="img/common-img/frame-rhombus.svg" alt="frame"/>
@@ -532,7 +538,7 @@
               <button class="px-8 py-2 bg-wardGreen text-2xl whitespace-nowrap max-lg:text-sm max-lg:px-2">Learning is something we do almost every day</button>
            </div>
         </div>
-        <!--  operation solution inner -->
+        <!-- operation solution inner -->
         <!-- operation 01 and 02 desktop -->
         <div class="w-9/12 m-auto flex flex-col py-8 max-md:py-4 2xl:w-8/12 max-md:hidden">
             <div class="max-md:hidden">
@@ -576,7 +582,7 @@
         </div>
         <!-- end -->
         <!-- operation 01 and 02 mobile -->
-        <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
+        <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden">
            <div class="flex  w-full ">
               <div class="w-1/2  flex pt-3">
                  <p class="mymove font-[Roboto] text-8xl font-extrabold">01</p>
@@ -703,7 +709,7 @@
               <p class="text-lg text-right max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
            </div>
         </div>
-     </section>   
+    </section>   
     <section class="w-full h-full bg-wardSilver "  id="avatar_sc">
         <div class=" flex flex-col  gap-10 w-11/12 m-auto py-5 border-b-2 2xl:w-9/12">
             <div class="flex justify-center items-center   gap-5 border-t-2 border-b-2 max-lg:flex-col">
@@ -968,7 +974,6 @@
             </div>
         </div>
     </section>
-
     <!-- about project  -->
     <section class="bg-wardSilver">
         <div >
@@ -1062,7 +1067,6 @@
       </div>
         </div>
     </section>
-
     <!-- footer -->
     <section class="bg-wardSilver pt-28 " id="career_sc" >
         <footer class=" w-11/12 m-auto border-t-[2px]  max-lg:pt-10">

@@ -15,17 +15,20 @@
 
 /* init text slider */
 .text-slider {
-  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-width: 0.4px;
   white-space: nowrap;
   animation: move-rt1 10000ms infinite;
 }
 
 @keyframes move-rt1 {
   0% {
-    transform: translateX(0);
+    transform: translateX(+15%);
   }
   50% {
-    transform: translateX(-30%);
+    transform: translateX(-15%);
+  }
+  100% {
+    transform: translateX(+15%);
   }
 }
 
@@ -76,6 +79,9 @@
 
 @keyframes stage-1 {
   0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
   }
   100% {
@@ -89,9 +95,12 @@
 
 @keyframes stage-2 {
   0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
   }
-  80% {
+  150% {
     opacity: 1;
   }
 }
@@ -102,9 +111,12 @@
 
 @keyframes stage-3 {
   0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
   }
-  60% {
+  200% {
     opacity: 1;
   }
 }
@@ -115,9 +127,12 @@
 
 @keyframes stage-4 {
   0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
   }
-  40% {
+  250% {
     opacity: 1;
   }
 }
@@ -128,9 +143,12 @@
 
 @keyframes stage-5 {
   0% {
+    opacity: 1;
+  }
+  50% {
     opacity: 0;
   }
-  20% {
+  300% {
     opacity: 1;
   }
 }

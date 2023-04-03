@@ -49,6 +49,15 @@
   }
 }
 
+/* performace metrics */
+.mymove_2 {
+  color: #dfdfdf;
+
+  text-shadow: -3px 2px 0 #000, 7px 0px 10px #5ebba8, 1px -1px 0 #000,
+    -0px -0px 10px #5ebba8;
+  letter-spacing: 10px;
+}
+
 /* for swiper */
 
 .swiper-pagination-bullet {

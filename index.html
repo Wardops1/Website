@@ -1,555 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/output.css" />
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="./src/input.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
-    <title>Ward IT</title>
-</head>
-
-<body>
-    <!-- nav bar -->
-    <nav class="bg-wardGreen dark:bg-gray-900 border-b-2 border-b-gray-200">
-        <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12">
-           <div class="flex items-center gap-12">
-              <div class="flex items-center gap-4">
-                 <a href="index.html" class="flex items-center">
-                 <img src="img/common-img/logo.svg" alt="Ward IT Logo" />
-                 </a>
-              </div>
-              <div class="items-center hidden lg:flex md:w-auto" id="navbar-sticky">
-                 <ul class="flex font-[Roboto] font-normal text-lg leading-6">
-                    <div class=" dropdown relative hover:bg-wardSilver flex   hover:border-x hover:font-bold">
-                       <div>
-                          <button class="flex gap-1 items-end py-6 px-4 capitalize cursor-pointer"  onclick="scrollServices()">
-                          <a>services</a>
-                          <img src="img/common-img/downward-arrow.svg" alt="">
-                          </button>  
-                          <div class="dropdown-content hidden absolute z-10 top-[100%] left-[-1%] bg-wardSilver w-[370px]">
-                             <div class="flex flex-col  p-2 border-x border-b">
-                                <div >
-                                   <ul class="font-thin capitalize">
-                                      <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3 ">
-                                         <a href="network-service.html">Product & Service Operational Center</a>
-                                         <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                      </li>
-                                      <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                         <a href="incident-management.html">Incident Managment</a>
-                                         <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                      </li>
-                                      <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                         <a href="software-qa.html">Software QA</a>
-                                         <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                      </li>
-                                      <li class="flex gap-2 py-2 border-b-2 hover:text-wardGreen hover:gap-3">
-                                         <a href="robotic-process.html">Robotic Process Automation </a>
-                                         <img  src="img/common-img/right_sign.svg" alt="right-sign">
-                                      </li>
-                                      <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                        <a href="problem-management.html">problem managment</a>
-                                        <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                     </li>
-                                     <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                        <a href="change-management.html">change managment</a>
-                                        <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                     </li>
-                                     <li class="flex gap-2  py-2 hover:text-wardGreen hover:gap-3">
-                                        <a href="realease-deployment-managment.html">deployment and release managment</a>
-                                        <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                     </li>
-                                   </ul>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                    <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
-                       <li class="mx-4 py-6 capitalize cursor-pointer" onclick="scrollAvatar()"><a>team </a></li>
-                    </div>
-                    <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
-                       <li class="mx-4 py-6 capitalize cursor-pointer"><a href="career.html">career</a></li>
-                    </div>
-                    <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
-                       <li class="mx-4  py-6 capitalize blog-scroll cursor-pointer" onclick="scrollBlog()"><a>blog</a></li>
-                    </div>
-                 </ul>
-              </div>
-           </div>
-           <div class="flex sm:py-1 max-sm:py-0 gap-4">
-              <a href="https://www.linkedin.com/in/nikoloz-tsulukidze-12a812230/" target="_blank">
-              <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2 md:mr-0 max-md:text-xs max-sm:px-2 max-sm:py-1 max-lg:hidden"> book consultation </button>
-              </a>
-              <div class="flex items-center justify-center lg:hidden">
-                 <div class="flex flex-col  relative">
-                    <div class="relative">
-                       <div class="flex items-baseline cursor-pointer" id="navDrop">
-                          <img src="img/common-img/menu-drop.svg" alt="">
-                          <path fill-rule="evenodd" d="M10 13.333l6.667-6.666h-13.334L10 13.333zM10 16.667l-6.667-6.666h13.334L10 16.667z"/>
-                          </svg>
-                       </div>
-                       <ul class="hidden absolute z-50 text-center bg-wardSilver w-[150px] capitalize border-2 p-2 text-xl top-full right-0 mt-2" id="navDropInner">
-                          <li class="capitalize cursor-pointer" onclick="scrollServices()">Services</li>
-                          <li class="capitalize cursor-pointer" onclick="scrollAvatar()">Team</li>
-                          <a href="career.html"><li class="capitalize cursor-pointer">Career</li></a>
-                          <li class="capitalize cursor-pointer" onclick="scrollBlog()">Blog</li>
-                       </ul>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </nav>
-    <!-- init main -->
-    <section class="w-full h-[58rem] bg-wardGreen py-10 border-b-2 relative max-lg:h-full max-lg:py-0 max-lg:pt-10">
-        <div class="flex w-11/12 m-auto bg-wardGreen 2xl:w-9/12">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="dist/output.css" />
+      <link rel="stylesheet" href="src/style.css" />
+      <link rel="stylesheet" href="./src/input.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+      <title>Ward IT</title>
+   </head>
+   <body>
+      <!-- nav bar -->
+      <nav class="bg-wardGreen dark:bg-gray-900 border-b-2 border-b-gray-200">
+         <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12">
+            <div class="flex items-center gap-12">
+               <div class="flex items-center gap-4  max-lg:py-2">
+                  <a href="index.html" class="flex items-center">
+                  <img src="img/common-img/logo.svg" alt="Ward IT Logo" />
+                  </a>
+               </div>
+               <div class="items-center hidden lg:flex md:w-auto" id="navbar-sticky">
+                  <ul class="flex font-[Roboto] font-normal text-lg leading-6">
+                     <div class=" dropdown relative hover:bg-wardSilver flex   hover:border-x hover:font-bold">
+                        <div>
+                           <button class="flex gap-1 items-end py-6 px-4 capitalize cursor-pointer"  onclick="scrollServices()">
+                           <a>services</a>
+                           <img src="img/common-img/downward-arrow.svg" alt="">
+                           </button>  
+                           <div class="dropdown-content hidden absolute z-10 top-[100%] left-[-1%] bg-wardSilver w-[370px]">
+                              <div class="flex flex-col  p-2 border-x border-b">
+                                 <div >
+                                    <ul class=" flex flex-col  gap-2 font-thin capitalize">
+                                       <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3 ">
+                                          <a href="network-service.html">Product & Service Operational Center</a>
+                                          <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                       </li>
+                                       <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="incident-management.html">Incident Managment</a>
+                                          <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                       </li>
+                                       <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="software-qa.html">Software QA</a>
+                                          <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                       </li>
+                                       <li class="flex gap-2 py-2 border-b-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="robotic-process.html">Robotic Process Automation </a>
+                                          <img  src="img/common-img/right_sign.svg" alt="right-sign">
+                                       </li>
+                                       <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="problem-management.html">problem managment</a>
+                                          <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                       </li>
+                                       <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="change-management.html">change managment</a>
+                                          <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                       </li>
+                                       <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="realease-deployment-managment.html">deployment and release managment</a>
+                                          <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                       </li>
+                                       <li class="flex gap-2  py-2 hover:text-wardGreen hover:gap-3">
+                                          <a href="tools-implementation.html">Tools Implementation</a>
+                                          <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                       </li>
+                                       
+                                    </ul>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
+                        <li class="mx-4 py-6 capitalize cursor-pointer" onclick="scrollAvatar()"><a>team </a></li>
+                     </div>
+                     <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
+                        <a href="career.html"><li class="mx-4 py-6 capitalize cursor-pointer">career</li></a>
+                     </div>
+                     <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
+                        <a href="blogpost-search.html"><li class="mx-4  py-6 capitalize blog-scroll cursor-pointer">blog</li></a>
+                     </div>
+                  </ul>
+               </div>
+            </div>
+            <div class="flex sm:py-1 max-sm:py-0 gap-4">
+               <a href="https://www.linkedin.com/in/nikoloz-tsulukidze-12a812230/" target="_blank">
+               <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2 md:mr-0 max-md:text-xs max-sm:px-2 max-sm:py-1 max-lg:hidden"> book consultation </button>
+               </a>
+               <div class="flex items-center justify-center lg:hidden">
+                  <div class="flex flex-col  relative">
+                     <div class="relative">
+                        <div class="flex items-baseline cursor-pointer" id="navDrop">
+                           <img src="img/common-img/menu-drop.svg" alt="">
+                           <path fill-rule="evenodd" d="M10 13.333l6.667-6.666h-13.334L10 13.333zM10 16.667l-6.667-6.666h13.334L10 16.667z"/>
+                           </svg>
+                        </div>
+                        <ul class="hidden absolute z-50 text-center bg-wardSilver w-[150px] capitalize border-2 p-2 text-xl top-full right-0 mt-2" id="navDropInner">
+                           <li class="capitalize cursor-pointer" onclick="scrollServices()">Services</li>
+                           <li class="capitalize cursor-pointer" onclick="scrollAvatar()">Team</li>
+                           <a href="career.html">
+                              <li class="capitalize cursor-pointer"><a href="career.html">Career</a></li>
+                           </a>
+                           <a href="blogpost-search.html"><li class="capitalize cursor-pointer" >Blog</li></a>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- init main -->
+      <section class="w-full h-[58rem] bg-wardGreen py-10 border-b-2 relative max-lg:h-full max-lg:py-0 max-lg:pt-10">
+         <div class="flex w-11/12 m-auto bg-wardGreen 2xl:w-9/12">
             <div class="font-[Roboto] font-normal">
-                <!-- init list -->
-                <h4 class="inline-block text-[80px] font-[Policemen] max-lg:text-6xl max-md:text-4xl max-sm:text-3xl max-sm:whitespace-normal"> Augmented your Staff using <br class="max-xl:hidden" /> On Demand IT Services </h4>
-                <!-- landing block for mobile -->
-                <div class="flex flex-row lg:hidden">
-                    <div class="">
-                        <img src="img/big-block/block_1.png" alt="block" />
-                    </div>
-                    <div class="">
-                        <img src="img/big-block/block_2.png" alt="block" />
-                    </div>
-                </div>
-                <div class="flex flex-col gap-3">
-                    <ul class="flex items-center gap-4 py-2 mt-8 text-2xl">
-                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
-                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> An All-In-One IT Outsourcing Solution </li>
-                    </ul>
-                    <ul class="flex items-center gap-4 py-2 text-2xl">
-                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
-                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> 24/7 Support And Availability </li>
-                    </ul>
-                    <ul class="flex items-center gap-4 py-2 text-2xl">
-                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
-                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Uninterrupted Business Continuity </li>
-                    </ul>
-                    <ul class="flex items-center gap-4 py-2 text-2xl">
-                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
-                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Advanced Automation of Business Processes </li>
-                    </ul>
-                    <ul class="flex items-center gap-4 py-2 text-2xl">
-                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
-                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Proactive approach to risk management </li>
-                    </ul>
-                    <ul class="flex items-center gap-4 py-2 text-2xl">
-                        <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
-                        <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Streamlined IT operations</li>
-                    </ul>
-                </div>
+               <!-- init list -->
+               <h4 class="inline-block text-[80px] font-[Policemen] max-lg:text-6xl max-md:text-4xl max-sm:text-3xl max-sm:whitespace-normal"> Augmented your Staff using <br class="max-xl:hidden" /> On Demand IT Services </h4>
+               <!-- landing block for mobile -->
+               <div class="flex flex-row lg:hidden">
+                  <div class="">
+                     <img src="img/big-block/block_1.png" alt="block" />
+                  </div>
+                  <div class="">
+                     <img src="img/big-block/block_2.png" alt="block" />
+                  </div>
+               </div>
+               <div class="flex flex-col gap-3">
+                  <ul class="flex items-center gap-4 py-2 mt-8 text-2xl">
+                     <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                     <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> An All-In-One IT Outsourcing Solution </li>
+                  </ul>
+                  <ul class="flex items-center gap-4 py-2 text-2xl">
+                     <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                     <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> 24/7 Support And Availability </li>
+                  </ul>
+                  <ul class="flex items-center gap-4 py-2 text-2xl">
+                     <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                     <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Uninterrupted Business Continuity </li>
+                  </ul>
+                  <ul class="flex items-center gap-4 py-2 text-2xl">
+                     <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                     <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Advanced Automation of Business Processes </li>
+                  </ul>
+                  <ul class="flex items-center gap-4 py-2 text-2xl">
+                     <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                     <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Proactive approach to risk management </li>
+                  </ul>
+                  <ul class="flex items-center gap-4 py-2 text-2xl">
+                     <img src="img/common-img/silver-rhombus.svg" alt="rhambus" />
+                     <li class="whitespace-nowrap capitalize max-sm:whitespace-normal max-sm:text-sm"> Streamlined IT operations</li>
+                  </ul>
+               </div>
             </div>
             <!-- landing blocks -->
             <div class="max-lg:hidden">
-                <div class="absolute left-[52%] top-[24%] max-2xl:top-[30%]">
-                    <img class="" src="img/big-block/block_1.png " alt="block" />
-                </div>
-                <div class="absolute left-[75%] top-[5%] max-xl:hidden">
-                    <img src="img/big-block/block_2.png" alt="block" />
-                </div>
-                <div class="absolute left-[91%] top-[30%] max-sm:top-[40%]">
-                    <img src="img/big-block/block_3.png" alt="block" />
-                </div>
+               <div class="absolute left-[52%] top-[24%] max-2xl:top-[30%]">
+                  <img class="" src="img/big-block/block_1.png " alt="block" />
+               </div>
+               <div class="absolute left-[75%] top-[5%] max-xl:hidden">
+                  <img src="img/big-block/block_2.png" alt="block" />
+               </div>
+               <div class="absolute left-[91%] top-[30%] max-sm:top-[40%]">
+                  <img src="img/big-block/block_3.png" alt="block" />
+               </div>
             </div>
-        </div>
-        <div class="hidden max-lg:flex max-lg:justify-center max-lg:py-5">
+         </div>
+         <div class="hidden max-lg:flex max-lg:justify-center max-lg:py-5">
             <a href="#" target="_blank">
-                <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2   "> book consultation </button>
+            <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2   "> book consultation </button>
             </a>
-        </div>
-        <div class="flex mt-8 max-sm:mt-2">
+         </div>
+         <div class="flex mt-8 max-sm:mt-2">
             <div class="w-full flex items-center mt-1 py-2 gap-10 justify-center border-y-2 rotate-[-7.77deg] max-lg:rotate-0">
-              <div class="text-slider flex gap-6 items-center">
-                <img class="w-10 h-full max-md:hidden" src="img/common-img/frame-rhombus.svg" alt="frame"/>
-                <span class="font-[Policemen] whitespace-nowrap text-[44px]  max-2xl:text-[35px] max-xl:text-[30px] max-lg:text-[24px] max-md:text-[18px] max-sm:text-[12px] ">Get started in no time, scale up with no limit, for any team, at any level </span>
-                <img class="w-10 h-full max-md:hidden" src="img/common-img/frame-rhombus.svg" alt="frame"/>
-              </div>
-              
+               <div class="text-slider flex gap-6 items-center">
+                  <img class="w-10 h-full max-md:hidden" src="img/common-img/frame-rhombus.svg" alt="frame"/>
+                  <span class="font-[Policemen] whitespace-nowrap text-[44px]  max-2xl:text-[35px] max-xl:text-[30px] max-lg:text-[24px] max-md:text-[18px] max-sm:text-[12px] ">Get started in no time, scale up with no limit, for any team, at any level </span>
+                  <img class="w-10 h-full max-md:hidden" src="img/common-img/frame-rhombus.svg" alt="frame"/>
+               </div>
             </div>
-        </div>
-        <div class="flex m-auto items-center flex-col gap-2 absolute top-[84%] left-[75%]  max-sm:left-[75%] max-sm:top-[80%] max-lg:hidden">
+         </div>
+         <div class="flex m-auto items-center flex-col gap-2 absolute top-[84%] left-[75%]  max-sm:left-[75%] max-sm:top-[80%] max-lg:hidden">
             <div class="animate-bounce">
-                <img src="img/common-img/service sign.png" alt="" />
+               <img src="img/common-img/service sign.png" alt="" />
             </div>
             <div class="whitespace-nowrap text-xl font-[Noto Sans] ">
-                <a href="#"><p>Our Services</p></a>
+               <a href="#">
+                  <p>Our Services</p>
+               </a>
             </div>
-        </div>
-    </section>
-    <!-- partners -->
-    <section class="bg-wardSilver">
-        <div>
+         </div>
+      </section>
+      <!-- partners -->
+      <section class="bg-wardSilver">
+         <div>
             <div class="flex justify-center pt-20 py-10">
-                <h1 class="uppercase whitespace-nowrap text-8xl font-[Policemen] bg-wardGreen max-lg:text-4xl max-sm:text-lg p-6 bg-wardLight"> Our Partner and Clients </h1>
+               <h2 class="uppercase whitespace-nowrap text-8xl font-[Policemen] bg-wardGreen max-lg:text-4xl max-sm:text-lg p-6 bg-wardLight"> Our Partner and Clients </h2>
             </div>
             <div class="w-full">
-                <div class=" border-2  m-auto py-10 max-lg:hidden ">
-                    <div class="flex  justify-center  gap-16 items-center">
-                        <div>
-                            <img src="img/partners/grafana.png" alt="grafana">
-                        </div>
-                        <div>
-                            <img src="img/partners/kibana.png" alt="kibana">
-                        </div>
-                        <div>
-                            <img src="img/partners/graylog.png" alt="graylog">
-                        </div>
-                        <div>
-                            <img src="img/partners/zabbix.png" alt="zabbix">
-                        </div>
-                        <div>
-                            <img src="img/partners/newrelic.png" alt="newrelic">
-                        </div>
-                        <div>
-                            <img src="img/partners/prometheus.png" alt="prometheus">
-                        </div>
-                        <div>
-                            <img src="img/partners/jagere.png" alt="jagere">
-                        </div>
-                    </div>
-                </div>
+               <div class=" border-2  m-auto py-10 max-lg:hidden ">
+                  <div class="flex  justify-center  gap-16 items-center">
+                     <div>
+                        <img src="img/partners/grafana.png" alt="grafana">
+                     </div>
+                     <div>
+                        <img src="img/partners/kibana.png" alt="kibana">
+                     </div>
+                     <div>
+                        <img src="img/partners/graylog.png" alt="graylog">
+                     </div>
+                     <div>
+                        <img src="img/partners/zabbix.png" alt="zabbix">
+                     </div>
+                     <div>
+                        <img src="img/partners/newrelic.png" alt="newrelic">
+                     </div>
+                     <div>
+                        <img src="img/partners/prometheus.png" alt="prometheus">
+                     </div>
+                     <div>
+                        <img src="img/partners/jagere.png" alt="jagere">
+                     </div>
+                  </div>
+               </div>
             </div>
             <!-- partner mobile slider -->
             <div class="w-full lg:hidden ">
-                <div class="swiper mySwiper_1 border-2">
-                    <div class="swiper-wrapper flex items-center py-10  gap-2">
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/partners/grafana.png" alt="Grafana">
-                            </div>
+               <div class="swiper mySwiper_1 border-2">
+                  <div class="swiper-wrapper flex items-center py-10  gap-2">
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/partners/grafana.png" alt="Grafana">
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/partners/kibana.png" alt="kibana">
-                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/partners/kibana.png" alt="kibana">
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/partners/graylog.png" alt="gralog">
-                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/partners/graylog.png" alt="gralog">
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/partners/zabbix.png" alt="zabbix">
-                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/partners/zabbix.png" alt="zabbix">
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/partners/newrelic.png" alt="newrelic">
-                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/partners/newrelic.png" alt="newrelic">
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img src="img/partners/prometheus.png" alt="prometheus">
-                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img src="img/partners/prometheus.png" alt="prometheus">
                         </div>
-                        <div class="swiper-slide">
-                            <div>
-                                <img  src="img/partners/jagere.png" alt="jagere">
-                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div>
+                           <img  src="img/partners/jagere.png" alt="jagere">
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- service section -->
-    <section class="bg-wardSilver" id="services_sc">
-        <div class="w-10/12 m-auto 2xl:w-9/12  ">
+         </div>
+      </section>
+      <!-- service section -->
+      <section class="bg-wardSilver" id="services_sc">
+         <div class="w-10/12 m-auto 2xl:w-9/12  md:border-b-2 ">
             <!-- service-header -->
             <div class="border-b-[2px]">
-                <div class="flex w-11/12 m-auto justify-between gap-10 max-sm:border-0 max-sm:gap-2">
-                    <div class="flex item-center py-8 max-md:justify-center max-md:w-full">
-                        <h5 class="uppercase  text-8xl font-[Policemen] max-lg:text-4xl max-sm:text-2xl">WARD Ops Services </h5>
-                    </div>
-                    <div class="flex items-center gap-10 max-md:hidden">
-                        <div class="w-[2px] h-full bg-[#000]"></div>           
-                        <button class="hover_button text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1 max-sm:px-[4px] max-sm:text-sm max-sm:py-[2px]"> Let's work together </button>   
-                    </div>
-                </div>
+               <div class="flex w-11/12 m-auto justify-between gap-10 max-sm:border-0 max-sm:gap-2">
+                  <div class="flex item-center py-8 max-md:justify-center max-md:w-full">
+                     <h5 class="uppercase  text-8xl font-[Policemen] max-lg:text-4xl max-sm:text-2xl">WARD Ops Services </h5>
+                  </div>
+                  <div class="flex items-center gap-10 max-md:hidden">
+                     <div class="w-[2px] h-full bg-[#000]"></div>
+                     <button class="hover_button text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1 max-sm:px-[4px] max-sm:text-sm max-sm:py-[2px]"> Let's work together </button>   
+                  </div>
+               </div>
             </div>
             <!-- services divisions -->
             <div class="w-11/12 m-auto 2xl:w-10/12">
-                <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
-                    <!-- service-inner-1 -->
-                    <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
-                        <div class="flex items-center gap-10">
-                            <img src="img/services-img/Product service.png" alt="" />
-                            <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Product & Service Operational <br />Center </h6>
+               <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
+                  <!-- service-inner-1 -->
+                  <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
+                     <div class="flex items-center gap-10">
+                        <img src="img/services-img/Product service.png" alt="" />
+                        <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Product & Service Operational <br />Center </h6>
+                     </div>
+                     <div class="flex flex-col py-5">
+                        <div>
+                           <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Collect metrics about the operations of an IT environment's hardware and software to ensure everything functions as expected. </p>
                         </div>
-                        <div class="flex flex-col py-5">
-                            <div>
-                                <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Collect metrics about the operations of an IT environment's hardware and software to ensure everything functions as expected. </p>
-                            </div>
-                            <div class="flex justify-end pt-4">
-                                <a href="network-service.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                        <div class="flex justify-end pt-4">
+                           <a href="network-service.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                    </div>
-                    <!-- end service-inner-1 -->
-                    <div class="w-[2px] h-[full] bg-[#000]"></div>
-                    <!-- service-inner-2 -->
-                    <div class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full">
-                        <div class="flex items-center gap-10">
-                            <img src="img/services-img/incident management.png" alt="" />
-                            <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Incident Management </h6>
+                     </div>
+                  </div>
+                  <!-- end service-inner-1 -->
+                  <div class="w-[2px] h-[full] bg-[#000]"></div>
+                  <!-- service-inner-2 -->
+                  <div class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full">
+                     <div class="flex items-center gap-10">
+                        <img src="img/services-img/incident management.png" alt="" />
+                        <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Incident Management </h6>
+                     </div>
+                     <div class="flex flex-col py-5">
+                        <div>
+                           <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly as possible. </p>
                         </div>
-                        <div class="flex flex-col py-5">
-                            <div>
-                                <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly as possible. </p>
-                            </div>
-                            <div class="flex justify-end pt-4">
-                                <a href="incident-management.html"><span class="font-semibold py-2 px-1  md:hover:bg-wardGreen  ">Read More</span></a>
-                            </div>
+                        <div class="flex justify-end pt-4">
+                           <a href="incident-management.html"><span class="font-semibold py-2 px-1  md:hover:bg-wardGreen  ">Read More</span></a>
                         </div>
-                    </div>
-                </div>
-                <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
-                    <!-- service-inner-3 -->
-                    <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
-                        <div class="flex items-center gap-10">
-                            <img src="img/services-img/sowftware-QA.png" alt="" />
-                            <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Software QA </h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
+                  <!-- service-inner-3 -->
+                  <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
+                     <div class="flex items-center gap-10">
+                        <img src="img/services-img/sowftware-QA.png" alt="" />
+                        <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Software QA </h6>
+                     </div>
+                     <div class="flex flex-col py-5">
+                        <div>
+                           <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Software testing could be the fastest, easiest, and exact part of your SDLC. Optimize the software testing process and get measurable results. </p>
                         </div>
-                        <div class="flex flex-col py-5">
-                            <div>
-                                <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Software testing could be the fastest, easiest, and exact part of your SDLC. Optimize the software testing process and get measurable results. </p>
-                            </div>
-                            <div class="flex justify-end pt-4">
-                                <a href="software-qa.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                        <div class="flex justify-end pt-4">
+                           <a href="software-qa.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                    </div>
-                    <!-- end service-inner-3 -->
-                    <div class="w-[2px] h-[full] bg-[#000]"></div>
-                    <!-- service-inner-4 -->
-                    <div class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full">
-                        <div class="flex items-center gap-10">
-                            <img src="img/services-img/robotic-process.png" alt="" />
-                            <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Robotic Process Automation </h6>
+                     </div>
+                  </div>
+                  <!-- end service-inner-3 -->
+                  <div class="w-[2px] h-[full] bg-[#000]"></div>
+                  <!-- service-inner-4 -->
+                  <div class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full">
+                     <div class="flex items-center gap-10">
+                        <img src="img/services-img/robotic-process.png" alt="" />
+                        <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Robotic Process Automation </h6>
+                     </div>
+                     <div class="flex flex-col py-5">
+                        <div>
+                           <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> A technology that mimics and automates the way humans interact with software to perform high-volume, repeatable tasks. </p>
                         </div>
-                        <div class="flex flex-col py-5">
-                            <div>
-                                <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> A technology that mimics and automates the way humans interact with software to perform high-volume, repeatable tasks. </p>
-                            </div>
-                            <div class="flex justify-end pt-4">
-                                <a href="robotic-process.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                        <div class="flex justify-end pt-4">
+                           <a href="robotic-process.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                    </div>
-                </div>
-                <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
-                    <!-- service-inner-5 -->
-                    <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
-                        <div class="flex items-center gap-10">
-                            <img src="img/services-img/idea.png" alt="" />
-                            <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> problem managment </h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
+                  <!-- service-inner-5 -->
+                  <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
+                     <div class="flex items-center gap-10">
+                        <img src="img/services-img/idea.png" alt="" />
+                        <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> problem managment </h6>
+                     </div>
+                     <div class="flex flex-col py-5">
+                        <div>
+                           <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly Respond to an. </p>
                         </div>
-                        <div class="flex flex-col py-5">
-                            <div>
-                                <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly Respond to an. </p>
-                            </div>
-                            <div class="flex justify-end pt-4">
-                                <a href="problem-management.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                        <div class="flex justify-end pt-4">
+                           <a href="problem-management.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                    </div>
-                    <!-- end service-inner-5 -->
-                    <div class="w-[2px] h-[full] bg-[#000]"></div>
-                    <!-- service-inner-6 -->
-                    <div class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full">
-                        <div class="flex items-center gap-10">
-                            <img src="img/services-img/change .png" alt="" />
-                            <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> change managment </h6>
+                     </div>
+                  </div>
+                  <!-- end service-inner-5 -->
+                  <div class="w-[2px] h-[full] bg-[#000]"></div>
+                  <!-- service-inner-6 -->
+                  <div class="w-[49%] service-inner-2 mt-16 max-md:mt-1 max-md:w-full">
+                     <div class="flex items-center gap-10">
+                        <img src="img/services-img/change .png" alt="" />
+                        <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> change managment </h6>
+                     </div>
+                     <div class="flex flex-col py-5">
+                        <div>
+                           <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly as possible. </p>
                         </div>
-                        <div class="flex flex-col py-5">
-                            <div>
-                                <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly as possible. </p>
-                            </div>
-                            <div class="flex justify-end pt-4">
-                                <a href="change-management.html"><span class="font-semibold  py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                        <div class="flex justify-end pt-4">
+                           <a href="change-management.html"><span class="font-semibold  py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                    </div>
-                </div>
-                <div class="flex justify-between gap-10 max-md:gap-2 max-md:flex-col">
-                    <!-- service-inner-7 -->
-                    <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
-                        <div class="flex items-center gap-10">
-                            <img src="img/services-img/rocket.png" alt="" />
-                            <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> deployment and release managment </h6>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex justify-between gap-10 max-md:gap-2 max-md:flex-col">
+                  <!-- service-inner-7 -->
+                  <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
+                     <div class="flex items-center gap-10">
+                        <img src="img/services-img/rocket.png" alt="" />
+                        <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> deployment and release managment </h6>
+                     </div>
+                     <div class="flex flex-col py-5">
+                        <div>
+                           <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Software testing  could be the fastest, easiest, and exact part of your SDLC. Optimize the software testing process and get measurable results. </p>
                         </div>
-                        <div class="flex flex-col py-5">
-                            <div>
-                                <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Software testing  could be the fastest, easiest, and exact part of your SDLC. Optimize the software testing process and get measurable results. </p>
-                            </div>
-                            <div class="flex justify-end pt-4">
-                                <a href="realease-deployment-managment.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                        <div class="flex justify-end pt-4">
+                           <a href="realease-deployment-managment.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                    </div>
-                    <!-- end service-inner-7 -->
-                    <div class="w-[2px] h-[full] bg-[#000]"></div>
-                    <!-- service-inner-8 -->
-                    <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
-                        <div class="flex items-center gap-10">
-                            <img src="img/services-img/tools.svg" alt="" />
-                            <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Tools Implementation, Integration, and Support  </h6>
+                     </div>
+                  </div>
+                  <!-- end service-inner-7 -->
+                  <div class="w-[2px] h-[full] bg-[#000]"></div>
+                  <!-- service-inner-8 -->
+                  <div class="w-[49%] service-inner-1 mt-16 max-md:border-b-2 max-md:w-full">
+                     <div class="flex items-center gap-10">
+                        <img src="img/services-img/tools.svg" alt="" />
+                        <h6 class="capitalize font-[Noto Sans] font-medium text-[24px] max-lg:text-[18px] max-sm:text-[14px]"> Tools Implementation, Integration, and Support  </h6>
+                     </div>
+                     <div class="flex flex-col py-5">
+                        <div>
+                           <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly as possible.Respond to an unplanned event or service interruption  </p>
                         </div>
-                        <div class="flex flex-col py-5">
-                            <div>
-                                <p class="capitalize text-[24px] font-[Noto Sans] max-lg:text-[18px] max-sm:text-[14px]"> Respond to an unplanned event or service interruption and restore the service to its operational state as quickly as possible.Respond to an unplanned event or service interruption  </p>
-                            </div>
-                            <div class="flex justify-end pt-4">
-                                <a href="tools-implementation.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                        <div class="flex justify-end pt-4">
+                           <a href="tools-implementation.html"><span class="font-semibold py-2 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                    </div>            
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            <div class=" flex justify-center  md:hidden mb-16">
-              <div class="  bg-[#000]"></div>           
-              <button class=" text-lg capitalize border-2 mt-[10px] py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1 max-sm:px-[6px] max-sm:text-sm max-sm:py-2 "> Let's work together </button>   
+            <div class=" flex justify-center  md:hidden py-12">
+               <div class="  bg-[#000]"></div>
+               <button class=" text-lg capitalize border-2 mt-[10px] py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1 max-sm:px-[6px] max-sm:text-sm max-sm:py-2 "> Let's work together </button>   
             </div>
-        </div>
-        <!-- product inner -->
-        <div class="flex w-11/12 m-auto border-t-[2px] border-b-[2px] max-lg:flex-col max-lg:border-b-0 2xl:w-9/12">
+         </div>
+      </section>
+      <!-- service end -->
+      <!-- performance metrics -->
+      <section class="bg-wardSilver">
+        <div class="w-9/12 m-auto py-5">
+            <div class="flex justify-center">
+               <span class="font-[Policemen] text-8xl uppercase  text-center p-4 border-t-2 border-b-2 bg-wardGreen max-md:text-4xl ">performance metrics</span>
+            </div>
+            <div class="py-20">
+               <ul class="flex flex-row gap-2 items-center lg:items-baseline  justify-between max-lg:flex-col max-lg:gap-5 max-lg:  max-lg:justify-center">
+                  <li class="flex flex-col gap-3 text-center items-cener ">
+                     <h6 class="mymove_2 text-right font-[noto sans] text-[70px] font-extrabold ">90%</h6>
+                     <span class="  capitalize  whitespace-nowrap text-[18px]">Change Management <br> Success Rate</span>
+                  </li>
+                  <li class="flex flex-col text-center">
+                     <h6 class="mymove_2 text-right font-[noto sans] text-[70px] font-extrabold ">5%</h6>
+                     <span class="capitalize text-[18px]">QA Team Defect Rate</span>
+                  </li>
+                  <li class="flex flex-col text-center">
+                     <h6 class="mymove_2 text-right font-[noto sans] text-[70px] font-extrabold ">10</h6>
+                     <span class="capitalize text-[18px]">Closed Projects</span>
+                  </li>
+                  <li class="flex flex-col text-center">
+                     <h6 class="mymove_2 text-right font-[Noto Sans] text-[70px] font-extrabold ">30Min</h6>
+                     <span class="capitalize text-[18px]">Incident Management <br> Average MTTR</span>
+                  </li>
+                  <li class="flex flex-col text-center">
+                     <h6 class="mymove_2 text-right font-[noto sans] text-[70px] font-extrabold ">2Min</h6>
+                     <span class="capitalize text-[18px]">Change Management  <br> Success Rate</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <!-- product inner -->
+      <section class='bg-wardSilver'>
+         <div class="flex w-11/12 m-auto border-t-[2px] border-b-[2px] max-lg:flex-col max-lg:border-b-0 2xl:w-9/12">
             <div class="flex w-[40%] items-center justify-center bg-wardGreen max-lg:w-full max-lg:py-5 max-lg:border-b-2">
-                <h4 class="uppercase font-[Policemen] text-8xl max-xl:text-6xl max-sm:text-4xl"> solutions </h4>
+               <h4 class="uppercase font-[Policemen] text-8xl max-xl:text-6xl max-sm:text-4xl"> solutions </h4>
             </div>
             <div class="flex flex-col p-10 gap-2 border-l-[2px] max-lg:border-l-0 max-lg:border-b-2">
-                <h5 class="font-normal text-[22px]"> Partnership and Experise Monitoring and Incident Management Tools. </h5>
-                <ul class="flex items-center gap-5">
-                    <img src="img/common-img/green-rhombus.svg" alt="rhombus" />
-                    <h6 class="text-[18px]">Implemenetraton and Integrations</h6>
-                </ul>
-                <ul class="flex items-center gap-5">
-                    <img src="img/common-img/green-rhombus.svg" alt="rambue" />
-                    <h6 class="text-[18px]">Open Source and Enterprise Souliutons</h6>
-                </ul>
-                <ul class="flex items-center gap-5">
-                    <img src="img/common-img/green-rhombus.svg" alt="rambue" />
-                    <h6 class="text-[18px]">Data ​Visualization</h6>
-                </ul>
+               <h5 class="font-normal text-[22px]"> Partnership and Experise Monitoring and Incident Management Tools. </h5>
+               <ul class="flex items-center gap-5">
+                  <img src="img/common-img/green-rhombus.svg" alt="rhombus" />
+                  <h6 class="text-[18px]">Implemenetraton and Integrations</h6>
+               </ul>
+               <ul class="flex items-center gap-5">
+                  <img src="img/common-img/green-rhombus.svg" alt="rambue" />
+                  <h6 class="text-[18px]">Open Source and Enterprise Souliutons</h6>
+               </ul>
+               <ul class="flex items-center gap-5">
+                  <img src="img/common-img/green-rhombus.svg" alt="rambue" />
+                  <h6 class="text-[18px]">Data ​Visualization</h6>
+               </ul>
             </div>
-        </div>
-    </section>
-    <section class="bg-wardSilver">
-        <div class="flex items-center w-8/12 m-auto py-10  2xl:w-8/12 max-md:flex-col max-lg:gap-10 ">
+         </div>
+      </section>
+      <section class="bg-wardSilver">
+         <div class="flex items-center w-8/12 m-auto py-10  2xl:w-8/12 max-md:flex-col max-lg:gap-10 ">
             <div class="w-1/2 max-lg:w-full max-lg:flex max-lg:items-center max-lg:justify-center">
-                <ul class="flex flex-col  gap-5">
-                    <li class="flex items-center gap-6">
-                        <img src="img/products/PageDuty.svg" alt="pagerduty">
-                        <span class="block text-2xl capitalize ">PagerDuty</span>
-                    </li>
-                    <li class="flex items-center gap-6">
-                        <img src="img/products/NewRelic.svg" alt="pagerduty">
-                        <span class="block text-2xl capitalize ">New Relic</span>
-                    </li>
-                    <li class="flex items-center gap-6">
-                        <img src="img/products/Rundeck.svg" alt="pagerduty">
-                        <span class="block text-2xl capitalize ">Rundeck</span>
-                    </li>
-                    <li class="flex items-center gap-6">
-                        <img src="img/products/Grafana.svg" alt="pagerduty">
-                        <span class="block text-2xl capitalize ">Grafana</span>
-                    </li>
-                    <li class="flex items-center gap-6">
-                        <img src="img/products/prometheusio.svg" alt="pagerduty">
-                        <span class="block text-2xl capitalize "> Prometheus</span>
-                    </li>
-                    <li class="flex items-center gap-6">
-                        <img src="img/products/zabbix.svg" alt="pagerduty">
-                        <span class="block text-2xl capitalize"> Zabbix</span>
-                    </li>
-                </ul>
+               <ul class="flex flex-col  gap-5">
+                  <li class="flex items-center gap-6">
+                     <img src="img/products/PageDuty.svg" alt="pagerduty">
+                     <span class="block text-2xl capitalize ">PagerDuty</span>
+                  </li>
+                  <li class="flex items-center gap-6">
+                     <img src="img/products/NewRelic.svg" alt="pagerduty">
+                     <span class="block text-2xl capitalize ">New Relic</span>
+                  </li>
+                  <li class="flex items-center gap-6">
+                     <img src="img/products/Rundeck.svg" alt="pagerduty">
+                     <span class="block text-2xl capitalize ">Rundeck</span>
+                  </li>
+                  <li class="flex items-center gap-6">
+                     <img src="img/products/Grafana.svg" alt="pagerduty">
+                     <span class="block text-2xl capitalize ">Grafana</span>
+                  </li>
+                  <li class="flex items-center gap-6">
+                     <img src="img/products/prometheusio.svg" alt="pagerduty">
+                     <span class="block text-2xl capitalize "> Prometheus</span>
+                  </li>
+                  <li class="flex items-center gap-6">
+                     <img src="img/products/zabbix.svg" alt="pagerduty">
+                     <span class="block text-2xl capitalize"> Zabbix</span>
+                  </li>
+               </ul>
             </div>
             <div class=" flex flex-col  items-center  w-1/2 max-lg:w-full">
-                <div class="swiper mySwiper_2 w-[292px] h-[340px] max-sm:w-[230px] max-sm:h-[330px]">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-5 p-5   w-full h-full items-center justify-center text-center bg-wardSilver border-2">
-                                <img src="img/products/PageDuty.svg" alt="pager duty">
-                                <h5 class="capitalize text-2xl">Pager Duty</h5>
-                                <p class="font-light">Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. </p>
-                                <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+               <div class="swiper mySwiper_2 w-[292px] h-[340px] max-sm:w-[230px] max-sm:h-[330px]">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="flex flex-col gap-5 p-5   w-full h-full items-center justify-center text-center bg-wardSilver border-2">
+                           <img src="img/products/PageDuty.svg" alt="pager duty">
+                           <h5 class="capitalize text-2xl">Pager Duty</h5>
+                           <p class="font-light">Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. </p>
+                           <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-5 p-4 w-full h-full items-center justify-center text-center bg-wardSilver border-2">
-                                <img src="img/products/NewRelic.svg" alt="pager duty">
-                                <h5 class="capitalize text-2xl">NewRelic</h5>
-                                <p class="font-light">S​horter Incidents. Fewer Escalations. Runbook Automation enableS anyone to safely execute self-service operations tasks. </p>
-                                <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="flex flex-col gap-5 p-4 w-full h-full items-center justify-center text-center bg-wardSilver border-2">
+                           <img src="img/products/NewRelic.svg" alt="pager duty">
+                           <h5 class="capitalize text-2xl">NewRelic</h5>
+                           <p class="font-light">S​horter Incidents. Fewer Escalations. Runbook Automation enableS anyone to safely execute self-service operations tasks. </p>
+                           <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-5 p-4 w-full h-full items-center justify-center text-center bg-wardSilver border-2">
-                                <img src="img/products/Rundeck.svg" alt="pager duty">
-                                <h5 class="capitalize text-2xl">Rundeck</h5>
-                                <p class="font-light">An open-source general-purpose operational dashboards for your data here, there, or anywhere. Compose and scale observability. </p>
-                                <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="flex flex-col gap-5 p-4 w-full h-full items-center justify-center text-center bg-wardSilver border-2">
+                           <img src="img/products/Rundeck.svg" alt="pager duty">
+                           <h5 class="capitalize text-2xl">Rundeck</h5>
+                           <p class="font-light">An open-source general-purpose operational dashboards for your data here, there, or anywhere. Compose and scale observability. </p>
+                           <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-5 p-5   w-full h-full items-center justify-center text-center bg-wardSilver border-2">
-                                <img src="img/products/Grafana.svg" alt="pager duty">
-                                <h5 class="capitalize text-2xl">Grafana</h5>
-                                <p class="font-light">Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. </p>
-                                <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="flex flex-col gap-5 p-5   w-full h-full items-center justify-center text-center bg-wardSilver border-2">
+                           <img src="img/products/Grafana.svg" alt="pager duty">
+                           <h5 class="capitalize text-2xl">Grafana</h5>
+                           <p class="font-light">Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. </p>
+                           <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-5 p-4 w-full h-full items-center justify-center text-center bg-wardSilver border-2">
-                                <img src="img/products/prometheusio.svg" alt="pager duty">
-                                <h5 class="capitalize text-2xl">Prometheus</h5>
-                                <p class="font-light">S​horter Incidents. Fewer Escalations. Runbook Automation enableS anyone to safely execute self-service operations tasks. </p>
-                                <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="flex flex-col gap-5 p-4 w-full h-full items-center justify-center text-center bg-wardSilver border-2">
+                           <img src="img/products/prometheusio.svg" alt="pager duty">
+                           <h5 class="capitalize text-2xl">Prometheus</h5>
+                           <p class="font-light">S​horter Incidents. Fewer Escalations. Runbook Automation enableS anyone to safely execute self-service operations tasks. </p>
+                           <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-5 p-4 w-full h-full items-center justify-center text-center bg-wardSilver border-2">
-                                <img src="img/products/zabbix.svg" alt="pager duty">
-                                <h5 class="capitalize text-2xl">Zabbix</h5>
-                                <p class="font-light">S​horter Incidents. Fewer Escalations. Runbook Automation enableS anyone to safely execute self-service operations tasks. </p>
-                                <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
-                            </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="flex flex-col gap-5 p-4 w-full h-full items-center justify-center text-center bg-wardSilver border-2">
+                           <img src="img/products/zabbix.svg" alt="pager duty">
+                           <h5 class="capitalize text-2xl">Zabbix</h5>
+                           <p class="font-light">S​horter Incidents. Fewer Escalations. Runbook Automation enableS anyone to safely execute self-service operations tasks. </p>
+                           <a href="#"><span class="font-semibold py-1 px-1 md:hover:bg-wardGreen">Read More</span></a>
                         </div>
-                    </div>
-                </div>
-                <button
-                    class="hover_button text-md capitalize border-2 py-[6px] px-[8px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-5"
+                     </div>
+                  </div>
+               </div>
+               <button
+                  class="hover_button text-md capitalize border-2 py-[6px] px-[8px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-5"
                   >
-                    see all products
-                  </button>
+               see all products
+               </button>
             </div>
-        </div>
-    </section>
-    <!-- end solution -->
-    <!-- operation section -->
-    <section class="bg-wardSilver">
-        <div class="w-2/3 m-auto flex flex-col gap-8 pt-10 max-md:pt-5">
-           <div class="flex justify-center">
-              <h3 class="font-[Policemen] text-8xl whitespace-nowrap max-lg:text-4xl max-sm:text-2xl">our approach to solution</h3>
-           </div>
-           <div class="flex justify-center">
-              <h3 class="font-[Policemen] text-8xl whitespace-nowrap max-lg:text-4xl max-sm:text-2xl">operations services</h3>
-           </div>
-           <div class="flex justify-center">
-              <button class="px-8 py-2 bg-wardGreen text-2xl whitespace-nowrap max-lg:text-sm max-lg:px-2">Learning is something we do almost every day</button>
-           </div>
-        </div>
-        <!-- operation solution inner -->
-        <!-- operation 01 and 02 desktop -->
-        <div class="w-9/12 m-auto flex flex-col py-8 max-md:py-4 2xl:w-8/12 max-md:hidden">
+         </div>
+      </section>
+      <!-- end solution -->
+      <!-- operation section -->
+      <section class="bg-wardSilver">
+         <div class="w-2/3 m-auto flex flex-col gap-8 pt-10 max-md:pt-5">
+            <div class="flex justify-center">
+               <h3 class="font-[Policemen] text-8xl whitespace-nowrap max-lg:text-4xl max-sm:text-2xl">our approach to solution</h3>
+            </div>
+            <div class="flex justify-center">
+               <h3 class="font-[Policemen] text-8xl whitespace-nowrap max-lg:text-4xl max-sm:text-2xl">operations services</h3>
+            </div>
+            <div class="flex justify-center">
+               <button class="px-8 py-2 bg-wardGreen text-2xl whitespace-nowrap max-lg:text-sm max-lg:px-2">Learning is something we do almost every day</button>
+            </div>
+         </div>
+         <!-- operation solution inner -->
+         <!-- operation 01 and 02 desktop -->
+         <div class="w-9/12 m-auto flex flex-col py-8 max-md:py-4 2xl:w-8/12 max-md:hidden">
             <div class="max-md:hidden">
                <div class="flex items-center max-md:flex-col max-md:gap-10 pt-10">
                   <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
@@ -572,14 +613,14 @@
                </div>
                <div class="flex items-center max-md:flex-col max-md:gap-10 pt-10 max-md:hidden">
                   <div class="flex justify-center items-center w-1/2 max-md:hidden">
-                    <div class="relative w-6/12 m-auto h-[200px] ramboues">
+                     <div class="relative w-6/12 m-auto h-[200px] ramboues">
                         <div class="absolute z-0"><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
                         <div class="absolute z-0 left-2 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
                         <div class="absolute z-0 left-4 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
                         <div class="absolute z-0 left-6 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
                         <div class="absolute z-0 left-8 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
                         <div class="absolute z-0 left-10 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
-                    </div>
+                     </div>
                   </div>
                   <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
                      <p class="w-full mymove text-right font-[Roboto] text-9xl font-extrabold max-md:text-8xl max-md:pt-3">02</p>
@@ -588,608 +629,602 @@
                   </div>
                </div>
             </div>
-        </div>
-        <!-- end -->
-        <!-- operation 01 and 02 mobile -->
-        <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden">
-           <div class="flex  w-full ">
-              <div class="w-1/2  flex pt-3">
-                 <p class="mymove font-[Roboto] text-8xl font-extrabold">01</p>
-              </div>
-              <div class="w-1/2 h-[120px] ">
-                <div class="relative  ramboues left-0 right-0">
-                    <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
-                    <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
-                    <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
-                    <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
-                    <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
-                    <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
-                </div>
-              </div>
-           </div>
-           <div>
-              <h5 class="capitalize text-left font-normal text-2xl max-md:text-xl">Build an Roadmap</h5>
-              <p class="text-lg text-left max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
-           </div>
-        </div>
-        <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
-           <div class="flex   w-full ">
-              <div class="w-1/2 h-[120px] ">
-                <div class="relative  ramboues left-0 right-0">
-                    <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
-                    <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
-                    <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
-                    <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
-                    <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
-                    <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
-                </div>
-              </div>
-              <div class="w-1/2  flex justify-end pt-3">
-                 <p class="mymove  text-right font-[Roboto] text-8xl font-extrabold">02</p>
-              </div>
-           </div>
-           <div>
-              <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Design and Develop</h5>
-              <p class="text-lg text-right max-md:text-sm">Once we’ve finalized the initial IT audit, we start to implement highly resilient and robust operational services, applying best practices in DevOps, cloud, and SRE to automate processes and minimize potential risks and errors</p>
-           </div>
-        </div>
-        <!-- operation 03 and 04 desktop -->
-        <div class="w-9/12 m-auto flex flex-col py-8 max-md:py-4 2xl:w-8/12 max-md:hidden">
-           <div class="max-md:hidden">
-              <div class="flex items-center max-md:flex-col max-md:gap-10 pt-10">
-                 <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
-                    <div class="flex gap-5 items-stretch max-md:gap-2 max-md:h-[150px]">
-                       <p class="mymove font-[Roboto] text-9xl font-extrabold max-md:text-8xl max-md:pt-3">03</p>
-                    </div>
-                    <h5 class="capitalize font-normal text-2xl max-md:text-xl">Verify and Fine-tune</h5>
-                    <p class="text-lg max-md:text-sm">After strategically optimizing operation solutions, we continue to improve your internal IT organization by setting up release management processes, monitoring post-deployment errors, and supporting overall security.</p>
-                 </div>
-                 <div class="flex justify-center items-center w-1/2 max-md:hidden">
-                    <div class="relative w-6/12 m-auto h-[200px] ramboues">
+         </div>
+         <!-- end -->
+         <!-- operation 01 and 02 mobile -->
+         <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden">
+            <div class="flex  w-full ">
+               <div class="w-1/2  flex pt-3">
+                  <p class="mymove font-[Roboto] text-8xl font-extrabold">01</p>
+               </div>
+               <div class="w-1/2 h-[120px] ">
+                  <div class="relative  ramboues left-0 right-0">
+                     <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                     <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                     <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                     <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                     <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                     <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <h5 class="capitalize text-left font-normal text-2xl max-md:text-xl">Build an Roadmap</h5>
+               <p class="text-lg text-left max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
+            </div>
+         </div>
+         <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
+            <div class="flex   w-full ">
+               <div class="w-1/2 h-[120px] ">
+                  <div class="relative  ramboues left-0 right-0">
+                     <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                     <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                     <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                     <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                     <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                     <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
+                  </div>
+               </div>
+               <div class="w-1/2  flex justify-end pt-3">
+                  <p class="mymove  text-right font-[Roboto] text-8xl font-extrabold">02</p>
+               </div>
+            </div>
+            <div>
+               <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Design and Develop</h5>
+               <p class="text-lg text-right max-md:text-sm">Once we’ve finalized the initial IT audit, we start to implement highly resilient and robust operational services, applying best practices in DevOps, cloud, and SRE to automate processes and minimize potential risks and errors</p>
+            </div>
+         </div>
+         <!-- operation 03 and 04 desktop -->
+         <div class="w-9/12 m-auto flex flex-col py-8 max-md:py-4 2xl:w-8/12 max-md:hidden">
+            <div class="max-md:hidden">
+               <div class="flex items-center max-md:flex-col max-md:gap-10 pt-10">
+                  <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
+                     <div class="flex gap-5 items-stretch max-md:gap-2 max-md:h-[150px]">
+                        <p class="mymove font-[Roboto] text-9xl font-extrabold max-md:text-8xl max-md:pt-3">03</p>
+                     </div>
+                     <h5 class="capitalize font-normal text-2xl max-md:text-xl">Verify and Fine-tune</h5>
+                     <p class="text-lg max-md:text-sm">After strategically optimizing operation solutions, we continue to improve your internal IT organization by setting up release management processes, monitoring post-deployment errors, and supporting overall security.</p>
+                  </div>
+                  <div class="flex justify-center items-center w-1/2 max-md:hidden">
+                     <div class="relative w-6/12 m-auto h-[200px] ramboues">
                         <div class="absolute z-0"><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
                         <div class="absolute z-0 left-2 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
                         <div class="absolute z-0 left-4 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
                         <div class="absolute z-0 left-6 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
                         <div class="absolute z-0 left-8 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
                         <div class="absolute z-0 left-10 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
-                    </div>
-                 </div>
-              </div>
-              <div class="flex items-center max-md:flex-col max-md:gap-10 pt-10 max-md:hidden">
-                 <div class="flex justify-center items-center w-1/2 max-md:hidden">
-                    <div class="relative w-6/12 m-auto h-[200px] ramboues">
+                     </div>
+                  </div>
+               </div>
+               <div class="flex items-center max-md:flex-col max-md:gap-10 pt-10 max-md:hidden">
+                  <div class="flex justify-center items-center w-1/2 max-md:hidden">
+                     <div class="relative w-6/12 m-auto h-[200px] ramboues">
                         <div class="absolute z-0"><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
                         <div class="absolute z-0 left-2 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
                         <div class="absolute z-0 left-4 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
                         <div class="absolute z-0 left-6 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
                         <div class="absolute z-0 left-8 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
                         <div class="absolute z-0 left-10 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
-                    </div>
-                 </div>
-                 <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
-                    <p class="w-full mymove text-right font-[Roboto] text-9xl font-extrabold max-md:text-8xl max-md:pt-3">04</p>
-                    <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Resources</h5>
-                    <p class="text-lg text-right max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
-                 </div>
-              </div>
-           </div>
-        </div>
-        <!-- end -->
-        <!-- operation 03 and 04 mobile -->
-        <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
-           <div class="flex  w-full ">
-              <div class="w-1/2  flex pt-3">
-                 <p class="mymove font-[Roboto] text-8xl font-extrabold">03</p>
-              </div>
-              <div class="w-1/2 h-[120px] ">
-                <div class="relative  ramboues left-0 right-0">
-                    <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
-                    <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
-                    <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
-                    <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
-                    <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
-                    <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
-                </div>
-              </div>
-           </div>
-           <div>
-              <h5 class="capitalize text-left font-normal text-2xl max-md:text-xl">Verify and Fine-tune</h5>
-              <p class="text-lg text-left max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
-           </div>
-        </div>
-        <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
-           <div class="flex   w-full ">
-              <div class="w-1/2 h-[120px] ">
-                <div class="relative  ramboues left-0 right-0">
-                    <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
-                    <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
-                    <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
-                    <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
-                    <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
-                    <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
-                </div>
-              </div>
-              <div class="w-1/2  flex justify-end pt-3">
-                 <p class="mymove  text-right font-[Roboto] text-8xl font-extrabold">04</p>
-              </div>
-           </div>
-           <div>
-              <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Resources</h5>
-              <p class="text-lg text-right max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
-           </div>
-        </div>
-    </section>   
-    <section class="w-full h-full bg-wardSilver "  id="avatar_sc">
-        <div class=" flex flex-col  gap-10 w-11/12 m-auto py-5 border-b-2 2xl:w-9/12">
+                     </div>
+                  </div>
+                  <div class="flex flex-col gap-5 w-1/2 max-lg:w-full max-sm:gap-2">
+                     <p class="w-full mymove text-right font-[Roboto] text-9xl font-extrabold max-md:text-8xl max-md:pt-3">04</p>
+                     <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Resources</h5>
+                     <p class="text-lg text-right max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end -->
+         <!-- operation 03 and 04 mobile -->
+         <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
+            <div class="flex  w-full ">
+               <div class="w-1/2  flex pt-3">
+                  <p class="mymove font-[Roboto] text-8xl font-extrabold">03</p>
+               </div>
+               <div class="w-1/2 h-[120px] ">
+                  <div class="relative  ramboues left-0 right-0">
+                     <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                     <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                     <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                     <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                     <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                     <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <h5 class="capitalize text-left font-normal text-2xl max-md:text-xl">Verify and Fine-tune</h5>
+               <p class="text-lg text-left max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
+            </div>
+         </div>
+         <div class="w-9/12 m-auto flex flex-col pt-7  md:hidden ">
+            <div class="flex   w-full ">
+               <div class="w-1/2 h-[120px] ">
+                  <div class="relative  ramboues left-0 right-0">
+                     <div class="absolute z-0 left-6 "><img src="img/common-img/lines/line-6.svg" alt="line-6"></div>
+                     <div class="absolute z-0 left-8 top-[10px] stage-5"><img src="img/common-img/lines/line-5.svg" alt="line-5"></div>
+                     <div class="absolute z-0 left-10 top-[20px] stage-4"><img src="img/common-img/lines/line-4.svg" alt="line-4"></div>
+                     <div class="absolute z-0 left-12 top-[30px] stage-3"><img src="img/common-img/lines/line-3.svg" alt="line-3"></div>
+                     <div class="absolute z-0 left-14 top-[40px] stage-2"><img src="img/common-img/lines/line-2.svg" alt="line-2"></div>
+                     <div class="absolute z-0 left-16 top-[50px] stage-1"><img src="img/common-img/lines/line-1.svg" alt="line-1"></div>
+                  </div>
+               </div>
+               <div class="w-1/2  flex justify-end pt-3">
+                  <p class="mymove  text-right font-[Roboto] text-8xl font-extrabold">04</p>
+               </div>
+            </div>
+            <div>
+               <h5 class="capitalize text-right font-normal text-2xl max-md:text-xl">Resources</h5>
+               <p class="text-lg text-right max-md:text-sm">We start with reviewing the current state of IT operations services within your organization and defining a tailored strategy to ramp up sustainable changes for optimal use of technology resources.</p>
+            </div>
+         </div>
+      </section>
+      <section class="w-full h-full bg-wardSilver "  id="avatar_sc">
+         <div class=" flex flex-col  gap-10 w-11/12 m-auto py-5 border-b-2 2xl:w-9/12">
             <div class="flex justify-center items-center   gap-5 border-t-2 border-b-2 max-lg:flex-col">
-                <div class="flex w-1/2 items-center justify-center py-4">
-                    <h5 class="uppercase font-[Policemen] whitespace-nowrap text-8xl p-1 max-xl:text-4xl">who we are</h5>
-                </div>
-                <div class="w-1/2 bg-wardGreen p-10 border-l-2 max-lg:border-t-2 max-lg:border-l-0 max-lg:w-full">
-                    <p class="text-1xl max-xl:text-sm">"We are a WARD IT team, with various backgrounds and cultures yet, with 10 + years of experience in IT and management, with the common desire to help make better software easier and managed services available for our clients. We work with the community to truly understand obstacles and roadblocks in IT and then collaborate with others to create innovative and practical solutions."</p>
-                </div>
+               <div class="flex w-1/2 items-center justify-center py-4">
+                  <h5 class="uppercase font-[Policemen] whitespace-nowrap text-8xl p-1 max-xl:text-4xl">who we are</h5>
+               </div>
+               <div class="w-1/2 bg-wardGreen p-10 border-l-2 max-lg:border-t-2 max-lg:border-l-0 max-lg:w-full">
+                  <p class="text-1xl max-xl:text-sm">"We are a WARD IT team, with various backgrounds and cultures yet, with 10 + years of experience in IT and management, with the common desire to help make better software easier and managed services available for our clients. We work with the community to truly understand obstacles and roadblocks in IT and then collaborate with others to create innovative and practical solutions."</p>
+               </div>
             </div>
             <!-- avatar slider -->
             <div class="w-full">
-                <div class="swiper mySwiper_avatar">
-                    <div  class="swiper-wrapper  py-10">
-                        <div  class="swiper-slide p-1 avatar_swiper ">
-                            <div class="flex flex-col  p-2">
-                                <div class="flex avatar_slider  items-center justify-center ">
-                                    <img src="img/avatar/lasha-1.png" alt="lasha">
-                                </div>
-                                <div class="flex  flex-col gap-2 text-center items-center justify-center">
-                                    <span class="pt-2 capitalize ">lasha jojua</span>
-                                    <span class="pt-2 uppercase ">CEO</span>
-                                    <div class="w-full  hidden avatar_text" >
-                                        <p class="text-[16px]  text-left ">
-                                            With RPA, you’ll be able to inject workflows into individual tasks and large-scale systems.
-                                            The bots can record and replay human-computer interactions even. With RPA, you’ll be able to 
-                                            inject workflows into individual tasks and large-scale systems. The bots can record and replay
-                                            human-computer interactions.With RPA, you’ll be able to inject workflows into individual tasks and 
-                                            large-scale systems. The bots can record and replay human.
-                                        </p>    
-                                    </div>
-                                </div>
-                            </div>
+               <div class="swiper mySwiper_avatar">
+                  <div  class="swiper-wrapper  py-10">
+                     <div  class="swiper-slide p-1 avatar_swiper ">
+                        <div class="flex flex-col  p-2">
+                           <div class="flex avatar_slider  items-center justify-center ">
+                              <img src="img/avatar/lasha-1.png" alt="lasha">
+                           </div>
+                           <div class="flex  flex-col gap-2 text-center items-center justify-center">
+                              <span class="pt-2 capitalize ">lasha jojua</span>
+                              <span class="pt-2 uppercase ">CEO</span>
+                              <div class="w-full  hidden avatar_text" >
+                                 <p class="text-[16px]  text-left ">
+                                    With RPA, you’ll be able to inject workflows into individual tasks and large-scale systems.
+                                    The bots can record and replay human-computer interactions even. With RPA, you’ll be able to 
+                                    inject workflows into individual tasks and large-scale systems. The bots can record and replay
+                                    human-computer interactions.With RPA, you’ll be able to inject workflows into individual tasks and 
+                                    large-scale systems. The bots can record and replay human.
+                                 </p>
+                              </div>
+                           </div>
                         </div>
-                        <div  class="swiper-slide p-1 avatar_swiper ">
-                            <div class="flex flex-col  p-2">
-                                <div class="flex avatar_slider  items-center justify-center ">
-                                    <img src="img/avatar/lasha-2.png" alt="lasha">
-                                </div>
-                                <div class="flex  flex-col gap-2 text-center items-center justify-center">
-                                    <span class="pt-2 capitalize ">lasha jojua</span>
-                                    <span class="pt-2 uppercase ">CEO</span>
-                                    <div class="w-full  hidden avatar_text" >
-                                        <p class="text-[16px]  text-left ">
-                                            With RPA, you’ll be able to inject workflows into individual tasks and large-scale systems.
-                                            The bots can record and replay human-computer interactions even. With RPA, you’ll be able to 
-                                            inject workflows into individual tasks and large-scale systems. The bots can record and replay
-                                            human-computer interactions.With RPA, you’ll be able to inject workflows into individual tasks and 
-                                            large-scale systems. The bots can record and replay human.
-                                        </p>    
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                     <div  class="swiper-slide p-1 avatar_swiper ">
+                        <div class="flex flex-col  p-2">
+                           <div class="flex avatar_slider  items-center justify-center ">
+                              <img src="img/avatar/lasha-2.png" alt="lasha">
+                           </div>
+                           <div class="flex  flex-col gap-2 text-center items-center justify-center">
+                              <span class="pt-2 capitalize ">lasha jojua</span>
+                              <span class="pt-2 uppercase ">CEO</span>
+                              <div class="w-full  hidden avatar_text" >
+                                 <p class="text-[16px]  text-left ">
+                                    With RPA, you’ll be able to inject workflows into individual tasks and large-scale systems.
+                                    The bots can record and replay human-computer interactions even. With RPA, you’ll be able to 
+                                    inject workflows into individual tasks and large-scale systems. The bots can record and replay
+                                    human-computer interactions.With RPA, you’ll be able to inject workflows into individual tasks and 
+                                    large-scale systems. The bots can record and replay human.
+                                 </p>
+                              </div>
+                           </div>
                         </div>
-                        <div  class="swiper-slide p-1 avatar_swiper ">
-                            <div class="flex flex-col  p-2">
-                                <div class="flex avatar_slider  items-center justify-center ">
-                                    <img src="img/avatar/lasha-3.png" alt="lasha">
-                                </div>
-                                <div class="flex  flex-col gap-2 text-center items-center justify-center">
-                                    <span class="pt-2 capitalize ">lasha jojua</span>
-                                    <span class="pt-2 uppercase ">CEO</span>
-                                    <div class="w-full  hidden avatar_text" >
-                                        <p class="text-[16px]  text-left ">
-                                            With RPA, you’ll be able to inject workflows into individual tasks and large-scale systems.
-                                            The bots can record and replay human-computer interactions even. With RPA, you’ll be able to 
-                                            inject workflows into individual tasks and large-scale systems. The bots can record and replay
-                                            human-computer interactions.With RPA, you’ll be able to inject workflows into individual tasks and 
-                                            large-scale systems. The bots can record and replay human.
-                                        </p>    
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                     <div  class="swiper-slide p-1 avatar_swiper ">
+                        <div class="flex flex-col  p-2">
+                           <div class="flex avatar_slider  items-center justify-center ">
+                              <img src="img/avatar/lasha-3.png" alt="lasha">
+                           </div>
+                           <div class="flex  flex-col gap-2 text-center items-center justify-center">
+                              <span class="pt-2 capitalize ">lasha jojua</span>
+                              <span class="pt-2 uppercase ">CEO</span>
+                              <div class="w-full  hidden avatar_text" >
+                                 <p class="text-[16px]  text-left ">
+                                    With RPA, you’ll be able to inject workflows into individual tasks and large-scale systems.
+                                    The bots can record and replay human-computer interactions even. With RPA, you’ll be able to 
+                                    inject workflows into individual tasks and large-scale systems. The bots can record and replay
+                                    human-computer interactions.With RPA, you’ll be able to inject workflows into individual tasks and 
+                                    large-scale systems. The bots can record and replay human.
+                                 </p>
+                              </div>
+                           </div>
                         </div>
-                        <div  class="swiper-slide p-1 avatar_swiper ">
-                            <div class="flex flex-col  p-2">
-                                <div class="flex avatar_slider  items-center justify-center ">
-                                    <img src="img/avatar/lasha-4.png" alt="lasha">
-                                </div>
-                                <div class="flex  flex-col gap-2 text-center items-center justify-center">
-                                    <span class="pt-2 capitalize ">lasha jojua</span>
-                                    <span class="pt-2 uppercase ">CEO</span>
-                                    <div class="w-full  hidden avatar_text" >
-                                        <p class="text-[16px]  text-left ">
-                                            With RPA, you’ll be able to inject workflows into individual tasks and large-scale systems.
-                                            The bots can record and replay human-computer interactions even. With RPA, you’ll be able to 
-                                            inject workflows into individual tasks and large-scale systems. The bots can record and replay
-                                            human-computer interactions.With RPA, you’ll be able to inject workflows into individual tasks and 
-                                            large-scale systems. The bots can record and replay human.
-                                        </p>    
-                                    </div>
-                                </div>
-                            </div>
+                     </div>
+                     <div  class="swiper-slide p-1 avatar_swiper ">
+                        <div class="flex flex-col  p-2">
+                           <div class="flex avatar_slider  items-center justify-center ">
+                              <img src="img/avatar/lasha-4.png" alt="lasha">
+                           </div>
+                           <div class="flex  flex-col gap-2 text-center items-center justify-center">
+                              <span class="pt-2 capitalize ">lasha jojua</span>
+                              <span class="pt-2 uppercase ">CEO</span>
+                              <div class="w-full  hidden avatar_text" >
+                                 <p class="text-[16px]  text-left ">
+                                    With RPA, you’ll be able to inject workflows into individual tasks and large-scale systems.
+                                    The bots can record and replay human-computer interactions even. With RPA, you’ll be able to 
+                                    inject workflows into individual tasks and large-scale systems. The bots can record and replay
+                                    human-computer interactions.With RPA, you’ll be able to inject workflows into individual tasks and 
+                                    large-scale systems. The bots can record and replay human.
+                                 </p>
+                              </div>
+                           </div>
                         </div>
-                        <div  class="swiper-slide p-1 avatar_swiper ">
-                            <div class="flex flex-col  p-2">
-                                <div class="flex avatar_slider  items-center justify-center ">
-                                    <img src="img/avatar/lasha-3.png" alt="lasha">
-                                </div>
-                                <div class="flex  flex-col gap-2 text-center items-center justify-center">
-                                    <span class="pt-2 capitalize ">lasha jojua</span>
-                                    <span class="pt-2 uppercase ">CEO</span>
-                                    <div class="w-full  hidden avatar_text" >
-                                        <p class="text-[16px]  text-left ">
-                                            With RPA, you’ll be able to inject workflows into individual tasks and large-scale systems.
-                                            The bots can record and replay human-computer interactions even. With RPA, you’ll be able to 
-                                            inject workflows into individual tasks and large-scale systems. The bots can record and replay
-                                            human-computer interactions.With RPA, you’ll be able to inject workflows into individual tasks and 
-                                            large-scale systems. The bots can record and replay human.
-                                        </p>    
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
+                     </div>
+                     <div  class="swiper-slide p-1 avatar_swiper ">
+                        <div class="flex flex-col  p-2">
+                           <div class="flex avatar_slider  items-center justify-center ">
+                              <img src="img/avatar/lasha-3.png" alt="lasha">
+                           </div>
+                           <div class="flex  flex-col gap-2 text-center items-center justify-center">
+                              <span class="pt-2 capitalize ">lasha jojua</span>
+                              <span class="pt-2 uppercase ">CEO</span>
+                              <div class="w-full  hidden avatar_text" >
+                                 <p class="text-[16px]  text-left ">
+                                    With RPA, you’ll be able to inject workflows into individual tasks and large-scale systems.
+                                    The bots can record and replay human-computer interactions even. With RPA, you’ll be able to 
+                                    inject workflows into individual tasks and large-scale systems. The bots can record and replay
+                                    human-computer interactions.With RPA, you’ll be able to inject workflows into individual tasks and 
+                                    large-scale systems. The bots can record and replay human.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+               </div>
             </div>
-        </div>
-    </section>
-    <!-- blog section -->
-    <section class="w-full h-full bg-wardSilver" id="blog_sc">
-        <div class="w-10/12 m-auto flex flex-col gap-10 py-5 max-lg:hidden">
+         </div>
+      </section>
+      <!-- blog section -->
+      <section class="w-full h-full bg-wardSilver" id="blog_sc">
+         <div class="w-10/12 m-auto flex flex-col gap-10 py-5 max-lg:hidden">
             <div class="flex items-center justify-center">
-                <h5 class="font-[Policemen] uppercase text-8xl py-5 ">blog post</h5>
+               <h5 class="font-[Policemen] uppercase text-8xl py-5 ">blog post</h5>
             </div>
             <div class="flex justify-center items-center gap-5 max-lg:flex-col ">
-                <div class="flex flex-col  gap-5 w-1/3  border-2 p-7 max-lg:w-full">
-                    <div class="flex justify-center items-center ">
-                        <div class="relative">
-                            <span class="absolute capitalize text-sm max-xl:text-[10px] left-[35%] top-4 p-1 bg-wardGreen whitespace-nowrap max-xl:left-[15%] ">Product & Service ops Center</span>
-                            <img src="img/blog-img/blog-1.png" alt="blog">
-                        </div>   
-                    </div>
-                    <div>
-                        <h6 class="text-lg font-medium">Blog post long Title Here Blog post long Title Here Blog post long Title Here</h6>
-                        <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
-                    </div>
-                    <div class="flex flex-row ">
-                        <div class=" w-1/2 flex justify-start">
-                            <span>november 13, 2022</span>
-                        </div>
-                        <div class=" w-1/2 flex justify-end">
-                            <a href="#"><span class="py-1 px-1 hover:bg-wardGreen">Read More</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col  gap-5 w-1/3  border-2 p-7 max-lg:w-full">
-                    <div class="flex justify-center items-center ">
-                        <div class="relative">
-                            <span class="absolute capitalize text-sm max-xl:text-[10px] left-[35%] top-4 p-1 bg-wardGreen whitespace-nowrap max-xl:left-[15%] ">Product & Service ops Center</span>
-                            <img src="img/blog-img/blog-2.png" alt="blog">
-                        </div>   
-                    </div>
-                    <div>
-                        <h6 class="text-lg font-medium">Blog post long Title Here Blog post long Title Here Blog post long Title Here</h6>
-                        <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
-                    </div>
-                    <div class="flex flex-row ">
-                        <div class=" w-1/2 flex justify-start">
-                            <span>november 13, 2022</span>
-                        </div>
-                        <div class=" w-1/2 flex justify-end">
-                            <a href="#"><span class="py-1 px-1 hover:bg-wardGreen">Read More</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex flex-col  gap-5 w-1/3  border-2 p-7 max-lg:w-full">
-                    <div class="flex justify-center items-center ">
-                        <div class="relative">
-                            <span class="absolute capitalize text-sm max-xl:text-[10px] left-[35%] top-4 p-1 bg-wardGreen whitespace-nowrap max-xl:left-[15%] ">Product & Service ops Center</span>
-                            <img src="img/blog-img/blog-1.png" alt="blog">
-                        </div>   
-                    </div>
-                    <div>
-                        <h6 class="text-lg font-medium">Blog post long Title Here Blog post long Title Here Blog post long Title Here</h6>
-                        <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
-                    </div>
-                    <div class="flex flex-row ">
-                        <div class=" w-1/2 flex justify-start">
-                            <span>november 13, 2022</span>
-                        </div>
-                        <div class=" w-1/2 flex justify-end">
-                            <a href="#"><span class="py-1 px-1 hover:bg-wardGreen">Read More</span></a>
-                        </div>
-                    </div>
-                </div>
+               <div class="flex flex-col  gap-5 w-1/3  border-2 p-7 max-lg:w-full">
+                  <div class="flex justify-center items-center ">
+                     <div class="relative">
+                        <span class="absolute capitalize text-sm max-xl:text-[10px] left-[35%] top-4 p-1 bg-wardGreen whitespace-nowrap max-xl:left-[15%] ">Product & Service ops Center</span>
+                        <img src="img/blog-img/blog-1.png" alt="blog">
+                     </div>
+                  </div>
+                  <div>
+                     <h6 class="text-lg font-medium">Blog post long Title Here Blog post long Title Here Blog post long Title Here</h6>
+                     <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
+                  </div>
+                  <div class="flex flex-row ">
+                     <div class=" w-1/2 flex justify-start">
+                        <span>november 13, 2022</span>
+                     </div>
+                     <div class=" w-1/2 flex justify-end">
+                        <a href="#"><span class="py-1 px-1 hover:bg-wardGreen">Read More</span></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex flex-col  gap-5 w-1/3  border-2 p-7 max-lg:w-full">
+                  <div class="flex justify-center items-center ">
+                     <div class="relative">
+                        <span class="absolute capitalize text-sm max-xl:text-[10px] left-[35%] top-4 p-1 bg-wardGreen whitespace-nowrap max-xl:left-[15%] ">Product & Service ops Center</span>
+                        <img src="img/blog-img/blog-2.png" alt="blog">
+                     </div>
+                  </div>
+                  <div>
+                     <h6 class="text-lg font-medium">Blog post long Title Here Blog post long Title Here Blog post long Title Here</h6>
+                     <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
+                  </div>
+                  <div class="flex flex-row ">
+                     <div class=" w-1/2 flex justify-start">
+                        <span>november 13, 2022</span>
+                     </div>
+                     <div class=" w-1/2 flex justify-end">
+                        <a href="#"><span class="py-1 px-1 hover:bg-wardGreen">Read More</span></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="flex flex-col  gap-5 w-1/3  border-2 p-7 max-lg:w-full">
+                  <div class="flex justify-center items-center ">
+                     <div class="relative">
+                        <span class="absolute capitalize text-sm max-xl:text-[10px] left-[35%] top-4 p-1 bg-wardGreen whitespace-nowrap max-xl:left-[15%] ">Product & Service ops Center</span>
+                        <img src="img/blog-img/blog-1.png" alt="blog">
+                     </div>
+                  </div>
+                  <div>
+                     <h6 class="text-lg font-medium">Blog post long Title Here Blog post long Title Here Blog post long Title Here</h6>
+                     <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
+                  </div>
+                  <div class="flex flex-row ">
+                     <div class=" w-1/2 flex justify-start">
+                        <span>november 13, 2022</span>
+                     </div>
+                     <div class=" w-1/2 flex justify-end">
+                        <a href="#"><span class="py-1 px-1 hover:bg-wardGreen">Read More</span></a>
+                     </div>
+                  </div>
+               </div>
             </div>
             <div class="flex justify-center items-center">
-                <button class="hover_button border-2 px-12 py-2 bg-wardGreen"><a href="#">See all blog</a></button>
+               <button class="hover_button border-2 px-12 py-2 bg-wardGreen"><a href="#">See all blog</a></button>
             </div>
-        </div>
-        <!-- blog for mobile -->
-        <div class="w-10/12 m-auto lg:hidden">
+         </div>
+         <!-- blog for mobile -->
+         <div class="w-10/12 m-auto lg:hidden">
             <div class="flex w-full items-center justify-center ">
-                <h5 class="font-[Policemen] whitespace-nowrap text-center uppercase text-4xl py-5 ">blog post</h5>
+               <h5 class="font-[Policemen] whitespace-nowrap text-center uppercase text-4xl py-5 ">blog post</h5>
             </div>
             <div class="swiper blog_swiper">
-                <div class="swiper-wrapper  py-5 mb-4">
-                    <div class="swiper-slide ">
-                        <div class="border-2 flex flex-col gap-5 justify-center items-center p-4">
-                            <div class="relative flex  items-center justify-center">
-                                <span class="absolute capitalize  left-[35%] top-4 p-1 bg-wardGreen  max-xl:text-[10px]">Product & Service ops Center</span>
-                                <img src="img/blog-img/blog-2.png" alt="blog">
-                            </div>
-                            <div class="flex flex-col">
-                                <h6 class="text-lg font-medium">Blog post long Title Here Blog post long </h6>
-                                <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
-                                <div class="flex justify-end">
-                                    <a href="#"><span class="capitalize py-1 px-1 hover:bg-wardGreen ">read more </span></a>
-                                </div>  
-                            </div>
+               <div class="swiper-wrapper  py-5 mb-4">
+                  <div class="swiper-slide ">
+                     <div class="border-2 flex flex-col gap-5 justify-center items-center p-4">
+                        <div class="relative flex  items-center justify-center">
+                           <span class="absolute capitalize  left-[35%] top-4 p-1 bg-wardGreen  max-xl:text-[10px]">Product & Service ops Center</span>
+                           <img src="img/blog-img/blog-2.png" alt="blog">
                         </div>
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="border-2 flex flex-col gap-5 justify-center items-center p-4">
-                            <div class="relative flex  items-center justify-center">
-                                <span class="absolute capitalize  text-sm left-[35%] top-4 p-1 bg-wardGreen  max-xl:text-[10px]">Product & Service ops Center</span>
-                                <img src="img/blog-img/blog-1.png" alt="blog">
-                            </div>
-                            <div class="flex flex-col">
-                                <h6 class="text-lg font-medium">Blog post long Title Here Blog post long </h6>
-                                <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
-                                <div class="flex justify-end">
-                                    <a href="#"><span class="capitalize py-1 px-1 hover:bg-wardGreen ">read more </span></a>
-                                </div>  
-                            </div>
+                        <div class="flex flex-col">
+                           <h6 class="text-lg font-medium">Blog post long Title Here Blog post long </h6>
+                           <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
+                           <div class="flex justify-end">
+                              <a href="#"><span class="capitalize py-1 px-1 hover:bg-wardGreen ">read more </span></a>
+                           </div>
                         </div>
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="border-2 flex flex-col gap-5 justify-center items-center p-4">
-                            <div class="relative flex  items-center justify-center">
-                                <span class="absolute capitalize  text-sm left-[35%] top-4 p-1 bg-wardGreen  max-xl:text-[10px]">Robotic Process automation</span>
-                                <img src="img/blog-img/blog-2.png" alt="blog">
-                            </div>
-                            <div class="flex flex-col">
-                                <h6 class="text-lg font-medium">Blog post long Title Here Blog post long </h6>
-                                <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
-                                <div class="flex justify-end">
-                                    <a href="#"><span class="capitalize py-1 px-1 hover:bg-wardGreen ">read more </span></a>
-                                </div>  
-                            </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide ">
+                     <div class="border-2 flex flex-col gap-5 justify-center items-center p-4">
+                        <div class="relative flex  items-center justify-center">
+                           <span class="absolute capitalize  text-sm left-[35%] top-4 p-1 bg-wardGreen  max-xl:text-[10px]">Product & Service ops Center</span>
+                           <img src="img/blog-img/blog-1.png" alt="blog">
                         </div>
-                    </div>
-                    <div class="swiper-slide ">
-                        <div class="border-2 flex flex-col gap-5 justify-center items-center p-4">
-                            <div class="relative flex  items-center justify-center">
-                                <span class="absolute capitalize  text-sm left-[35%] top-4 p-1 bg-wardGreen  max-xl:text-[10px]">Robotic Process automation</span>
-                                <img src="img/blog-img/blog-1.png" alt="blog">
-                            </div>
-                            <div class="flex flex-col">
-                                <h6 class="text-lg font-medium">Blog post long Title Here Blog post long </h6>
-                                <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
-                                <div class="flex justify-end">
-                                    <a href="#"><span class="capitalize py-1 px-1 hover:bg-wardGreen ">read more </span></a>
-                                </div>  
-                            </div>
+                        <div class="flex flex-col">
+                           <h6 class="text-lg font-medium">Blog post long Title Here Blog post long </h6>
+                           <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
+                           <div class="flex justify-end">
+                              <a href="#"><span class="capitalize py-1 px-1 hover:bg-wardGreen ">read more </span></a>
+                           </div>
                         </div>
-                    </div>                                        
-                </div>
-                <div class="swiper-pagination  "></div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide ">
+                     <div class="border-2 flex flex-col gap-5 justify-center items-center p-4">
+                        <div class="relative flex  items-center justify-center">
+                           <span class="absolute capitalize  text-sm left-[35%] top-4 p-1 bg-wardGreen  max-xl:text-[10px]">Robotic Process automation</span>
+                           <img src="img/blog-img/blog-2.png" alt="blog">
+                        </div>
+                        <div class="flex flex-col">
+                           <h6 class="text-lg font-medium">Blog post long Title Here Blog post long </h6>
+                           <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
+                           <div class="flex justify-end">
+                              <a href="#"><span class="capitalize py-1 px-1 hover:bg-wardGreen ">read more </span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide ">
+                     <div class="border-2 flex flex-col gap-5 justify-center items-center p-4">
+                        <div class="relative flex  items-center justify-center">
+                           <span class="absolute capitalize  text-sm left-[35%] top-4 p-1 bg-wardGreen  max-xl:text-[10px]">Robotic Process automation</span>
+                           <img src="img/blog-img/blog-1.png" alt="blog">
+                        </div>
+                        <div class="flex flex-col">
+                           <h6 class="text-lg font-medium">Blog post long Title Here Blog post long </h6>
+                           <p>Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on. Uptime is money. For better digital operations. For faster issue resolutions. For keeping your business always on.Uptime is money. For better digital operations. For faster </p>
+                           <div class="flex justify-end">
+                              <a href="#"><span class="capitalize py-1 px-1 hover:bg-wardGreen ">read more </span></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-pagination  "></div>
             </div>
-        </div>
-    </section>
-    <!-- about project  -->
-    <section class="bg-wardSilver">
-        <div >
-          <div
-        class="flex w-11/12 m-auto border-t-[2px] border-b-[2px] max-lg:flex-col max-lg:border-b-0"
-      >
-        <div
-          class=" w-[50%] items-center  bg-wardSilver   x max-lg:w-full"
-        >
-          <h4 class="flex justify-center py-28  uppercase font-[Policemen] text-8xl max-xl:text-4xl">
-            Tell Us About <br />
-            Your Project
-          </h4>
-          <div class="bg-wardGreen border-solid border-t-2 bg-wardLight p-14 max-sm:p-4 max-sm:w-full">
-            <p>
-              "We are a WARD IT team, with various backgrounds and cultures yet, with 10 + years of experience in IT and management, with the common desire to help make better software easier and managed services available for our clients. 
-            </p>
-            <p>
-              We work with the community to truly understand obstacles and roadblocks in IT and then collaborate with others to create innovative and practical solutions."
-            </p>
-          </div>
-        </div>
-        <div
-          class="flex w-1/2 items-center  flex-col gap-2 border-l-[2px] max-lg:border-l-0 max-lg:w-full " 
-        >
-        <div class="pt-24 max-sm:w-full flex justify-center items-center gap-6 ">
-          
-          <div class="max-sm:w-11/12 max-sm:m-auto">
-            <h3 class="flex justify-center  text-3xl ">
-              Send Us message
-            </h3>
-            <form class="flex flex-col gap-8 "
-              id="contact_form"
-              action="#"
-              method="POST"
-              enctype="multipart/form-data"
-            >
-              <div class="border-b-2 h-[32px] border-wardGray mt-12">
-                <input 
-                  class="bg-wardSilver outline-none w-full"
-                  type="email"
-                  placeholder="Email"
-                  
-                />
-              </div>
-              <div class="border-b-2 h-[32px] border-wardGray">
-                <input
-                  class="bg-wardSilver outline-none w-full"
-                  type="name"
-                  id="name"
-                  placeholder="Name"
-                  size="35"
-                  maxlength="256"
-                  required
-                  minlength="4"
-                  maxlength="16"
-                />
-              </div>
-              <div class="border-b-2 h-[32px] border-wardGray">
-                <input
-                  class="bg-wardSilver outline-none w-full"
-                  type="tel"
-                  id="phone"
-                  placeholder="Phone"
-                  size="35"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                  required
-                />
-              </div>
-              <div class="border-b-2 border-wardGray">
-                <textarea
-                  class="bg-wardSilver outline-none w-full"
-                  placeholder="Text"
-                  name="Text"
-                  rows="7"
-                  cols="40"
-                ></textarea>
-              </div>
-              <div class="flex justify-center ">
-                <input
-                class="consultation text-white bg-wardGreen capitalize whitespace-nowrap font-medium border-2 text-sm px-12 py-3 text-center mr-2 md:mr-0 max-md:text-xs"
-                  type="submit"
-                  value="Submit"
-                >
-              </input>
-              </div>
-            </form>
-          </div>
-        </div>
-        </div>
-      </div>
-        </div>
-    </section>
-    <!-- footer -->
-    <section class="bg-wardSilver pt-28 " id="career_sc" >
-        <footer class=" w-11/12 m-auto  max-lg:pt-10">
+         </div>
+      </section>
+      <!-- about project  -->
+      <section class="bg-wardSilver">
+         <div>
+            <div
+               class="flex w-11/12 m-auto border-t-[2px] border-b-[2px] max-lg:flex-col max-lg:border-b-0"
+               >
+               <div
+                  class=" w-[50%] items-center  bg-wardSilver   x max-lg:w-full"
+                  >
+                  <h4 class="flex justify-center py-28  uppercase font-[Policemen] text-8xl max-xl:text-4xl">
+                     Tell Us About <br />
+                     Your Project
+                  </h4>
+                  <div class="bg-wardGreen border-solid border-t-2 bg-wardLight p-14 max-sm:p-4 max-sm:w-full">
+                     <p>
+                        "We are a WARD IT team, with various backgrounds and cultures yet, with 10 + years of experience in IT and management, with the common desire to help make better software easier and managed services available for our clients. 
+                     </p>
+                     <p>
+                        We work with the community to truly understand obstacles and roadblocks in IT and then collaborate with others to create innovative and practical solutions."
+                     </p>
+                  </div>
+               </div>
+               <div
+                  class="flex w-1/2 items-center  flex-col gap-2 border-l-[2px] max-lg:border-l-0 max-lg:w-full " 
+                  >
+                  <div class="pt-24 max-sm:w-full flex justify-center items-center gap-6 ">
+                     <div class="max-sm:w-11/12 max-sm:m-auto">
+                        <h3 class="flex justify-center  text-3xl ">
+                           Send Us message
+                        </h3>
+                        <form class="flex flex-col gap-8 "
+                           id="contact_form"
+                           action="#"
+                           method="POST"
+                           enctype="multipart/form-data"
+                           >
+                           <div class="border-b-2 h-[32px] border-wardGray mt-12">
+                              <input 
+                                 class="bg-wardSilver outline-none w-full"
+                                 type="email"
+                                 placeholder="Email"
+                                 />
+                           </div>
+                           <div class="border-b-2 h-[32px] border-wardGray">
+                              <input
+                                 class="bg-wardSilver outline-none w-full"
+                                 type="name"
+                                 id="name"
+                                 placeholder="Name"
+                                 size="35"
+                                 maxlength="256"
+                                 required
+                                 minlength="4"
+                                 maxlength="16"
+                                 />
+                           </div>
+                           <div class="border-b-2 h-[32px] border-wardGray">
+                              <input
+                                 class="bg-wardSilver outline-none w-full"
+                                 type="tel"
+                                 id="phone"
+                                 placeholder="Phone"
+                                 size="35"
+                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                 required
+                                 />
+                           </div>
+                           <div class="border-b-2 border-wardGray">
+                              <textarea
+                                 class="bg-wardSilver outline-none w-full"
+                                 placeholder="Text"
+                                 name="Text"
+                                 rows="7"
+                                 cols="40"
+                                 ></textarea>
+                           </div>
+                           <div class="flex justify-center ">
+                              <input
+                                 class="consultation text-white bg-wardGreen capitalize whitespace-nowrap font-medium border-2 text-sm px-12 py-3 text-center mr-2 md:mr-0 max-md:text-xs"
+                                 type="submit"
+                                 value="Submit"
+                                 >
+                              </input>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- footer -->
+      <section class="bg-wardSilver pt-28 " id="career_sc" >
+         <footer class=" w-11/12 m-auto  max-lg:pt-10">
             <div class="w-11/12 m-auto flex gap-10  2xl:gap-20  py-8 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
-                <div class="w-1/4 flex-col max-lg:w-[30%] max-sm:w-auto">
-                    <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Contact US</h2>
-                    <ul class="text-gray-500 dark:text-gray-400">
+               <div class="w-1/4 flex-col max-lg:w-[30%] max-sm:w-auto">
+                  <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Contact US</h2>
+                  <ul class="text-gray-500 dark:text-gray-400">
+                     <li class="mb-4">
+                        <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 flex gap-4 max-lg:justify-center max-md:justify-center max-sm:justify-center items-center">
+                        <img class="w-[21px] h-[21px]" src="img/footer/footer-email.png" alt="">
+                        wardit@gmail.com</a>
+                     </li>
+                  </ul>
+                  <div class="">
+                     <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Address</h2>
+                     <ul class="text-gray-500 dark:text-gray-400">
                         <li class="mb-4">
-                            <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 flex gap-4 max-lg:justify-center max-md:justify-center max-sm:justify-center items-center">
-                              <img class="w-[21px] h-[21px]" src="img/footer/footer-email.png" alt="">
-                              wardit@gmail.com</a>
+                           <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 max-lg:justify-center max-md:justify-center  flex gap-4 max-sm:justify-center items-center">
+                           <img class="w-[21px] h-[21px]" src="img/footer/footer-map.png" alt="">
+                           4/4 Ertso St. 0194, Tbilisi</a>
                         </li>
-                    </ul>
-                    <div class="">
-                      <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Address</h2>
-                    <ul class="text-gray-500 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 max-lg:justify-center max-md:justify-center  flex gap-4 max-sm:justify-center items-center">
-                              <img class="w-[21px] h-[21px]" src="img/footer/footer-map.png" alt="">
-                              4/4 Ertso St. 0194, Tbilisi</a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-                <div class="w-1/4 flex-col max-sm:w-2/4">
-                    <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Services</h2>
-                    <ul class="text-gray-500 dark:text-gray-400">
-                        <li class="mb-4">
-                            <a href="network-service.html" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1 ">Network and Service Ops</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="incident-management.html" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Incident Management</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="software-qa.html" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Software Quality Assurance</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="robotic-process.html" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Robotic Process Automation</a>
-                        </li>
-                        <li class="mb-4">
-                          <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">IT Consulting</a>
-                      </li>
-                    </ul>
-                </div>
-                <div class="w-1/4 max-lg:hidden">
-                    <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Products</h2>
-                    <ul class="text-gray-500 dark:text-gray-400">
-                        <li class="mb-4">
-                            <span href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Pager Duty</span>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">grafana</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Pager Duty</a>
-                        </li>
-                        <li class="mb-4">
-                          <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">randeck</a>
-                        </li>
-                        <li class="mb-4">
-                          <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">grafana</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-1/4 flex-col max-sm:w-2/4">
+                     </ul>
+                  </div>
+               </div>
+               <div class="w-1/4 flex-col max-sm:w-2/4">
+                  <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Services</h2>
+                  <ul class="text-gray-500 dark:text-gray-400">
+                     <li class="mb-4">
+                        <a href="network-service.html" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1 ">Network and Service Ops</a>
+                     </li>
+                     <li class="mb-4">
+                        <a href="incident-management.html" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Incident Management</a>
+                     </li>
+                     <li class="mb-4">
+                        <a href="software-qa.html" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Software Quality Assurance</a>
+                     </li>
+                     <li class="mb-4">
+                        <a href="robotic-process.html" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Robotic Process Automation</a>
+                     </li>
+                     <li class="mb-4">
+                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">IT Consulting</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="w-1/4 max-lg:hidden">
+                  <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Products</h2>
+                  <ul class="text-gray-500 dark:text-gray-400">
+                     <li class="mb-4">
+                        <span href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Pager Duty</span>
+                     </li>
+                     <li class="mb-4">
+                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">grafana</a>
+                     </li>
+                     <li class="mb-4">
+                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Pager Duty</a>
+                     </li>
+                     <li class="mb-4">
+                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">randeck</a>
+                     </li>
+                     <li class="mb-4">
+                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">grafana</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="w-1/4 flex-col max-sm:w-2/4">
                   <div class="flex justify-center">
-                    <a class="flex-col" href="">
-                      <img src="img/footer/footer-logo.svg" alt="warditLogo" class="">
-                      
-                    </a>
+                     <a class="flex-col" href="">
+                     <img src="img/footer/footer-logo.svg" alt="warditLogo" class="">
+                     </a>
                   </div>
                   <div class="flex flex-col justify-center items-center mt-6">
-                    <img class="" src="img/footer/footer-sign.svg" alt="">
-                    <button
-                      class="work_together text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
-                    >
-                      Let's work together
-                    </button>
+                     <img class="" src="img/footer/footer-sign.svg" alt="">
+                     <button
+                        class="work_together text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
+                        >
+                     Let's work together
+                     </button>
                   </div>
-              </div>
-              </div>
+               </div>
+            </div>
             </div>
             <div class="items-center px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between border-t-2 max-lg:">
-                <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center flex justify-center">© 2022 <a href=""> WARD IT</a>. All Rights Reserved.
-                </span>
-                <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0 items-center justify-center">
-                    <a href="https://www.linkedin.com/in/vako-gogatishvili-972951220/" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                        <img src="img/footer/linkedln.png" alt="">
-                        <span class="sr-only">Linkedin page</span>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                        <img src="img/footer/twitter .png" alt="">
-                        <span class="sr-only">Twitter</span>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                        <img src="img/footer/facebook .png" alt="">
-                        <span class="sr-only">Facebook page</span>
-                    </a>
-                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
-                        <img src="img/footer/instagram.png" alt="">
-                        <span class="sr-only">Instagram page</span>
-                      </a>  
-                </div>
+               <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center flex justify-center">© 2022 <a href=""> WARD IT</a>. All Rights Reserved.
+               </span>
+               <div class="flex mt-4 space-x-6 sm:justify-center md:mt-0 items-center justify-center">
+                  <a href="https://www.linkedin.com/in/vako-gogatishvili-972951220/" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                  <img src="img/footer/linkedln.png" alt="">
+                  <span class="sr-only">Linkedin page</span>
+                  </a>
+                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                  <img src="img/footer/twitter .png" alt="">
+                  <span class="sr-only">Twitter</span>
+                  </a>
+                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                  <img src="img/footer/facebook .png" alt="">
+                  <span class="sr-only">Facebook page</span>
+                  </a>
+                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                  <img src="img/footer/instagram.png" alt="">
+                  <span class="sr-only">Instagram page</span>
+                  </a>  
+               </div>
             </div>
-          </div>
-        </footer>
-    </section>
-      
-    <!-- end blog section -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    <script src="./js/app.js"></script>
-    
-</body>
-
+            </div>
+         </footer>
+      </section>
+      <!-- end blog section -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+      <script src="./js/app.js"></script>
+   </body>
 </html>

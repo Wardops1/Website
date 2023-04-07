@@ -132,11 +132,3 @@ function scrollServices() {
   const targetElement = document.getElementById("services_sc");
   targetElement.scrollIntoView({ behavior: "smooth" });
 }
-
-let nam = ["j", "s", "h", "n"];
-for (let i = 0; i < nam.length; i++) {
-  if (nam[i] > "o") {
-    nam[i] = "o";
-  }
-  console.log(nam[i]);
-}

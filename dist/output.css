@@ -633,10 +633,6 @@ video {
   top: 10px;
 }
 
-.top-\[130\%\] {
-  top: 130%;
-}
-
 .top-\[20px\] {
   top: 20px;
 }
@@ -679,10 +675,6 @@ video {
 
 .top-full {
   top: 100%;
-}
-
-.top-\[200\%\] {
-  top: 200%;
 }
 
 .z-0 {
@@ -818,6 +810,10 @@ video {
   height: 21px;
 }
 
+.h-\[28rem\] {
+  height: 28rem;
+}
+
 .h-\[32px\] {
   height: 32px;
 }
@@ -852,22 +848,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[30rem\] {
-  height: 30rem;
-}
-
-.h-\[20rem\] {
-  height: 20rem;
-}
-
-.h-\[25rem\] {
-  height: 25rem;
-}
-
-.h-\[28rem\] {
-  height: 28rem;
 }
 
 .min-h-\[auto\] {
@@ -1789,28 +1769,16 @@ video {
     position: sticky;
   }
 
-  .max-lg\:right-\[-10\%\] {
-    right: -10%;
-  }
-
-  .max-lg\:top-\[100\%\] {
-    top: 100%;
-  }
-
   .max-lg\:left-\[-10\%\] {
     left: -10%;
   }
 
+  .max-lg\:right-\[-10\%\] {
+    right: -10%;
+  }
+
   .max-lg\:top-\[200\%\] {
     top: 200%;
-  }
-
-  .max-lg\:top-\[90\%\] {
-    top: 90%;
-  }
-
-  .max-lg\:top-\[0\%\] {
-    top: 0%;
   }
 
   .max-lg\:top-\[70\%\] {
@@ -1956,26 +1924,6 @@ video {
 }
 
 @media not all and (min-width: 768px) {
-  .max-md\:right-\[-10\%\] {
-    right: -10%;
-  }
-
-  .max-md\:top-\[100\%\] {
-    top: 100%;
-  }
-
-  .max-md\:top-\[90\%\] {
-    top: 90%;
-  }
-
-  .max-md\:top-\[20\%\] {
-    top: 20%;
-  }
-
-  .max-md\:top-\[70\%\] {
-    top: 70%;
-  }
-
   .max-md\:mt-1 {
     margin-top: 0.25rem;
   }
@@ -2082,44 +2030,20 @@ video {
     left: 75%;
   }
 
+  .max-sm\:top-\[165\%\] {
+    top: 165%;
+  }
+
   .max-sm\:top-\[40\%\] {
     top: 40%;
-  }
-
-  .max-sm\:top-\[80\%\] {
-    top: 80%;
-  }
-
-  .max-sm\:top-\[50\%\] {
-    top: 50%;
-  }
-
-  .max-sm\:top-\[60\%\] {
-    top: 60%;
-  }
-
-  .max-sm\:top-\[62\%\] {
-    top: 62%;
   }
 
   .max-sm\:top-\[65\%\] {
     top: 65%;
   }
 
-  .max-sm\:top-\[20\%\] {
-    top: 20%;
-  }
-
-  .max-sm\:top-\[180\%\] {
-    top: 180%;
-  }
-
-  .max-sm\:top-\[170\%\] {
-    top: 170%;
-  }
-
-  .max-sm\:top-\[165\%\] {
-    top: 165%;
+  .max-sm\:top-\[80\%\] {
+    top: 80%;
   }
 
   .max-sm\:m-auto {

@@ -185,9 +185,7 @@
                <img src="img/common-img/service-sign.svg" alt="" />
             </div>
             <div class="whitespace-nowrap text-xl font-[Noto Sans] ">
-               <a href="#">
-                  <p>Our Services</p>
-               </a>
+                  <p onclick=scrollServices() class="cursor-pointer">  Our Services</p>
             </div>
          </div>
       </section>
@@ -950,7 +948,7 @@
                </div>
             </div>
             <div class="flex justify-center items-center">
-               <button class="hover_button border-2 px-12 py-2 bg-wardGreen"><a href="#">See all blog</a></button>
+               <button class="hover_button border-2 px-12 py-2 bg-wardGreen"><a href="blogpost-search.html">See all blog</a></button>
             </div>
          </div>
          <!-- blog for mobile -->
@@ -1119,7 +1117,7 @@
       <!-- footer -->
       <section class="bg-wardSilver pt-28 " id="career_sc" >
          <footer class=" w-11/12 m-auto  max-lg:pt-10">
-            <div class="w-11/12 m-auto flex gap-10  2xl:gap-20  py-8 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
+            <div class="w-11/12 m-auto flex  gap-10  2xl:gap-20  py-8 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
                <div class="w-1/4 flex-col max-lg:w-[30%] max-sm:w-auto">
                   <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Contact US</h2>
                   <ul class="text-gray-500 dark:text-gray-400">
@@ -1164,19 +1162,22 @@
                   <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Products</h2>
                   <ul class="text-gray-500 dark:text-gray-400">
                      <li class="mb-4">
-                        <span href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Pager Duty</span>
+                        <span href="#" class=" capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">PagerDuty</span>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">grafana</a>
+                        <a href="#" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">new relic</a>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Pager Duty</a>
+                        <a href="#" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Rundeck</a>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">randeck</a>
+                        <a href="#" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Grafana</a>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">grafana</a>
+                        <a href="#" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Prometheus</a>
+                     </li>
+                     <li class="mb-4">
+                        <a href="#" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Zabbix</a>
                      </li>
                   </ul>
                </div>
@@ -1188,11 +1189,13 @@
                   </div>
                   <div class="flex flex-col justify-center items-center mt-6">
                      <img class="" src="img/footer/footer-sign.svg" alt="">
-                     <button
-                        class="work_together text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
-                        >
-                     Let's work together
-                     </button>
+                     <a href="career.html">
+                        <button
+                           class="hover_button text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
+                           >
+                        Let's work together
+                        </button>
+                     </a>
                   </div>
                </div>
             </div>

@@ -1,3 +1,22 @@
+var swiper = new Swiper(".mySwiper_main", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 10,
+    stretch: 50,
+    depth: 300,
+    modifier: 2,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  loop: true,
+});
+
 var swiper = new Swiper(".mySwiper_1", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -14,10 +33,7 @@ var swiper = new Swiper(".mySwiper_avatar", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  loop: true,
-  autoplay: {
-    delay: 3000,
-  },
+
   breakpoints: {
     "@0.00": {
       slidesPerView: 1,

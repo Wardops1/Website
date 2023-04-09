@@ -818,6 +818,10 @@ video {
   height: 28rem;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .h-\[32px\] {
   height: 32px;
 }
@@ -856,6 +860,38 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[500px\] {
+  height: 500px;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
+.h-\[440px\] {
+  height: 440px;
+}
+
+.h-\[30px\] {
+  height: 30px;
+}
+
+.h-2 {
+  height: 0.5rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-3 {
+  height: 0.75rem;
 }
 
 .min-h-\[auto\] {
@@ -938,6 +974,10 @@ video {
   width: 30%;
 }
 
+.w-\[300px\] {
+  width: 300px;
+}
+
 .w-\[33\%\] {
   width: 33%;
 }
@@ -964,6 +1004,22 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[55\%\] {
+  width: 55%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
 }
 
 .max-w-\[90\%\] {
@@ -1221,8 +1277,16 @@ video {
   background-image: url('/img/network-and-service-bg.svg');
 }
 
+.bg-\[url\(\'img\/review-pages\/overlay\.svg\'\)\] {
+  background-image: url('img/review-pages/overlay.svg');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .fill-\[\#336dec\] {
@@ -1457,6 +1521,14 @@ video {
 
 .pt-\[0\.37rem\] {
   padding-top: 0.37rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-left {
@@ -1781,6 +1853,11 @@ video {
     line-height: 2.5rem;
   }
 
+  .max-2xl\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
   .max-2xl\:text-\[35px\] {
     font-size: 35px;
   }
@@ -1788,11 +1865,6 @@ video {
   .max-2xl\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .max-2xl\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
   }
 }
 
@@ -1819,14 +1891,6 @@ video {
 
   .max-xl\:flex-col {
     flex-direction: column;
-  }
-
-  .max-xl\:justify-center {
-    justify-content: center;
-  }
-
-  .max-xl\:gap-5 {
-    gap: 1.25rem;
   }
 
   .max-xl\:text-4xl {
@@ -1902,6 +1966,10 @@ video {
 
   .max-lg\:h-full {
     height: 100%;
+  }
+
+  .max-lg\:h-20 {
+    height: 5rem;
   }
 
   .max-lg\:w-\[30\%\] {

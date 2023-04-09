@@ -59,6 +59,30 @@
 }
 
 /* for swiper */
+.main-slider {
+  background-position: center !important;
+  background-size: cover !important;
+  width: 300px !important;
+  height: 300px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-slider {
+    width: 270px !important;
+    height: 300px !important;
+  }
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
 
 .swiper-pagination-bullet {
   border-radius: 0 !important;

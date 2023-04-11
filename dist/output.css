@@ -677,6 +677,14 @@ video {
   top: 100%;
 }
 
+.left-\[0\%\] {
+  left: 0%;
+}
+
+.right-\[3rem\] {
+  right: 3rem;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -778,6 +786,10 @@ video {
   margin-top: 10px;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -790,8 +802,16 @@ video {
   display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
 .hidden {
   display: none;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .h-5 {
@@ -818,16 +838,16 @@ video {
   height: 28rem;
 }
 
-.h-\[300px\] {
-  height: 300px;
-}
-
 .h-\[32px\] {
   height: 32px;
 }
 
 .h-\[340px\] {
   height: 340px;
+}
+
+.h-\[40px\] {
+  height: 40px;
 }
 
 .h-\[40rem\] {
@@ -862,36 +882,20 @@ video {
   height: 100%;
 }
 
-.h-\[500px\] {
-  height: 500px;
+.h-\[150px\] {
+  height: 150px;
 }
 
-.h-\[400px\] {
-  height: 400px;
+.h-\[100px\] {
+  height: 100px;
 }
 
-.h-\[440px\] {
-  height: 440px;
+.h-\[10px\] {
+  height: 10px;
 }
 
-.h-\[30px\] {
-  height: 30px;
-}
-
-.h-2 {
-  height: 0.5rem;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-3 {
-  height: 0.75rem;
+.h-\[20px\] {
+  height: 20px;
 }
 
 .min-h-\[auto\] {
@@ -946,10 +950,6 @@ video {
   width: 50%;
 }
 
-.w-8\/12 {
-  width: 66.666667%;
-}
-
 .w-9\/12 {
   width: 75%;
 }
@@ -974,10 +974,6 @@ video {
   width: 30%;
 }
 
-.w-\[300px\] {
-  width: 300px;
-}
-
 .w-\[33\%\] {
   width: 33%;
 }
@@ -990,12 +986,24 @@ video {
   width: 40%;
 }
 
+.w-\[40px\] {
+  width: 40px;
+}
+
+.w-\[45\%\] {
+  width: 45%;
+}
+
 .w-\[49\%\] {
   width: 49%;
 }
 
 .w-\[50\%\] {
   width: 50%;
+}
+
+.w-\[55\%\] {
+  width: 55%;
 }
 
 .w-auto {
@@ -1006,20 +1014,16 @@ video {
   width: 100%;
 }
 
-.w-2 {
-  width: 0.5rem;
+.w-\[50px\] {
+  width: 50px;
 }
 
 .w-\[60\%\] {
   width: 60%;
 }
 
-.w-\[55\%\] {
-  width: 55%;
-}
-
-.w-\[45\%\] {
-  width: 45%;
+.w-\[740px\] {
+  width: 740px;
 }
 
 .max-w-\[90\%\] {
@@ -1041,6 +1045,11 @@ video {
 
 .-translate-y-\[40\%\] {
   --tw-translate-y: -40%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-translate-y-\[150px\] {
+  --tw-translate-y: -150px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1204,6 +1213,10 @@ video {
   border-radius: 0px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border-0 {
   border-width: 0px;
 }
@@ -1281,12 +1294,48 @@ video {
   background-image: url('img/review-pages/overlay.svg');
 }
 
-.bg-cover {
-  background-size: cover;
+.bg-\[url\(\'\/img\/Rect\.jpg\'\)\] {
+  background-image: url('/img/Rect.jpg');
 }
 
-.bg-center {
-  background-position: center;
+.bg-\[url\(\'\/img\/orika\.png\'\)\] {
+  background-image: url('/img/orika.png');
+}
+
+.bg-\[url\(\'img\/Team\/Rect\.svg\'\)\] {
+  background-image: url('img/Team/Rect.svg');
+}
+
+.bg-\[url\(\'img\/Team\/Rect\.ong\'\)\] {
+  background-image: url('img/Team/Rect.ong');
+}
+
+.bg-\[url\(\'img\/Team\/Rect\.png\'\)\] {
+  background-image: url('img/Team/Rect.png');
+}
+
+.bg-\[url\(\'\/img\/Team\/Rect\.png\'\)\] {
+  background-image: url('/img/Team/Rect.png');
+}
+
+.bg-\[url\(\'\/img\/Team\/Rect\.svg\'\)\] {
+  background-image: url('/img/Team/Rect.svg');
+}
+
+.bg-\[url\(\'\/img\/Team\/Rect\.jpg\'\)\] {
+  background-image: url('/img/Team/Rect.jpg');
+}
+
+.bg-\[url\(\'\/img\/Team\/Rect\.jpeg\'\)\] {
+  background-image: url('/img/Team/Rect.jpeg');
+}
+
+.bg-\[url\(\'\/img\/Team\/orika\.jpeg\'\)\] {
+  background-image: url('/img/Team/orika.jpeg');
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .fill-\[\#336dec\] {
@@ -1459,6 +1508,15 @@ video {
   padding-bottom: 6px;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-11 {
   padding-bottom: 2.75rem;
 }
@@ -1523,12 +1581,28 @@ video {
   padding-top: 0.37rem;
 }
 
-.pb-20 {
-  padding-bottom: 5rem;
+.pb-24 {
+  padding-bottom: 6rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
+.pb-32 {
+  padding-bottom: 8rem;
+}
+
+.pb-9 {
+  padding-bottom: 2.25rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.pt-60 {
+  padding-top: 15rem;
 }
 
 .text-left {
@@ -1541,6 +1615,10 @@ video {
 
 .text-right {
   text-align: right;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .font-\[Policemen\] {
@@ -1778,6 +1856,12 @@ video {
   outline-offset: 2px;
 }
 
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
 .focus\:placeholder\:opacity-100:focus::-moz-placeholder {
   opacity: 1;
 }
@@ -1848,6 +1932,10 @@ video {
     width: 40%;
   }
 
+  .max-2xl\:bg-no-repeat {
+    background-repeat: no-repeat;
+  }
+
   .max-2xl\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -1891,6 +1979,10 @@ video {
 
   .max-xl\:flex-col {
     flex-direction: column;
+  }
+
+  .max-xl\:bg-contain {
+    background-size: contain;
   }
 
   .max-xl\:text-4xl {
@@ -1948,6 +2040,10 @@ video {
     top: 70%;
   }
 
+  .max-lg\:right-6 {
+    right: 1.5rem;
+  }
+
   .max-lg\:mt-16 {
     margin-top: 4rem;
   }
@@ -1966,10 +2062,6 @@ video {
 
   .max-lg\:h-full {
     height: 100%;
-  }
-
-  .max-lg\:h-20 {
-    height: 5rem;
   }
 
   .max-lg\:w-\[30\%\] {
@@ -2233,6 +2325,10 @@ video {
     margin-top: 0.5rem;
   }
 
+  .max-sm\:hidden {
+    display: none;
+  }
+
   .max-sm\:h-\[330px\] {
     height: 330px;
   }
@@ -2255,6 +2351,19 @@ video {
 
   .max-sm\:w-full {
     width: 100%;
+  }
+
+  .max-sm\:w-\[270px\] {
+    width: 270px;
+  }
+
+  .max-sm\:-translate-y-\[120px\] {
+    --tw-translate-y: -120px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .max-sm\:justify-end {
+    justify-content: flex-end;
   }
 
   .max-sm\:justify-center {

@@ -10,11 +10,14 @@ var swiper = new Swiper(".mySwiper_main", {
     modifier: 2,
     slideShadows: true,
   },
+  speed: 800,
+  autoplay: {
+    delay: 3000,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-  loop: true,
 });
 
 var swiper = new Swiper(".mySwiper_1", {

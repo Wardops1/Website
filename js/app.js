@@ -1,3 +1,4 @@
+// main slider
 var swiper = new Swiper(".mySwiper_main", {
   effect: "coverflow",
   grabCursor: true,
@@ -99,9 +100,20 @@ var swiper = new Swiper(".mySwiper_2", {
 
 const navDrop = document.getElementById("navDrop");
 const navDropInner = document.getElementById("navDropInner");
+const navDropClose = document.getElementById("navDropClose");
+const serviceMobileDropdown = document.getElementById("serviceMobileDropdown");
+const serviceMenuMobile = document.getElementById("serviceMenuMobile");
 
 navDrop.addEventListener("click", function () {
   navDropInner.classList.toggle("hidden");
+});
+navDropClose.addEventListener("click", function () {
+  navDropInner.classList.toggle("hidden");
+});
+
+serviceMobileDropdown.addEventListener("click", function () {
+  serviceMenuMobile.classList.remove("hidden");
+  serviceMobileDropdown.classList.add("pb-[300px]");
 });
 
 document.addEventListener("click", function (event) {

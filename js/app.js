@@ -103,17 +103,21 @@ const navDropInner = document.getElementById("navDropInner");
 const navDropClose = document.getElementById("navDropClose");
 const serviceMobileDropdown = document.getElementById("serviceMobileDropdown");
 const serviceMenuMobile = document.getElementById("serviceMenuMobile");
+const serviceMobileArow = document.getElementById("serviceMobileArow");
 
 navDrop.addEventListener("click", function () {
-  navDropInner.classList.toggle("hidden");
-});
-navDropClose.addEventListener("click", function () {
   navDropInner.classList.toggle("hidden");
 });
 
 serviceMobileDropdown.addEventListener("click", function () {
   serviceMenuMobile.classList.remove("hidden");
-  serviceMobileDropdown.classList.add("pb-[300px]");
+  serviceMobileDropdown.classList.add("pb-[500px]");
+});
+
+navDropClose.addEventListener("click", function () {
+  navDropInner.classList.toggle("hidden");
+  serviceMenuMobile.classList.add("hidden");
+  serviceMobileDropdown.classList.remove("pb-[500px]");
 });
 
 document.addEventListener("click", function (event) {

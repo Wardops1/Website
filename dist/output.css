@@ -870,37 +870,6 @@ video {
   height: 100%;
 }
 
-<<<<<<< Updated upstream
-=======
-.h-20 {
-  height: 5rem;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[1000px\] {
-  height: 1000px;
-}
-
-.h-\[100vh\] {
-  height: 100vh;
-}
-
-.h-\[150vh\] {
-  height: 150vh;
-}
-
-.h-\[20px\] {
-  height: 20px;
-}
-
-.h-\[120vh\] {
-  height: 120vh;
-}
-
->>>>>>> Stashed changes
 .min-h-\[auto\] {
   min-height: auto;
 }
@@ -1473,11 +1442,6 @@ video {
   padding-bottom: 6px;
 }
 
-.px-\[16px\] {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1568,6 +1532,10 @@ video {
 
 .pt-\[0\.37rem\] {
   padding-top: 0.37rem;
+}
+
+.pb-\[500px\] {
+  padding-bottom: 500px;
 }
 
 .text-left {
@@ -2416,10 +2384,6 @@ video {
   .max-sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .max-sm\:text-\[18px\] {
-    font-size: 18px;
   }
 }
 

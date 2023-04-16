@@ -109,9 +109,37 @@ navDrop.addEventListener("click", function () {
   navDropInner.classList.toggle("hidden");
 });
 
+// service drop down
+
+let clickCount = 0;
+let delayTime = 500; // in milliseconds
+
 serviceMobileDropdown.addEventListener("click", function () {
-  serviceMenuMobile.classList.remove("hidden");
-  serviceMobileDropdown.classList.add("pb-[500px]");
+  clickCount++;
+
+  if (clickCount % 2 === 1) {
+    // First click: Show the menu after delayTime
+    setTimeout(function () {
+      serviceMenuMobile.classList.remove("hidden");
+      serviceMobileDropdown.classList.add("pb-[500px]");
+      serviceMenuMobile.style.transition =
+        "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
+      serviceMenuMobile.style.opacity = "1";
+      serviceMenuMobile.style.transform = "translateY(20px)";
+    }, delayTime);
+  } else {
+    // Second click: Hide the menu after delayTime
+    setTimeout(function () {
+      serviceMenuMobile.style.transition =
+        "opacity 1s ease-in-out, transform 0.5s ease-in-out";
+      serviceMenuMobile.style.opacity = "0";
+      serviceMenuMobile.style.transform = "translateY(-50px)";
+      setTimeout(function () {
+        serviceMenuMobile.classList.add("hidden");
+        serviceMobileDropdown.classList.remove("pb-[500px]");
+      }, 500);
+    }, delayTime);
+  }
 });
 
 navDropClose.addEventListener("click", function () {

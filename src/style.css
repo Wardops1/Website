@@ -51,11 +51,12 @@
 
 /* performace metrics */
 .mymove_2 {
-  color: #dfdfdf;
+  color: #364557;
+  -webkit-text-fill-color: #dfdfdf;
+  -webkit-text-stroke-width: 2px;
 
-  text-shadow: -2px 5px 0 #000;
   letter-spacing: 5px;
-  filter: drop-shadow(5px 0px 2px #5ebba8);
+  filter: drop-shadow(2px 0px 0px #38a58e) drop-shadow(1px 0px 0px #5ebba8);
 }
 
 /* for swiper */

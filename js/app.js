@@ -195,3 +195,40 @@ function scrollServices() {
   const targetElement = document.getElementById("services_sc");
   targetElement.scrollIntoView({ behavior: "smooth" });
 }
+
+// const counters = document.querySelectorAll(".counter");
+// const speed = 1000;
+
+// counters.forEach((counter) => {
+//   const updateCount = () => {
+//     const target = +counter.getAttribute("data-target");
+//     const count = +counter.innerText;
+
+//     const inc = target / speed;
+
+//     if (count < target) {
+//       counter.innerText = count + inc;
+//       setTimeout(updateCount, 1);
+//     } else {
+//       count.innerText = target;
+//     }
+//   };
+
+//   updateCount();
+// });
+
+// let valueDisplays = document.querySelectorAll(".counter");
+// let interval = 2000;
+
+// valueDisplays.forEach((valueDisplay) => {
+//   let startValue = 0;
+//   let endValue = parseInt(valueDisplay.getAttribute("data-target"));
+//   let duration = Math.floor(interval / endValue);
+//   let counter = setInterval(function () {
+//     startValue += 1;
+//     valueDisplay.textContent = startValue;
+//     if (startValue == endValue) {
+//       clearInterval(counter);
+//     }
+//   }, duration);
+// });

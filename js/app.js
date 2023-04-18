@@ -112,7 +112,7 @@ navDrop.addEventListener("click", function () {
 // service drop down
 
 let clickCount = 0;
-let delayTime = 500; // in milliseconds
+let delayTime = 100; // in milliseconds
 
 serviceMobileDropdown.addEventListener("click", function () {
   clickCount++;

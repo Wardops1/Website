@@ -1445,11 +1445,6 @@ video {
   padding-bottom: 0.32rem;
 }
 
-.py-\[100px\] {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
 .py-\[12px\] {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -1555,10 +1550,6 @@ video {
   padding-top: 100px;
 }
 
-.pt-\[50px\] {
-  padding-top: 50px;
-}
-
 .text-left {
   text-align: left;
 }
@@ -1626,6 +1617,10 @@ video {
   font-size: 18px;
 }
 
+.text-\[21px\] {
+  font-size: 21px;
+}
+
 .text-\[22px\] {
   font-size: 22px;
 }
@@ -1666,10 +1661,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-\[21px\] {
-  font-size: 21px;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1698,10 +1689,6 @@ video {
   font-weight: 100;
 }
 
-.font-\[18px\] {
-  font-weight: 18px;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -1722,20 +1709,20 @@ video {
   line-height: 1.6;
 }
 
-.leading-\[27px\] {
-  line-height: 27px;
+.leading-\[24px\] {
+  line-height: 24px;
 }
 
-.leading-\[55px\] {
-  line-height: 55px;
+.leading-\[27px\] {
+  line-height: 27px;
 }
 
 .leading-\[28px\] {
   line-height: 28px;
 }
 
-.leading-\[24px\] {
-  line-height: 24px;
+.leading-\[55px\] {
+  line-height: 55px;
 }
 
 .text-darkGray {
@@ -2438,6 +2425,10 @@ video {
     font-size: 14px;
   }
 
+  .max-sm\:text-\[18px\] {
+    font-size: 18px;
+  }
+
   .max-sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -2446,14 +2437,6 @@ video {
   .max-sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .max-sm\:text-\[16px\] {
-    font-size: 16px;
-  }
-
-  .max-sm\:text-\[18px\] {
-    font-size: 18px;
   }
 }
 

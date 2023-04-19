@@ -5,7 +5,7 @@ var swiper = new Swiper(".mySwiper_main", {
   centeredSlides: true,
   slidesPerView: "auto",
   coverflowEffect: {
-    rotate: 10,
+    rotate: 0,
     stretch: 100,
     depth: 210,
     modifier: 2,
@@ -16,6 +16,7 @@ var swiper = new Swiper(".mySwiper_main", {
     delay: 3000,
   },
   pagination: {
+    dynamicMainBullets: 1,
     el: ".swiper-pagination",
     clickable: true,
   },

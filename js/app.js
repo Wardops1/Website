@@ -6,11 +6,12 @@ var swiper = new Swiper(".mySwiper_main", {
   slidesPerView: "auto",
   coverflowEffect: {
     rotate: 0,
-    stretch: 100,
-    depth: 210,
-    modifier: 2,
-    slideShadows: true,
+    stretch: 0,
+    depth: 120,
+    modifier: 4,
+    slideShadows: false,
   },
+  spaceBetween: 30,
   speed: 800,
   autoplay: {
     delay: 3000,

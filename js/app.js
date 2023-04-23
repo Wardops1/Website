@@ -149,7 +149,7 @@ serviceMobileDropdown.addEventListener("click", function () {
 navDropClose.addEventListener("click", function () {
   navDropInner.classList.toggle("hidden");
   serviceMenuMobile.classList.add("hidden");
-  serviceMobileDropdown.classList.remove("pb-[500px]");
+  serviceMobileDropdown.classList.remove("mbServiceDrop");
 });
 
 document.addEventListener("click", function (event) {

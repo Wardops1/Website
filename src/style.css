@@ -204,3 +204,8 @@
   padding-right: 15px;
   transition: 1s;
 }
+
+/* mobile service drop padding  */
+.mbServiceDrop {
+  padding-bottom: 500px;
+}

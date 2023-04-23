@@ -67,10 +67,7 @@ var swiper = new Swiper(".blog_swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  // loop: true,
-  // autoplay: {
-  //   delay: 1000,
-  // },
+
   breakpoints: {
     "@0.00": {
       slidesPerView: 1,
@@ -106,6 +103,7 @@ const navDropClose = document.getElementById("navDropClose");
 const serviceMobileDropdown = document.getElementById("serviceMobileDropdown");
 const serviceMenuMobile = document.getElementById("serviceMenuMobile");
 const serviceMobileArow = document.getElementById("serviceMobileArow");
+const serviceMobileArow_2 = document.getElementById("serviceMobileArow_2");
 
 navDrop.addEventListener("click", function () {
   navDropInner.classList.toggle("hidden");
@@ -123,7 +121,9 @@ serviceMobileDropdown.addEventListener("click", function () {
     // First click: Show the menu after delayTime
     setTimeout(function () {
       serviceMenuMobile.classList.remove("hidden");
-      serviceMobileDropdown.classList.add("pb-[500px]");
+      serviceMobileDropdown.classList.add("mbServiceDrop");
+      serviceMobileArow_2.classList.add("hidden");
+      serviceMobileArow.classList.remove("hidden");
       serviceMenuMobile.style.transition =
         "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
       serviceMenuMobile.style.opacity = "1";
@@ -138,7 +138,9 @@ serviceMobileDropdown.addEventListener("click", function () {
       serviceMenuMobile.style.transform = "translateY(-50px)";
       setTimeout(function () {
         serviceMenuMobile.classList.add("hidden");
-        serviceMobileDropdown.classList.remove("pb-[500px]");
+        serviceMobileArow_2.classList.remove("hidden");
+        serviceMobileArow.classList.add("hidden");
+        serviceMobileDropdown.classList.remove("mbServiceDrop");
       }, 500);
     }, delayTime);
   }
@@ -176,27 +178,6 @@ avatarDivs.forEach((avatarDiv) => {
     }
   });
 });
-
-// scroling tamp
-function scrollBlog() {
-  const targetElement = document.getElementById("blog_sc");
-  targetElement.scrollIntoView({ behavior: "smooth" });
-}
-
-function scrollCareer() {
-  const targetElement = document.getElementById("career_sc");
-  targetElement.scrollIntoView({ behavior: "smooth" });
-}
-
-function scrollAvatar() {
-  const targetElement = document.getElementById("avatar_sc");
-  targetElement.scrollIntoView({ behavior: "smooth" });
-}
-
-function scrollServices() {
-  const targetElement = document.getElementById("services_sc");
-  targetElement.scrollIntoView({ behavior: "smooth" });
-}
 
 // slider hover
 

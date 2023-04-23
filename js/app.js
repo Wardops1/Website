@@ -23,7 +23,6 @@ var swiper = new Swiper(".mySwiper_main", {
   },
 });
 
-
 var swiper = new Swiper(".mySwiper_1", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -199,10 +198,22 @@ function scrollServices() {
   targetElement.scrollIntoView({ behavior: "smooth" });
 }
 
-// const counters = document.querySelectorAll(".counter");
-// const speed = 1000;
+// slider hover
 
-// counters.forEach((counter) => {
+const sliderHoverDivs = document.querySelectorAll(".sliderHover");
+
+sliderHoverDivs.forEach((sliderHoverDiv) => {
+  const rightSighn = sliderHoverDiv.querySelector(".rightSign_none");
+
+  sliderHoverDiv.addEventListener("mouseover", () => {
+    rightSighn.classList.remove("hidden");
+  });
+
+  sliderHoverDiv.addEventListener("mouseout", () => {
+    rightSighn.classList.add("hidden");
+  });
+});
+
 //   const updateCount = () => {
 //     const target = +counter.getAttribute("data-target");
 //     const count = +counter.innerText;

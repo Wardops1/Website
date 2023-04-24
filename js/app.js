@@ -1,3 +1,13 @@
+// navbar
+window.addEventListener("scroll", function () {
+  var navbar = document.getElementById("navbar");
+  if (window.pageYOffset > navbar.offsetTop) {
+    navbar.classList.add("fixed");
+  } else {
+    navbar.classList.remove("fixed");
+  }
+});
+
 // main slider
 var swiper = new Swiper(".mySwiper_main", {
   effect: "coverflow",

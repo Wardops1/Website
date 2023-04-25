@@ -597,8 +597,8 @@ video {
   left: 35%;
 }
 
-.left-\[52\%\] {
-  left: 52%;
+.left-\[55\%\] {
+  left: 55%;
 }
 
 .left-\[75\%\] {
@@ -633,6 +633,10 @@ video {
   top: -18%;
 }
 
+.top-\[10\%\] {
+  top: 10%;
+}
+
 .top-\[100\%\] {
   top: 100%;
 }
@@ -661,10 +665,6 @@ video {
   top: 40px;
 }
 
-.top-\[5\%\] {
-  top: 5%;
-}
-
 .top-\[50px\] {
   top: 50px;
 }
@@ -679,22 +679,6 @@ video {
 
 .top-\[84\%\] {
   top: 84%;
-}
-
-.top-\[50\%\] {
-  top: 50%;
-}
-
-.top-\[10\%\] {
-  top: 10%;
-}
-
-.left-\[9\%\] {
-  left: 9%;
-}
-
-.left-\[55\%\] {
-  left: 55%;
 }
 
 .z-0 {
@@ -874,8 +858,8 @@ video {
   height: 50rem;
 }
 
-.h-\[58rem\] {
-  height: 58rem;
+.h-\[68rem\] {
+  height: 68rem;
 }
 
 .h-\[797px\] {
@@ -888,14 +872,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[64rem\] {
-  height: 64rem;
-}
-
-.h-\[68rem\] {
-  height: 68rem;
 }
 
 .min-h-\[auto\] {
@@ -1283,6 +1259,18 @@ video {
   background-image: url('img/review-pages/overlay.svg');
 }
 
+.bg-\[url\(\'\.\.\/samika\.png\'\)\] {
+  background-image: url('../samika.png');
+}
+
+.bg-\[url\(\'\/img\/Team\/samika\.png\'\)\] {
+  background-image: url('/img/Team/samika.png');
+}
+
+.bg-\[url\(\'\/img\/Team\/otxika\.png\'\)\] {
+  background-image: url('/img/Team/otxika.png');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1568,6 +1556,14 @@ video {
 
 .pt-\[100px\] {
   padding-top: 100px;
+}
+
+.pt-\[140px\] {
+  padding-top: 140px;
+}
+
+.pt-36 {
+  padding-top: 9rem;
 }
 
 .text-left {
@@ -2150,6 +2146,10 @@ video {
     padding-top: 3rem;
   }
 
+  .max-lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .max-lg\:pt-5 {
     padding-top: 1.25rem;
   }
@@ -2158,8 +2158,8 @@ video {
     padding-top: 1.5rem;
   }
 
-  .max-lg\:pt-20 {
-    padding-top: 5rem;
+  .max-lg\:pt-28 {
+    padding-top: 7rem;
   }
 
   .max-lg\:text-center {
@@ -2263,10 +2263,6 @@ video {
 
   .max-md\:pt-5 {
     padding-top: 1.25rem;
-  }
-
-  .max-md\:pt-20 {
-    padding-top: 5rem;
   }
 
   .max-md\:text-4xl {
@@ -2430,8 +2426,8 @@ video {
     padding-top: 4rem;
   }
 
-  .max-sm\:pt-20 {
-    padding-top: 5rem;
+  .max-sm\:pt-28 {
+    padding-top: 7rem;
   }
 
   .max-sm\:text-2xl {

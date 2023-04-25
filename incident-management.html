@@ -17,8 +17,8 @@
       <title>Incident Management</title>
    </head>
    <body>
-      <nav class="bg-wardGreen relative dark:bg-gray-900 border-b-2 border-b-gray-200">
-         <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12">
+      <nav id="navbar" class=" navbar bg-wardGreen relative dark:bg-gray-900 border-b-2 border-b-gray-200">
+         <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12 ">
             <div class="flex items-center gap-12">
                <div class="flex items-center gap-4">
                   <a href="index.html" class="flex items-center">
@@ -167,7 +167,7 @@
           </ul>
       </nav>
       <section class="w-full h-[44rem]  m-auto bg-wardGreen bg-cover max-lg:h-auto bg-[url('/img/network-and-service-bg.svg')] border-b-2 border-b-gray-200">
-         <div class="w-11/12 flex items-center m-auto justify-between  pt-24  max-lg:pt-12 max-lg:flex-col max-lg:justify-center max-lg:items-center  max-lg:pb-40 max-lg:gap-10  2xl:w-9/12">
+         <div class="w-11/12 flex items-center m-auto justify-between  pt-40  max-lg:pt-28 max-lg:flex-col max-lg:justify-center max-lg:items-center  max-lg:pb-40 max-lg:gap-10  2xl:w-9/12">
             <div class=" w-1/2 flex flex-col gap-5 max-lg:w-full ">
                <h3 class="font-[Policemen] uppercase whitespace-nowrap text-8xl max-sm:whitespace-pre-wrap max-xl:text-6xl max-md:text-4xl ">INCIDENT MANAGEMENT</h3>
                <p class="font-[Roboto] text-lg font-thin capitalize">Use WARD IT's scalable and 24/7 team and RESPOND to an unplanned event or service interruption and restore the service to its operational state.</p>
@@ -609,9 +609,9 @@
          </div>
       </section>
       <!-- footer -->
-      <section class="bg-wardSilver pt-28 " id="career_sc" >
+      <section class="bg-wardSilver  " id="career_sc" >
          <footer class=" w-11/12 m-auto  max-lg:pt-10">
-            <div class="w-11/12 m-auto flex gap-10  2xl:gap-20  py-8 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
+            <div class="w-11/12 m-auto flex  gap-10  2xl:gap-20  py-20 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
                <div class="w-1/4 flex-col max-lg:w-[30%] max-sm:w-auto">
                   <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Contact US</h2>
                   <ul class="text-gray-500 dark:text-gray-400">
@@ -621,6 +621,7 @@
                         info@wardops.tech</a>
                      </li>
                   </ul>
+                  
                </div>
                <div class="w-1/4 flex-col max-sm:w-2/4">
                   <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Services</h2>
@@ -646,19 +647,19 @@
                   <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Products</h2>
                   <ul class="text-gray-500 dark:text-gray-400">
                      <li class="mb-4">
-                        <span href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Pager Duty</span>
+                        <a href="/incident-management.html" class=" capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">PagerDuty</a>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">New Relic</a>
+                        <a href="/network-service.html" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">new relic</a>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Rundeck</a>
+                        <a href="/incident-management.html" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Rundeck</a>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Grafana</a>
+                        <a href="/network-service.html" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Grafana</a>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Prometheus</a>
+                        <a href="/network-service.html" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Prometheus</a>
                      </li>
                   </ul>
                </div>
@@ -670,11 +671,13 @@
                   </div>
                   <div class="flex flex-col justify-center items-center mt-6">
                      <img class="" src="img/footer/footer-sign.svg" alt="">
-                     <button
-                        class="hover_button text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
-                        >
-                     Let's work together
-                     </button>
+                     <a href="career.html">
+                        <button
+                           class="hover_button text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
+                           >
+                        Let's work together
+                        </button>
+                     </a>
                   </div>
                </div>
             </div>

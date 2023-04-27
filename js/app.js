@@ -8,6 +8,21 @@ window.addEventListener("scroll", function () {
   }
 });
 
+const pagerDuty = document.getElementById("pagerDuty");
+
+pagerDuty.addEventListener("click", function () {
+  var activeSlideIndex = mySwiper.activeIndex;
+
+  // get the active pagination bullet element
+  var activeBulletElement = document.querySelector(
+    ".my-pagination-bullet-active"
+  );
+
+  // update the content of the slider
+  var sliderContent = "Swiper pagination active: " + (activeSlideIndex + 1);
+  activeBulletElement.innerHTML = sliderContent;
+});
+
 // main slider
 var swiper = new Swiper(".mySwiper_main", {
   effect: "coverflow",
@@ -27,9 +42,13 @@ var swiper = new Swiper(".mySwiper_main", {
     delay: 3000,
   },
   pagination: {
-    dynamicMainBullets: 1,
     el: ".swiper-pagination",
     clickable: true,
+    bulletClass: "my-pagination-bullet",
+    bulletActiveClass: "my-pagination-bullet-active",
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
   },
 });
 

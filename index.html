@@ -14,8 +14,8 @@
    </head>
    <body>
       <!-- nav bar -->
-      <nav class="bg-wardGreen relative dark:bg-gray-900 border-b-2 border-b-gray-200">
-         <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12">
+      <nav id="navbar" class=" navbar bg-wardGreen relative dark:bg-gray-900 border-b-2 border-b-gray-200">
+         <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12 ">
             <div class="flex items-center gap-12">
                <div class="flex items-center gap-4">
                   <a href="index.html" class="flex items-center">
@@ -97,16 +97,16 @@
                </div>
             </div>
          </div>
-         <ul class=" hidden duration-500 absolute z-50 pb-5 text-left bg-wardSilver w-full h-[150vh]  capitalize border-2 p-2 text-xl top-[-18%] right-0 mt-2" id="navDropInner">
+         <ul class=" hidde duration-500 absolute z-50 pb-5 text-left bg-wardSilver w-full h-[150vh]  capitalize border-2 p-2 text-xl top-[-18%] right-0 mt-2" id="navDropInner">
             <div class="w-11/12 m-auto flex flex-col gap-10">
-               <div class="flex pb-2 items-center justify-between">
-                  <a href="index.html"><img src="img/common-img/logo-mobile.svg" alt="mobileLogo"></a>
-                  <img class="cursor-pointer" src="img/common-img/navbar-down.svg"  alt="logo-mobile" id="navDropClose">
+               <div class="flex w-11/12 m-auto pb-2 items-center  justify-between">
+                  <a href="index.html"><img class="scale-150 p-2" src="img/common-img/logo-mobile.svg" alt="mobileLogo"></a>
+                  <img class="cursor-pointer " src="img/common-img/navbar-down.svg"  alt="logo-mobile" id="navDropClose">
                </div>
-               <li class="capitalize  cursor-pointer">
-                  <div class="flex flex-row justify-between   items-center w-full" id="serviceMobileDropdown">
+               <li class="capitalize   cursor-pointer">
+                  <div class=" flex flex-row justify-between w-11/12 m-auto items-center  h-full" id="serviceMobileDropdown">
                      <div class="">services 
-                        <div class="absolute w-11/12 hidden " id="serviceMenuMobile">
+                        <div class="absolute w-11/12 hidden    " id="serviceMenuMobile"> 
                            <ul class="flex flex-col gap-5 pt-2 ">
                               <a href="network-service.html">
                                  <div class="flex items-center gap-2 border-b-2 py-2">
@@ -151,24 +151,26 @@
                                  </div>
                               </a>
                            </ul>
-                        </div>
+                        </div> 
                      </div>
-                     <img  src="img/common-img/downward-arrow-2.svg" alt="dropMobile"id="serviceMobileArow_2" >
-                     <img  src="img/common-img/downward-arrow.svg" alt="dropMobile" id="serviceMobileArow" >
+                     <img class=""src="img/common-img/downward-arrow-2.svg" alt="dropMobile"id="serviceMobileArow_2" >
+                     <img class="hidden"  src="img/common-img/downward-arrow.svg" alt="dropMobile" id="serviceMobileArow" >
                   </div>
                   </li>
-               <a href="team.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Team</li></a>
-               <a href="career.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Career</li></a>
-               <a href="blogpost-search.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Blog</li></a>
+                  <div class=" flex  flex-col w-11/12 m-auto gap-5">
+                  <a href="team.html"><li class=" border-t-2 pt-3 capitalize cursor-pointer">Team</li></a>
+                  <a href="career.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Career</li></a>
+                  <a href="blogpost-search.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Blog</li></a>
+                  </div>
             </div>
           </ul>
       </nav>
       <!-- init main -->
-      <section class="w-full h-[58rem] bg-wardGreen py-10 border-b-2 relative max-lg:h-full max-lg:py-0 max-lg:pt-10">
+      <section class="w-full h-[68rem] bg-wardGreen pb-10 pt-40 border-b-2 relative max-lg:h-full max-lg:py-0 max-lg:pt-10">
          <div class="flex w-11/12 m-auto bg-wardGreen 2xl:w-9/12">
             <div class="font-[Roboto] font-normal">
                <!-- init list -->
-               <h4 class="inline-block text-[80px] font-[Policemen] max-lg:text-6xl max-md:text-4xl max-sm:text-3xl max-sm:whitespace-normal"> Optimize, Automate, Improve. <br class="max-xl:hidden" /> On Demand IT Services </h4>
+               <h4 class="inline-block text-[80px] max-lg:pt-20 font-[Policemen] max-lg:text-6xl max-md:text-4xl max-sm:text-3xl max-sm:whitespace-normal"> Optimize, Automate, Improve. <br class="max-xl:hidden" /> On Demand IT Services </h4>
                <!-- landing block for mobile -->
                <div class="flex justify-between gap-10 flex-row lg:hidden">
                   <div class="">
@@ -207,10 +209,10 @@
             </div>
             <!-- landing blocks -->
             <div class="max-lg:hidden">
-               <div class="absolute left-[52%] top-[24%] max-2xl:top-[30%]">
+               <div class="absolute left-[55%] top-[24%] max-2xl:top-[30%]">
                   <img class="" src="img/big-block/block_1.svg " alt="block" />
                </div>
-               <div class="absolute left-[75%] top-[5%] max-xl:hidden">
+               <div class="absolute left-[75%] top-[10%] max-xl:hidden">
                   <img src="img/big-block/block_2.svg" alt="block" />
                </div>
                <div class="absolute left-[91%] top-[30%] max-sm:top-[40%]">
@@ -223,11 +225,20 @@
             <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2   "> book consultation </button>
             </a>
          </div>
-         <div class="flex mt-8 max-sm:mt-2">
+         <div class="flex mt-8 max-sm:mt-2 max-lg:hidden">
             <div class="w-full flex items-center mt-1 py-2 gap-10 justify-center border-y-2 rotate-[-7.77deg] max-lg:rotate-0">
-               <div class="text-slider flex gap-6 items-center">
+               <div class="text-slider flex gap-6 items-center ">
                   <img class="w-10 h-full max-md:hidden" src="img/common-img/frame-rhombus.svg" alt="frame"/>
                   <span class="font-[Policemen] whitespace-nowrap text-[44px]  max-2xl:text-[35px] max-xl:text-[30px] max-lg:text-[24px] max-md:text-[18px] max-sm:text-[18px] "> Get Started on time, increase capability : for any business, at any level. </span>
+                  <img class="w-10 h-full max-md:hidden" src="img/common-img/frame-rhombus.svg" alt="frame"/>
+               </div>
+            </div>
+         </div>
+         <div class="flex mt-8 max-sm:mt-2 lg:hidden">
+            <div class="w-full flex items-center mt-1 py-2 gap-10 justify-center border-y-2 rotate-[-7.77deg] max-lg:rotate-0">
+               <div class=" flex gap-6 items-center ">
+                  <img class="w-10 h-full max-md:hidden" src="img/common-img/frame-rhombus.svg" alt="frame"/>
+                  <span class="font-[Policemen] whitespace-nowrap text-[44px]  max-2xl:text-[35px] max-xl:text-[30px] max-lg:text-[24px] max-md:text-[18px] max-sm:text-[12px] "> Get Started on time, increase capability : for any business, at any level. </span>
                   <img class="w-10 h-full max-md:hidden" src="img/common-img/frame-rhombus.svg" alt="frame"/>
                </div>
             </div>
@@ -439,7 +450,7 @@
       <section class="bg-wardSilver">
          <div>
             <div class="flex justify-center pt-20 py-10">
-               <h2 class=" uppercase whitespace-nowrap text-8xl font-[Policemen] bg-wardGreen max-lg:text-4xl max-sm:text-lg p-6 border-y-2 text-darkGray"> Customers </h2>
+               <h2 class=" uppercase whitespace-nowrap text-8xl font-[Policemen] bg-wardGreen max-md:text-4xl max-lg:text-4xl  p-6 border-y-2 text-darkGray"> Customers </h2>
             </div>
             <div class="w-full">
                <div class=" border-2  m-auto py-10 max-lg:hidden ">
@@ -547,48 +558,53 @@
          <div class="flex items-start w-9/12 m-auto gap-5 py-20  2xl:w-8/12 max-lg:flex-col max-lg:gap-10 ">
             <div class="w-[45%] max-lg:w-full  max-lg:items-center max-lg:hidden">
                <ul class="flex flex-col  gap-5">
-<<<<<<< Updated upstream
                   <li class="flex items-center gap-6 ">
                      <div class="flex gap-5 ">
                         <img src="img/products/PageDuty.svg" alt="pagerduty">
                         <span class="block text-2xl capitalize ">PagerDuty</span>
-=======
-                  <li class="flex items-center ">
-                     <div id="SliderProduct" class=" flex gap-5 cursor-pointer  p-2">
-                        <img src="img/products/PageDuty.svg" alt="pagerduty">
-                        <div class="flex gap-4 items-center">
-                           <span class="block text-2xl capitalize ">PagerDuty</span>
-                           <img class="hidden" src="img/common-img/hover-right.svg" alt="right-sign" id="hover-right">
-                        </div>
->>>>>>> Stashed changes
                      </div>
                   </li>
-                  <li class="flex items-center gap-6">
-                     <img src="img/products/NewRelic.svg" alt="pagerduty">
-                     <span class="block text-2xl capitalize ">New Relic</span>
+                  <li class="flex  items-center gap-6 ">
+                     <div class="flex sliderHover  gap-5 p-1 cursor-pointer items-center hover:bg-wardGreen " id="sliderHover">
+                        <img src="img/products/NewRelic.svg" alt="pagerduty">
+                        <span class="block text-2xl capitalize ">New Relic</span>
+                        <img class="rightSign_none  hidden" src="img/common-img/rightSign.svg" alt="right_sign" id="rightSign_none">
+                     </div>
                   </li>
-                  <li class="flex items-center gap-6">
-                     <img src="img/products/Rundeck.svg" alt="pagerduty">
-                     <span class="block text-2xl capitalize ">Rundeck</span>
+                  <li class="flex  items-center gap-6 ">
+                     <div class="flex sliderHover  gap-5 p-1 cursor-pointer items-center hover:bg-wardGreen " id="sliderHover">
+                        <img src="img/products/Rundeck.svg" alt="pagerduty">
+                        <span class="block text-2xl capitalize ">Rundeck</span>
+                        <img class="rightSign_none  hidden" src="img/common-img/rightSign.svg" alt="right_sign" id="rightSign_none">
+                     </div>
                   </li>
-                  <li class="flex items-center gap-6">
-                     <img src="img/products/Grafana.svg" alt="pagerduty">
-                     <span class="block text-2xl capitalize ">Grafana</span>
+                  <li class="flex  items-center gap-6 ">
+                     <div class="flex sliderHover  gap-5 p-1 cursor-pointer items-center hover:bg-wardGreen " id="sliderHover">
+                        <img src="img/products/Grafana.svg" alt="pagerduty">
+                        <span class="block text-2xl capitalize ">Grafana</span>
+                        <img class="rightSign_none  hidden" src="img/common-img/rightSign.svg" alt="right_sign" id="rightSign_none">
+                     </div>
                   </li>
-                  <li class="flex items-center gap-6">
-                     <img src="img/products/prometheusio.svg" alt="pagerduty">
-                     <span class="block text-2xl capitalize "> Prometheus</span>
+                  <li class="flex  items-center gap-6 ">
+                     <div class="flex sliderHover  gap-5 p-1 cursor-pointer items-center hover:bg-wardGreen " id="sliderHover">
+                        <img src="img/products/prometheusio.svg" alt="pagerduty">
+                        <span class="block text-2xl capitalize ">Prometheus</span>
+                        <img class="rightSign_none  hidden" src="img/common-img/rightSign.svg" alt="right_sign" id="rightSign_none">
+                     </div>
                   </li>
-                  <li class="flex items-center gap-6">
-                     <img src="img/products/zabbix.svg" alt="pagerduty">
-                     <span class="block text-2xl capitalize"> Zabbix</span>
+                  <li class="flex  items-center gap-6 ">
+                     <div class="flex sliderHover  gap-5 p-1 cursor-pointer items-center hover:bg-wardGreen " id="sliderHover">
+                        <img src="img/products/zabbix.svg" alt="pagerduty">
+                        <span class="block text-2xl capitalize ">Zabbix</span>
+                        <img class="rightSign_none  hidden" src="img/common-img/rightSign.svg" alt="right_sign" id="rightSign_none">
+                     </div>
                   </li>
                </ul>
             </div>
-            <div class=" flex flex-col  items-center  w-[55%] max-lg:w-full">
+            <div class=" flex flex-col  items-center  w-[60%] max-lg:w-full">
                <div class="w-full py-12 swiper mySwiper_main ">
                   <div class="swiper-wrapper pb-10">
-                    <div class="swiper-slide main-slider ">
+                    <div id="pagerDuty" class="swiper-slide main-slider ">
                      <div class="flex flex-col gap-5 p-5   w-full h-full items-center justify-center text-center bg-wardSilver border-2">
                         <img class="h-10 w-10" src="img/products/PageDuty.svg" alt="">
                         <h5 class="capitalize text-2xl">Pager Duty</h5>
@@ -1237,9 +1253,9 @@
          </div>
       </section>
       <!-- footer -->
-      <section class="bg-wardSilver pt-28 " id="career_sc" >
+      <section class="bg-wardSilver  " id="career_sc" >
          <footer class=" w-11/12 m-auto  max-lg:pt-10">
-            <div class="w-11/12 m-auto flex  gap-10  2xl:gap-20  py-8 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
+            <div class="w-11/12 m-auto flex  gap-10  2xl:gap-20  py-20 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
                <div class="w-1/4 flex-col max-lg:w-[30%] max-sm:w-auto">
                   <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Contact US</h2>
                   <ul class="text-gray-500 dark:text-gray-400">

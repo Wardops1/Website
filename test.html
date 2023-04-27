@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="./src/input.css" />
+    <link rel="icon" href="img/common-img/logo-tab.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Ward Ops</title>
+  </head>
+
+  <body>
+    <div class="cate">
+      <h1 class="active">전체</h1>
+      <h1>음료</h1>
+      <h1>빵</h1>
+      <h1>과일</h1>
+    </div>
+
+    <div class="view_section">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-type="음료">
+            <div class="sample_img">
+              <img
+                src="https://cdn.pixabay.com/photo/2014/09/12/18/20/can-443123_960_720.png"
+              />
+            </div>
+            <div class="sample_name">
+              <p>콜라</p>
+            </div>
+          </div>
+          <div class="swiper-slide" data-type="빵">
+            <div class="sample_img">
+              <img
+                src="https://cdn.pixabay.com/photo/2012/04/14/15/37/cheeseburger-34315_960_720.png"
+              />
+            </div>
+            <div class="sample_name">
+              <p>햄버거</p>
+            </div>
+          </div>
+          <div class="swiper-slide" data-type="음료">
+            <div class="sample_img">
+              <img
+                src="https://cdn.pixabay.com/photo/2014/04/03/11/51/milk-312369_960_720.png"
+              />
+            </div>
+            <div class="sample_name">
+              <p>우유</p>
+            </div>
+          </div>
+          <div class="swiper-slide" data-type="음료">
+            <div class="sample_img">
+              <img
+                src="https://cdn.pixabay.com/photo/2012/04/14/15/14/coffee-34251_960_720.png"
+              />
+            </div>
+            <div class="sample_name">
+              <p>커피</p>
+            </div>
+          </div>
+          <div class="swiper-slide" data-type="빵">
+            <div class="sample_img">
+              <img
+                src="https://cdn.pixabay.com/photo/2013/07/12/14/13/sandwich-148023_960_720.png"
+              />
+            </div>
+            <div class="sample_name">
+              <p>샌드위치</p>
+            </div>
+          </div>
+          <div class="swiper-slide" data-type="빵">
+            <div class="sample_img">
+              <img
+                src="https://cdn.pixabay.com/photo/2018/03/01/03/51/chocolate-cake-3189673_960_720.png"
+              />
+            </div>
+            <div class="sample_name">
+              <p>케익</p>
+            </div>
+          </div>
+          <div class="swiper-slide" data-type="과일">
+            <div class="sample_img">
+              <img
+                src="https://cdn.pixabay.com/photo/2013/07/13/11/34/apple-158419_960_720.png"
+              />
+            </div>
+            <div class="sample_name">
+              <p>사과</p>
+            </div>
+          </div>
+          <div class="swiper-slide" data-type="과일">
+            <div class="sample_img">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/04/01/11/31/banana-1300390_960_720.png"
+              />
+            </div>
+            <div class="sample_name">
+              <p>바나나</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .cate {
+        margin: 30px 0 0 30px;
+      }
+      .cate h1 {
+        cursor: pointer;
+        margin: 0 0 10px;
+      }
+      .cate h1.active {
+        color: #174ec9;
+      }
+      .swiper-container {
+        margin: 50px auto;
+        width: 1000px;
+      }
+      .swiper-slide {
+        text-align: center;
+      }
+      .swiper-slide img {
+        max-height: 350px;
+      }
+      .sample_name {
+        font-size: 32px;
+      }
+    </style>
+    <script>
+      const cloneSlide = $(".view_section .swiper-wrapper").html();
+      const arraySlide = [];
+
+      $(".view_section .swiper-slide").each(function (i, e) {
+        arraySlide.push(e);
+      });
+
+      const mainSwiper = new Swiper(".view_section .swiper-container", {
+        slidesPerView: 2,
+        centeredSlides: true,
+        spaceBetween: 30,
+        speed: 1000,
+        loop: false,
+        loopAdditionalSlides: 1,
+        autoplay: {
+          autoplay: true,
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+      });
+
+      $(".cate h1").on("click", function () {
+        const type = $(this).text();
+
+        $(".cate h1").removeClass("active");
+        $(this).addClass("active");
+        $(".view_section .swiper-wrapper").empty();
+
+        if (type === "전체") {
+          $(".view_section .swiper-wrapper").append(cloneSlide);
+        } else {
+          $(arraySlide).each(function (i, e) {
+            const exist = $(e).attr("data-type").indexOf(type);
+
+            if (exist >= 0) {
+              $(".view_section .swiper-wrapper").append(e);
+            }
+          });
+        }
+
+        mainSwiper.update();
+        mainSwiper.slideTo(0);
+      });
+    </script>
+    <!-- end blog section -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

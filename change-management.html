@@ -17,7 +17,7 @@
       <title>Change Management</title>
    </head>
    <body>
-      <nav class="bg-wardGreen relative dark:bg-gray-900 border-b-2 border-b-gray-200">
+      <nav id="navbar" class=" navbar bg-wardGreen relative dark:bg-gray-900 border-b-2 border-b-gray-200">
          <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12">
             <div class="flex items-center gap-12">
                <div class="flex items-center gap-4">
@@ -102,14 +102,14 @@
          </div>
          <ul class=" hidden duration-500 absolute z-50 pb-5 text-left bg-wardSilver w-full h-[150vh]  capitalize border-2 p-2 text-xl top-[-18%] right-0 mt-2" id="navDropInner">
             <div class="w-11/12 m-auto flex flex-col gap-10">
-               <div class="flex pb-2 items-center justify-between">
-                  <img src="img/common-img/logo-mobile.svg" alt="">
+               <div class="flex pb-2 items-center  justify-between">
+                  <a href="index.html"><img src="img/common-img/logo-mobile.svg" alt="mobileLogo"></a>
                   <img class="cursor-pointer" src="img/common-img/navbar-down.svg"  alt="logo-mobile" id="navDropClose">
                </div>
-               <li class="capitalize  cursor-pointer">
-                  <div class="flex flex-row justify-between  items-center w-full" id="serviceMobileDropdown">
+               <li class="capitalize   cursor-pointer">
+                  <div class=" flex flex-row justify-between  items-center w-full h-full" id="serviceMobileDropdown">
                      <div class="">services 
-                        <div class="absolute w-11/12 hidden  " id="serviceMenuMobile">
+                        <div class="absolute w-11/12 hidden    " id="serviceMenuMobile"> 
                            <ul class="flex flex-col gap-5 pt-2 ">
                               <a href="network-service.html">
                                  <div class="flex items-center gap-2 border-b-2 py-2">
@@ -154,19 +154,20 @@
                                  </div>
                               </a>
                            </ul>
-                        </div>
+                        </div> 
                      </div>
-                     <img  src="img/common-img/downward-arrow.svg" alt="dropMobile"id="serviceMobileArow" >
+                     <img class=""src="img/common-img/downward-arrow-2.svg" alt="dropMobile"id="serviceMobileArow_2" >
+                     <img class="hidden"  src="img/common-img/downward-arrow.svg" alt="dropMobile" id="serviceMobileArow" >
                   </div>
                   </li>
-               <a href="team.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Team</li></a>
-               <a href="career.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Career</li></a>
-               <a href="blogpost-search.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Blog</li></a>
+                  <a href="team.html"><li class=" border-t-2 pt-3 capitalize cursor-pointer">Team</li></a>
+                  <a href="career.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Career</li></a>
+                  <a href="blogpost-search.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Blog</li></a>
             </div>
           </ul>
       </nav>
       <section class="w-full h-[44rem]  m-auto bg-wardGreen bg-cover max-lg:h-auto bg-[url('/img/network-and-service-bg.svg')] border-b-2 border-b-gray-200">
-         <div class="w-11/12 flex items-end m-auto justify-between  pt-24  max-lg:pt-12 max-lg:flex-col max-lg:justify-center max-lg:items-center  max-lg:pb-44 max-lg:gap-10  2xl:w-9/12">
+         <div class="w-11/12 flex items-end m-auto justify-between  pt-40  max-lg:pt-28 max-lg:flex-col max-lg:justify-center max-lg:items-center  max-lg:pb-44 max-lg:gap-10  2xl:w-9/12">
             <div class=" w-1/2 flex flex-col gap-10 max-lg:w-full ">
                <h3 class="font-[Policemen] uppercase whitespace-nowrap text-8xl max-sm:whitespace-pre-wrap max-xl:text-6xl max-md:text-4xl ">change Managment</h3>
                <p class="font-[Roboto] text-lg font-thin capitalize">Service helps your businesses effectively plan, manage, and implement changes to your IT systems while minimizing disruptions and reducing the risk of errors. We work closely with you to assess the impact of the change, develop a comprehensive plan, and ensure a smooth transition to the new or existing systems. With WARD's expert guidance, your business can adapt to changing market needs by introducing new technology, processes, or policies with ease.</p>
@@ -460,38 +461,19 @@
                   </div>
                </div>
             </div>
-            <div class=" flex justify-center  md:hidden mb-16">
+            <div class=" flex justify-center  md:hidden mb-16 ">
                <div class="  bg-[#000]"></div>
                <button class=" text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1 max-sm:px-[6px] max-sm:text-sm max-sm:py-2 "> Let's work together </button>   
             </div>
          </div>
          <!-- product inner -->
-         <div class="flex w-11/12 m-auto border-t-[2px] border-b-[2px] max-lg:flex-col max-lg:border-b-0 2xl:w-9/12">
-            <div class="flex w-[40%] items-center justify-center bg-wardGreen max-lg:w-full max-lg:py-5 max-lg:border-b-2">
-               <h4 class="uppercase font-[Policemen] text-8xl max-xl:text-6xl max-sm:text-4xl"> Product </h4>
-            </div>
-            <div class="flex flex-col p-10 gap-2 border-l-[2px] max-lg:border-l-0 max-lg:border-b-2">
-               <h5 class="font-normal text-[22px]"> Partnership and Experise Monitoring and Incident Management Tools. </h5>
-               <ul class="flex items-center gap-5">
-                  <img src="img/common-img/green-rhombus.svg" alt="rhombus" />
-                  <h6 class="text-[18px]">Implemenetraton and Integrations</h6>
-               </ul>
-               <ul class="flex items-center gap-5">
-                  <img src="img/common-img/green-rhombus.svg" alt="rambue" />
-                  <h6 class="text-[18px]">Open Source and Enterprise Souliutons</h6>
-               </ul>
-               <ul class="flex items-center gap-5">
-                  <img src="img/common-img/green-rhombus.svg" alt="rambue" />
-                  <h6 class="text-[18px]">Data ​Visualization</h6>
-               </ul>
-            </div>
-         </div>
+         
       </section>
       <!-- product inner -->
       <section>
          <div class="">
             <div
-               class="flex w-10/12 m-auto border-b-[2px] max-lg:flex-col max-lg:border-b-0"
+               class="flex w-10/12 m-auto border-b-[2px] max-lg:flex-col max-lg:border-b-0 border-t-2"
                >
                <div
                   class=" w-[50%] items-center  bg-wardSilver max-lg:w-full"
@@ -576,18 +558,19 @@
          </div>
       </section>
       <!-- footer -->
-      <section class="bg-wardSilver pt-28 " id="career_sc" >
+      <section class="bg-wardSilver  " id="career_sc" >
          <footer class=" w-11/12 m-auto  max-lg:pt-10">
-            <div class="w-11/12 m-auto flex gap-10  2xl:gap-20  py-8 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
+            <div class="w-11/12 m-auto flex  gap-10  2xl:gap-20  py-20 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
                <div class="w-1/4 flex-col max-lg:w-[30%] max-sm:w-auto">
                   <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Contact US</h2>
                   <ul class="text-gray-500 dark:text-gray-400">
                      <li class="mb-4">
-                        <a href="#" class=" 2xl:hover:bg-wardLight 2xl:hover:p-2 flex gap-4 max-lg:justify-center max-md:justify-center max-sm:justify-center items-center">
+                        <a href="#" class=" 2xl:hover:bg-wardGreen 2xl:hover:p-2 flex gap-4 max-lg:justify-center max-md:justify-center max-sm:justify-center items-center">
                         <img class="w-[21px] h-[21px]" src="img/footer/footer-email.png" alt="">
                         info@wardops.tech</a>
                      </li>
                   </ul>
+                  
                </div>
                <div class="w-1/4 flex-col max-sm:w-2/4">
                   <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Services</h2>
@@ -613,19 +596,19 @@
                   <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Products</h2>
                   <ul class="text-gray-500 dark:text-gray-400">
                      <li class="mb-4">
-                        <span href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Pager Duty</span>
+                        <a href="/incident-management.html" class=" capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">PagerDuty</a>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">New Relic</a>
+                        <a href="/network-service.html" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">new relic</a>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Rundeck</a>
+                        <a href="/incident-management.html" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Rundeck</a>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Grafana</a>
+                        <a href="/network-service.html" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Grafana</a>
                      </li>
                      <li class="mb-4">
-                        <a href="#" class="md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Prometheus</a>
+                        <a href="/network-service.html" class="capitalize md:hover:bg-wardGreen md:hover:py-2 md:hover:px-1">Prometheus</a>
                      </li>
                   </ul>
                </div>
@@ -637,11 +620,13 @@
                   </div>
                   <div class="flex flex-col justify-center items-center mt-6">
                      <img class="" src="img/footer/footer-sign.svg" alt="">
-                     <button
-                        class="hover_button text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
-                        >
-                     Let's work together
-                     </button>
+                     <a href="career.html">
+                        <button
+                           class="hover_button text-lg capitalize border-2 py-[12px] px-[48px] bg-wardGreen whitespace-nowrap max-md:text-sm max-md:border-1  mt-11"
+                           >
+                        Let's work together
+                        </button>
+                     </a>
                   </div>
                </div>
             </div>

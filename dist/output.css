@@ -613,8 +613,16 @@ video {
   right: 0px;
 }
 
+.right-\[-0\%\] {
+  right: -0%;
+}
+
 .right-\[-10\%\] {
   right: -10%;
+}
+
+.right-\[-2\%\] {
+  right: -2%;
 }
 
 .right-\[3rem\] {
@@ -679,6 +687,10 @@ video {
 
 .top-\[84\%\] {
   top: 84%;
+}
+
+.top-\[85\%\] {
+  top: 85%;
 }
 
 .z-0 {
@@ -786,6 +798,10 @@ video {
   margin-top: 10px;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -844,10 +860,6 @@ video {
 
 .h-\[40px\] {
   height: 40px;
-}
-
-.h-\[40rem\] {
-  height: 40rem;
 }
 
 .h-\[44rem\] {
@@ -1251,12 +1263,12 @@ video {
   background-color: rgb(223 223 223 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/img\/Team\/Rect\.jpeg\'\)\] {
-  background-image: url('/img/Team/Rect.jpeg');
+.bg-\[url\(\'\/img\/Team\/otxika\.png\'\)\] {
+  background-image: url('/img/Team/otxika.png');
 }
 
-.bg-\[url\(\'\/img\/Team\/orika\.jpeg\'\)\] {
-  background-image: url('/img/Team/orika.jpeg');
+.bg-\[url\(\'\/img\/Team\/samika\.png\'\)\] {
+  background-image: url('/img/Team/samika.png');
 }
 
 .bg-\[url\(\'\/img\/network-and-service-bg\.svg\'\)\] {
@@ -1474,6 +1486,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pb-9 {
   padding-bottom: 2.25rem;
 }
@@ -1488,10 +1504,6 @@ video {
 
 .pt-12 {
   padding-top: 3rem;
-}
-
-.pt-16 {
-  padding-top: 4rem;
 }
 
 .pt-2 {
@@ -1538,10 +1550,6 @@ video {
   padding-top: 1.75rem;
 }
 
-.pt-8 {
-  padding-top: 2rem;
-}
-
 .pt-\[0\.37rem\] {
   padding-top: 0.37rem;
 }
@@ -1550,6 +1558,13 @@ video {
   padding-top: 100px;
 }
 
+<<<<<<< Updated upstream
+=======
+.pt-\[140px\] {
+  padding-top: 140px;
+}
+
+>>>>>>> Stashed changes
 .text-left {
   text-align: left;
 }
@@ -1619,10 +1634,6 @@ video {
 
 .text-\[21px\] {
   font-size: 21px;
-}
-
-.text-\[22px\] {
-  font-size: 22px;
 }
 
 .text-\[24px\] {
@@ -2130,14 +2141,28 @@ video {
     padding-top: 3rem;
   }
 
+<<<<<<< Updated upstream
+=======
+  .max-lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
+  .max-lg\:pt-28 {
+    padding-top: 7rem;
+  }
+
+>>>>>>> Stashed changes
   .max-lg\:pt-5 {
     padding-top: 1.25rem;
   }
 
+<<<<<<< Updated upstream
   .max-lg\:pt-6 {
     padding-top: 1.5rem;
   }
 
+=======
+>>>>>>> Stashed changes
   .max-lg\:text-center {
     text-align: center;
   }
@@ -2167,6 +2192,14 @@ video {
 }
 
 @media not all and (min-width: 768px) {
+  .max-md\:right-0 {
+    right: 0px;
+  }
+
+  .max-md\:top-\[80\%\] {
+    top: 80%;
+  }
+
   .max-md\:mt-1 {
     margin-top: 0.25rem;
   }
@@ -2219,6 +2252,10 @@ video {
     border-bottom-width: 2px;
   }
 
+  .max-md\:p-2 {
+    padding: 0.5rem;
+  }
+
   .max-md\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -2227,6 +2264,10 @@ video {
   .max-md\:py-\[15rem\] {
     padding-top: 15rem;
     padding-bottom: 15rem;
+  }
+
+  .max-md\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .max-md\:pt-0 {
@@ -2427,11 +2468,6 @@ video {
 
   .max-sm\:text-\[18px\] {
     font-size: 18px;
-  }
-
-  .max-sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .max-sm\:text-sm {

@@ -1,3 +1,13 @@
+// navbar
+window.addEventListener("scroll", function () {
+  var navbar = document.getElementById("navbar");
+  if (window.pageYOffset > navbar.offsetTop) {
+    navbar.classList.add("fixed");
+  } else {
+    navbar.classList.remove("fixed");
+  }
+});
+
 // main slider
 var swiper = new Swiper(".mySwiper_main", {
   effect: "coverflow",
@@ -21,31 +31,6 @@ var swiper = new Swiper(".mySwiper_main", {
     el: ".swiper-pagination",
     clickable: true,
   },
-});
-
-// slider product list
-
-const sliderProduct = document.getElementById("SliderProduct");
-const hoverRight = document.getElementById("hover-right");
-
-sliderProduct.addEventListener("mouseenter", function handleMouseEnter() {
-  hoverRight.style.display = "block";
-  sliderProduct.classList.add(
-    "bg-wardGreen",
-    "w-2/4",
-    "pr-10",
-    "transition-all",
-    "duration-500"
-  );
-});
-sliderProduct.addEventListener("mouseleave", function handleMouseLeave() {
-  hoverRight.style.display = "none";
-  sliderProduct.classList.remove(
-    "bg-wardGreen",
-    "w-2/4",
-    "transition-all",
-    "duration-500"
-  );
 });
 
 var swiper = new Swiper(".mySwiper_1", {
@@ -204,31 +189,22 @@ avatarDivs.forEach((avatarDiv) => {
   });
 });
 
-// scroling tamp
-function scrollBlog() {
-  const targetElement = document.getElementById("blog_sc");
-  targetElement.scrollIntoView({ behavior: "smooth" });
-}
+// slider hover
 
-function scrollCareer() {
-  const targetElement = document.getElementById("career_sc");
-  targetElement.scrollIntoView({ behavior: "smooth" });
-}
+const sliderHoverDivs = document.querySelectorAll(".sliderHover");
 
-function scrollAvatar() {
-  const targetElement = document.getElementById("avatar_sc");
-  targetElement.scrollIntoView({ behavior: "smooth" });
-}
+sliderHoverDivs.forEach((sliderHoverDiv) => {
+  const rightSighn = sliderHoverDiv.querySelector(".rightSign_none");
 
-function scrollServices() {
-  const targetElement = document.getElementById("services_sc");
-  targetElement.scrollIntoView({ behavior: "smooth" });
-}
+  sliderHoverDiv.addEventListener("mouseover", () => {
+    rightSighn.classList.remove("hidden");
+  });
 
-// const counters = document.querySelectorAll(".counter");
-// const speed = 1000;
+  sliderHoverDiv.addEventListener("mouseout", () => {
+    rightSighn.classList.add("hidden");
+  });
+});
 
-// counters.forEach((counter) => {
 //   const updateCount = () => {
 //     const target = +counter.getAttribute("data-target");
 //     const count = +counter.innerText;

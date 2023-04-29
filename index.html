@@ -14,8 +14,8 @@
    </head>
    <body>
       <!-- nav bar -->
-      <nav class="bg-wardGreen relative dark:bg-gray-900 border-b-2 border-b-gray-200">
-         <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12">
+      <nav id="navbar" class=" navbar bg-wardGreen relative dark:bg-gray-900 border-b-2 border-b-gray-200">
+         <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12 ">
             <div class="flex items-center gap-12">
                <div class="flex items-center gap-4">
                   <a href="index.html" class="flex items-center">
@@ -164,11 +164,11 @@
           </ul>
       </nav>
       <!-- init main -->
-      <section class="w-full h-[58rem] bg-wardGreen py-10 border-b-2 relative max-lg:h-full max-lg:py-0 max-lg:pt-10">
+      <section class="w-full h-[68rem] bg-wardGreen pb-10 pt-40 border-b-2 relative max-lg:h-full max-lg:py-0 max-lg:pt-10">
          <div class="flex w-11/12 m-auto bg-wardGreen 2xl:w-9/12">
             <div class="font-[Roboto] font-normal">
                <!-- init list -->
-               <h4 class="inline-block text-[80px] font-[Policemen] max-lg:text-6xl max-md:text-4xl max-sm:text-3xl max-sm:whitespace-normal"> Optimize, Automate, Improve. <br class="max-xl:hidden" /> On Demand IT Services </h4>
+               <h4 class="inline-block text-[80px] max-lg:pt-20 font-[Policemen] max-lg:text-6xl max-md:text-4xl max-sm:text-3xl max-sm:whitespace-normal"> Optimize, Automate, Improve. <br class="max-xl:hidden" /> On Demand IT Services </h4>
                <!-- landing block for mobile -->
                <div class="flex justify-between gap-10 flex-row lg:hidden">
                   <div class="">
@@ -207,10 +207,10 @@
             </div>
             <!-- landing blocks -->
             <div class="max-lg:hidden">
-               <div class="absolute left-[52%] top-[24%] max-2xl:top-[30%]">
+               <div class="absolute left-[55%] top-[24%] max-2xl:top-[30%]">
                   <img class="" src="img/big-block/block_1.svg " alt="block" />
                </div>
-               <div class="absolute left-[75%] top-[5%] max-xl:hidden">
+               <div class="absolute left-[75%] top-[10%] max-xl:hidden">
                   <img src="img/big-block/block_2.svg" alt="block" />
                </div>
                <div class="absolute left-[91%] top-[30%] max-sm:top-[40%]">
@@ -448,7 +448,7 @@
       <section class="bg-wardSilver">
          <div>
             <div class="flex justify-center pt-20 py-10">
-               <h2 class=" uppercase whitespace-nowrap text-8xl font-[Policemen] bg-wardGreen max-lg:text-4xl max-sm:text-lg p-6 border-y-2 text-darkGray"> Customers </h2>
+               <h2 class=" uppercase whitespace-nowrap text-8xl font-[Policemen] bg-wardGreen max-md:text-4xl max-lg:text-4xl  p-6 border-y-2 text-darkGray"> Customers </h2>
             </div>
             <div class="w-full">
                <div class=" border-2  m-auto py-10  ">
@@ -486,12 +486,13 @@
       </section>
       <section class="bg-wardSilver">
          <div class="flex items-start w-9/12 m-auto gap-5 py-20  2xl:w-8/12 max-lg:flex-col max-lg:gap-10 ">
-            <div class="w-[45%] max-lg:w-full  max-lg:items-center max-lg:hidden">
-               <ul class="flex flex-col  gap-5">
-                  <li class="flex items-center gap-6 ">
-                     <div class="flex gap-5 ">
+            <div class="w-[40%] max-lg:w-full  max-lg:items-center max-lg:hidden">
+               <ul class="flex flex-col   gap-5">
+                  <li class="flex  items-center gap-6 ">
+                     <div class="flex sliderHover  gap-5 p-1 cursor-pointer items-center hover:bg-wardGreen " id="sliderHover">
                         <img src="img/products/PageDuty.svg" alt="pagerduty">
                         <span class="block text-2xl capitalize ">PagerDuty</span>
+                        <img class="rightSign_none hidden" src="img/common-img/rightSign.svg" alt="right_sign" id="rightSign_none">
                      </div>
                   </li>
                   <li class="flex  items-center gap-6 ">
@@ -1183,9 +1184,9 @@
          </div>
       </section>
       <!-- footer -->
-      <section class="bg-wardSilver pt-28 " id="career_sc" >
+      <section class="bg-wardSilver  " id="career_sc" >
          <footer class=" w-11/12 m-auto  max-lg:pt-10">
-            <div class="w-11/12 m-auto flex  gap-10  2xl:gap-20  py-8 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
+            <div class="w-11/12 m-auto flex  gap-10  2xl:gap-20  py-20 lg:flex-row lg:text-start max-lg:flex-col max-lg:items-center max-lg:w-full max-lg:text-center ">
                <div class="w-1/4 flex-col max-lg:w-[30%] max-sm:w-auto">
                   <h2 class="mb-6 font-[Noto Sans] text-2xl font-medium text-wardDarkGray">Contact US</h2>
                   <ul class="text-gray-500 dark:text-gray-400">

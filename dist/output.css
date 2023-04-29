@@ -613,8 +613,16 @@ video {
   right: 0px;
 }
 
+.right-\[-0\%\] {
+  right: -0%;
+}
+
 .right-\[-10\%\] {
   right: -10%;
+}
+
+.right-\[-2\%\] {
+  right: -2%;
 }
 
 .right-\[3rem\] {
@@ -681,24 +689,196 @@ video {
   top: 84%;
 }
 
-.left-\[52\%\] {
-  left: 52%;
-}
-
-.right-\[-0\%\] {
-  right: -0%;
-}
-
-.right-\[-2\%\] {
-  right: -2%;
-}
-
-.top-\[5\%\] {
-  top: 5%;
-}
-
 .top-\[85\%\] {
   top: 85%;
+}
+
+.right-20 {
+  right: 5rem;
+}
+
+.right-\[-20px\] {
+  right: -20px;
+}
+
+.right-\[20px\] {
+  right: 20px;
+}
+
+.right-\[40px\] {
+  right: 40px;
+}
+
+.left-\[20px\] {
+  left: 20px;
+}
+
+.left-\[200px\] {
+  left: 200px;
+}
+
+.right-\[-20\%\] {
+  right: -20%;
+}
+
+.right-\[-5\%\] {
+  right: -5%;
+}
+
+.right-\[-4\] {
+  right: -4;
+}
+
+.right-\[-4\%\] {
+  right: -4%;
+}
+
+.right-\[-8\%\] {
+  right: -8%;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.top-\[40\$\] {
+  top: 40$;
+}
+
+.top-\[40\%\] {
+  top: 40%;
+}
+
+.top-\[60\%\] {
+  top: 60%;
+}
+
+.top-\[45\%\] {
+  top: 45%;
+}
+
+.top-\[42\%\] {
+  top: 42%;
+}
+
+.top-\[43\%\] {
+  top: 43%;
+}
+
+.top-\[41\%\] {
+  top: 41%;
+}
+
+.right-\[-15\%\] {
+  right: -15%;
+}
+
+.top-\[39\%\] {
+  top: 39%;
+}
+
+.top-\[38\%\] {
+  top: 38%;
+}
+
+.top-\[35\%\] {
+  top: 35%;
+}
+
+.top-\[28\%\] {
+  top: 28%;
+}
+
+.top-\[28\\5\%\] {
+  top: 28\5%;
+}
+
+.top-\[25\%\] {
+  top: 25%;
+}
+
+.top-\[2\%\] {
+  top: 2%;
+}
+
+.top-\[20\%\] {
+  top: 20%;
+}
+
+.right-\[-30\%\] {
+  right: -30%;
+}
+
+.right-\[-40\%\] {
+  right: -40%;
+}
+
+.right-\[-100\%\] {
+  right: -100%;
+}
+
+.right-\[10\%\] {
+  right: 10%;
+}
+
+.right-\[12\%\] {
+  right: 12%;
+}
+
+.right-\[1\%\] {
+  right: 1%;
+}
+
+.right-\[5\%\] {
+  right: 5%;
+}
+
+.right-\[-6\%\] {
+  right: -6%;
+}
+
+.right-\[2\%\] {
+  right: 2%;
+}
+
+.right-\[-1\%\] {
+  right: -1%;
+}
+
+.right-\[0\%\] {
+  right: 0%;
+}
+
+.right-\[-3\%\] {
+  right: -3%;
+}
+
+.right-\[20\%\] {
+  right: 20%;
+}
+
+.top-20 {
+  top: 5rem;
+}
+
+.right-\[6\%\] {
+  right: 6%;
+}
+
+.right-\[8\%\] {
+  right: 8%;
+}
+
+.right-\[3\%\] {
+  right: 3%;
+}
+
+.right-\[4\%\] {
+  right: 4%;
+}
+
+.right-\[7\%\] {
+  right: 7%;
 }
 
 .z-0 {
@@ -806,6 +986,10 @@ video {
   margin-top: 10px;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -866,10 +1050,6 @@ video {
   height: 40px;
 }
 
-.h-\[40rem\] {
-  height: 40rem;
-}
-
 .h-\[44rem\] {
   height: 44rem;
 }
@@ -894,8 +1074,20 @@ video {
   height: 100%;
 }
 
-.h-\[58rem\] {
-  height: 58rem;
+.h-\[49rem\] {
+  height: 49rem;
+}
+
+.h-\[45rem\] {
+  height: 45rem;
+}
+
+.h-\[43rem\] {
+  height: 43rem;
+}
+
+.h-\[46rem\] {
+  height: 46rem;
 }
 
 .min-h-\[auto\] {
@@ -1008,6 +1200,14 @@ video {
 
 .w-\[45\%\] {
   width: 45%;
+}
+
+.w-\[55\%\] {
+  width: 55%;
+}
+
+.w-\[51\%\] {
+  width: 51%;
 }
 
 .max-w-\[90\%\] {
@@ -1257,6 +1457,11 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-midnight {
+  --tw-bg-opacity: 1;
+  background-color: rgb(18 16 99 / var(--tw-bg-opacity));
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -1285,14 +1490,6 @@ video {
 
 .bg-\[url\(\'img\/review-pages\/overlay\.svg\'\)\] {
   background-image: url('img/review-pages/overlay.svg');
-}
-
-.bg-\[url\(\'\/img\/Team\/Rect\.jpeg\'\)\] {
-  background-image: url('/img/Team/Rect.jpeg');
-}
-
-.bg-\[url\(\'\/img\/Team\/orika\.jpeg\'\)\] {
-  background-image: url('/img/Team/orika.jpeg');
 }
 
 .bg-cover {
@@ -1341,6 +1538,10 @@ video {
 
 .p-8 {
   padding: 2rem;
+}
+
+.p-20 {
+  padding: 5rem;
 }
 
 .px-1 {
@@ -1502,6 +1703,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
 .pb-9 {
   padding-bottom: 2.25rem;
 }
@@ -1578,16 +1783,16 @@ video {
   padding-top: 140px;
 }
 
-.pt-16 {
-  padding-top: 4rem;
+.pt-\[200px\] {
+  padding-top: 200px;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
+.pt-\[150px\] {
+  padding-top: 150px;
 }
 
-.pt-8 {
-  padding-top: 2rem;
+.pt-\[250px\] {
+  padding-top: 250px;
 }
 
 .text-left {
@@ -1695,10 +1900,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-\[22px\] {
-  font-size: 22px;
 }
 
 .font-bold {
@@ -2182,10 +2383,6 @@ video {
     padding-top: 1.25rem;
   }
 
-  .max-lg\:pt-6 {
-    padding-top: 1.5rem;
-  }
-
   .max-lg\:text-center {
     text-align: center;
   }
@@ -2289,6 +2486,10 @@ video {
     padding-bottom: 15rem;
   }
 
+  .max-md\:pb-10 {
+    padding-bottom: 2.5rem;
+  }
+
   .max-md\:pt-0 {
     padding-top: 0px;
   }
@@ -2299,10 +2500,6 @@ video {
 
   .max-md\:pt-5 {
     padding-top: 1.25rem;
-  }
-
-  .max-md\:pb-10 {
-    padding-bottom: 2.5rem;
   }
 
   .max-md\:text-4xl {
@@ -2501,11 +2698,6 @@ video {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
-
-  .max-sm\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 640px) {
@@ -2609,6 +2801,110 @@ video {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:right-0 {
+    right: 0px;
+  }
+
+  .\32xl\:right-20 {
+    right: 5rem;
+  }
+
+  .\32xl\:right-\[-20\%\] {
+    right: -20%;
+  }
+
+  .\32xl\:right-\[20\%\] {
+    right: 20%;
+  }
+
+  .\32xl\:right-\[0\%\] {
+    right: 0%;
+  }
+
+  .\32xl\:right-\[2\%\] {
+    right: 2%;
+  }
+
+  .\32xl\:right-\[5\%\] {
+    right: 5%;
+  }
+
+  .\32xl\:right-\[10\%\] {
+    right: 10%;
+  }
+
+  .\32xl\:right-\[12\%\] {
+    right: 12%;
+  }
+
+  .\32xl\:right-\[13\%\] {
+    right: 13%;
+  }
+
+  .\32xl\:right-\[-20\] {
+    right: -20;
+  }
+
+  .\32xl\:right-\[-5\%\] {
+    right: -5%;
+  }
+
+  .\32xl\:right-\[-8\%\] {
+    right: -8%;
+  }
+
+  .\32xl\:right-\[-6\%\] {
+    right: -6%;
+  }
+
+  .\32xl\:right-\[-2\%\] {
+    right: -2%;
+  }
+
+  .\32xl\:right-\[-4\%\] {
+    right: -4%;
+  }
+
+  .\32xl\:right-\[-3\%\] {
+    right: -3%;
+  }
+
+  .\32xl\:right-2 {
+    right: 0.5rem;
+  }
+
+  .\32xl\:right-\[-1\] {
+    right: -1;
+  }
+
+  .\32xl\:right-\[2\] {
+    right: 2;
+  }
+
+  .\32xl\:right-\[1\%\] {
+    right: 1%;
+  }
+
+  .\32xl\:right-\[-9\%\] {
+    right: -9%;
+  }
+
+  .\32xl\:right-\[-1\%\] {
+    right: -1%;
+  }
+
+  .\32xl\:right-\[-0\%\] {
+    right: -0%;
+  }
+
+  .\32xl\:right-\[9\%\] {
+    right: 9%;
+  }
+
+  .\32xl\:right-\[14\%\] {
+    right: 14%;
+  }
+
   .\32xl\:m-auto {
     margin: auto;
   }

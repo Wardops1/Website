@@ -681,6 +681,26 @@ video {
   top: 84%;
 }
 
+.left-\[52\%\] {
+  left: 52%;
+}
+
+.right-\[-0\%\] {
+  right: -0%;
+}
+
+.right-\[-2\%\] {
+  right: -2%;
+}
+
+.top-\[5\%\] {
+  top: 5%;
+}
+
+.top-\[85\%\] {
+  top: 85%;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -874,6 +894,10 @@ video {
   height: 100%;
 }
 
+.h-\[58rem\] {
+  height: 58rem;
+}
+
 .min-h-\[auto\] {
   min-height: auto;
 }
@@ -980,6 +1004,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[45\%\] {
+  width: 45%;
 }
 
 .max-w-\[90\%\] {
@@ -1257,6 +1285,14 @@ video {
 
 .bg-\[url\(\'img\/review-pages\/overlay\.svg\'\)\] {
   background-image: url('img/review-pages/overlay.svg');
+}
+
+.bg-\[url\(\'\/img\/Team\/Rect\.jpeg\'\)\] {
+  background-image: url('/img/Team/Rect.jpeg');
+}
+
+.bg-\[url\(\'\/img\/Team\/orika\.jpeg\'\)\] {
+  background-image: url('/img/Team/orika.jpeg');
 }
 
 .bg-cover {
@@ -1542,6 +1578,18 @@ video {
   padding-top: 140px;
 }
 
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pb-8 {
+  padding-bottom: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1647,6 +1695,10 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
 }
 
 .font-bold {
@@ -2130,6 +2182,10 @@ video {
     padding-top: 1.25rem;
   }
 
+  .max-lg\:pt-6 {
+    padding-top: 1.5rem;
+  }
+
   .max-lg\:text-center {
     text-align: center;
   }
@@ -2159,6 +2215,14 @@ video {
 }
 
 @media not all and (min-width: 768px) {
+  .max-md\:right-0 {
+    right: 0px;
+  }
+
+  .max-md\:top-\[80\%\] {
+    top: 80%;
+  }
+
   .max-md\:mt-1 {
     margin-top: 0.25rem;
   }
@@ -2211,6 +2275,10 @@ video {
     border-bottom-width: 2px;
   }
 
+  .max-md\:p-2 {
+    padding: 0.5rem;
+  }
+
   .max-md\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -2231,6 +2299,10 @@ video {
 
   .max-md\:pt-5 {
     padding-top: 1.25rem;
+  }
+
+  .max-md\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .max-md\:text-4xl {
@@ -2428,6 +2500,11 @@ video {
   .max-sm\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .max-sm\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 

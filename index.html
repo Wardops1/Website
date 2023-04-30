@@ -100,7 +100,7 @@
          <ul class=" hidden duration-500 absolute z-50 pb-5 text-left bg-wardSilver w-full h-[150vh]  capitalize border-2 p-2 text-xl top-[-18%] right-0 mt-2" id="navDropInner">
             <div class="w-11/12 m-auto flex flex-col gap-10">
                <div class="flex pb-2 items-center  justify-between">
-                  <a href="index.html"><img src="img/common-img/logo-mobile.svg" alt="mobileLogo"></a>
+                  <a href="index.html"><img class="w-[150px] h-[150px]" src="img/common-img/logo-mobile.svg" alt="mobileLogo"></a>
                   <img class="cursor-pointer" src="img/common-img/navbar-down.svg"  alt="logo-mobile" id="navDropClose">
                </div>
                <li class="capitalize   cursor-pointer">
@@ -241,18 +241,18 @@
                </div>
             </div>
          </div>
-         <div class="flex m-auto items-center flex-col gap-2 absolute top-[84%] left-[75%]  max-sm:left-[75%] max-sm:top-[80%] max-lg:hidden">
+         <div onclick=scrollServices()  class="flex cursor-pointer m-auto items-center flex-col gap-2 absolute top-[84%] left-[75%]  max-sm:left-[75%] max-sm:top-[80%] max-lg:hidden">
             <div class="animate-bounce">
                <img src="img/common-img/service-sign.svg" alt="" />
             </div>
             <div class="whitespace-nowrap text-xl font-[Noto Sans] ">
-                  <p onclick=scrollServices() class="cursor-pointer">  Our Services</p>
+                  <p  class="cursor-pointer">  Our Services</p>
             </div>
          </div>
       </section>
       
       <!-- service section -->
-      <section class="bg-wardSilver">
+      <section class="bg-wardSilver" id="scrollServices" >
          <div class="w-10/12 m-auto 2xl:w-9/12  md:border-b-2 ">
             <!-- service-header -->
             <div class="border-b-[2px]">
@@ -267,7 +267,7 @@
                </div>
             </div>
             <!-- services divisions -->
-            <div class="w-11/12 m-auto 2xl:w-10/12">
+            <div class="w-11/12 m-auto 2xl:w-10/12" >
                <div class="flex justify-between border-b-2 gap-10 max-md:flex-col">
                   <!-- service-inner-1 -->
                   <div class="w-[49%] relative service-inner-1  mt-16 max-md:border-b-2 max-md:w-full">

@@ -46,7 +46,18 @@ var swiper = new Swiper(".mySwiper_main", {
 
 var swiper = new Swiper(".mySwiper_1", {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 50,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+// qa engeinering slider
+
+var swiper = new Swiper(".mySwiper_Qa", {
+  slidesPerView: 2,
+  spaceBetween: 60,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

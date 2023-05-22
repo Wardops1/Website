@@ -159,7 +159,7 @@ serviceMobileDropdown.addEventListener("click", function () {
       serviceMenuMobile.style.transition =
         "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
       serviceMenuMobile.style.opacity = "1";
-      serviceMenuMobile.style.transform = "translateY(20px)";
+      serviceMenuMobile.style.transform = "translateY(10px)";
     }, delayTime);
   } else {
     // Second click: Hide the menu after delayTime

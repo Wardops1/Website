@@ -16,155 +16,165 @@
 
 <body>
     <!-- nav bar -->
-    <nav class="bg-wardGreen relative dark:bg-gray-900 border-b-2 border-b-gray-200">
-        <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12">
-           <div class="flex items-center gap-12">
-              <div class="flex items-center gap-4">
-                 <a href="index.html" class="flex items-center">
-                 <img class="max-lg:py-2" src="img/common-img/logo.svg" alt="Ward IT Logo" />
-                 </a>
-              </div>
-              <div class="items-center hidden lg:flex md:w-auto" id="navbar-sticky">
-                 <ul class="flex font-[Roboto] font-normal text-lg leading-6">
-                    <div class=" dropdown relative hover:bg-wardSilver flex   hover:border-x hover:font-bold">
-                       <div>
-                          <button class="flex gap-1 items-end py-6 px-4 capitalize cursor-pointer"  onclick="scrollServices()">
-                          <a>services</a>
-                          <img src="img/common-img/downward-arrow.svg" alt="">
-                          </button>  
-                          <div class="dropdown-content hidden absolute z-10 top-[100%] left-[-1%] bg-wardSilver w-[370px]">
-                             <div class="flex flex-col  p-2 border-x border-b">
-                                <div >
-                                   <ul class="font-thin capitalize">
-                                      <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3 ">
-                                         <a href="network-service.html">Product & Service Operational Center</a>
-                                         <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                      </li>
-                                      <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                         <a href="incident-management.html">Incident Managment</a>
-                                         <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                      </li>
-                                      <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                         <a href="software-qa.html">Software QA</a>
-                                         <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                      </li>
-                                      <li class="flex gap-2 py-2 border-b-2 hover:text-wardGreen hover:gap-3">
-                                         <a href="robotic-process.html">Robotic Process Automation </a>
-                                         <img  src="img/common-img/right_sign.svg" alt="right-sign">
-                                      </li>
-                                      <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                        <a href="problem-management.html">problem managment</a>
-                                        <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                     </li>
-                                     <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
-                                        <a href="change-management.html">change managment</a>
-                                        <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                     </li>
-                                     <li class="flex gap-2  py-2 hover:text-wardGreen hover:gap-3">
-                                        <a href="realease-deployment-managment.html">deployment and release managment</a>
-                                        <img src="img/common-img/right_sign.svg" alt="right-sign">
-                                     </li>
-                                   </ul>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                    <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
-                       <a href="team.html"><li class="mx-4 py-6 capitalize cursor-pointer">team </li></a>
-                    </div>
-                    <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
-                       <a href="career.html"><li class="mx-4 py-6 capitalize cursor-pointer">career</li></a>
-                    </div>
-                    <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
-                       <a href="blogpost-search.html"><li class="mx-4  py-6 capitalize blog-scroll cursor-pointer" >blog</li></a>
-                    </div>
-                 </ul>
-              </div>
-           </div>
-           <div class="flex sm:py-1 max-sm:py-0 gap-4">
-              <a href="https://www.linkedin.com/in/nikoloz-tsulukidze-12a812230/" target="_blank">
-              <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2 md:mr-0 max-md:text-xs max-sm:px-2 max-sm:py-1 max-lg:hidden"> book consultation </button>
-              </a>
-              <div class="flex items-center justify-center lg:hidden">
-                 <div class="flex flex-col  relative">
-                    <div class="relative">
-                       <div class="flex items-baseline cursor-pointer" id="navDrop">
-                          <img src="img/common-img/menu-drop.svg" alt="">
-                          <path fill-rule="evenodd" d="M10 13.333l6.667-6.666h-13.334L10 13.333zM10 16.667l-6.667-6.666h13.334L10 16.667z"/>
-                          </svg>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-        <ul class=" hidden duration-500 absolute z-50 pb-5 text-left bg-wardSilver w-full h-[150vh]  capitalize border-2 p-2 text-xl top-[-18%] right-0 mt-2" id="navDropInner">
-           <div class="w-11/12 m-auto flex flex-col gap-10">
-              <div class="flex pb-2 items-center  justify-between">
-                 <a href="index.html"><img class="w-[150px]"  src="img/common-img/logo-mobile.svg" alt="mobileLogo"></a>
-                 <img class="cursor-pointer" src="img/common-img/navbar-down.svg"  alt="logo-mobile" id="navDropClose">
-              </div>
-              <li class="capitalize   cursor-pointer">
-                 <div class=" flex flex-row justify-between  items-center w-full h-full" id="serviceMobileDropdown">
-                    <div class="">services 
-                       <div class="absolute w-11/12 hidden    " id="serviceMenuMobile"> 
-                          <ul class="flex flex-col gap-5 pt-2 ">
-                             <a href="network-service.html">
-                                <div class="flex items-center gap-2 border-b-2 py-2">
-                                   <img class="w-[30px] h-[30px]" src="img/services-img/Product service.png" alt="" />
-                                   <li class="capitalize whitespace-nowrap  max-sm:text-sm">Product & Service Operational Center</li>
-                                </div>
-                             </a>
-                             <a href="incident-management.html">
-                                <div class="flex items-center gap-2 border-b-2 py-2">
-                                   <img class="w-[30px] h-[30px]" src="img/services-img/incident management.png" alt="" />
-                                   <li class="capitalize whitespace-nowrap  max-sm:text-sm">Incident Managment</li>
-                                </div>
-                             </a>
-                             <a href="software-qa.html">
-                                <div class="flex items-center gap-2 border-b-2 py-2">
-                                   <img class="w-[30px] h-[30px]" src="img/services-img/sowftware-QA.png" alt="" />
-                                   <li class="capitalize whitespace-nowrap  max-sm:text-sm">software Qa</li>
-                                </div>
-                             </a>
-                             <a href="robotic-process.html">
-                                <div class="flex items-center gap-2 border-b-2 py-2">
-                                   <img class="w-[30px] h-[30px]" src="img/services-img/robotic-process.png" alt="" />
-                                   <li class="capitalize whitespace-nowrap  max-sm:text-sm">Robotic Process Automation</li>
-                                </div>
-                             </a>
-                             <a href="problem-management.html">
-                                <div class="flex items-center gap-2 border-b-2 py-2">
-                                   <img class="w-[30px] h-[30px]" src="img/services-img/problem-management.png" alt="" />
-                                   <li class="capitalize whitespace-nowrap  max-sm:text-sm">problem managment</li>
-                                </div>
-                             </a>
-                             <a href="change-management.html">
-                                <div class="flex items-center gap-2 border-b-2 py-2">
-                                   <img class="w-[30px] h-[30px]" src="img/services-img/change-management.png" alt="" />
-                                   <li class="capitalize whitespace-nowrap  max-sm:text-sm">change managment</li>
-                                </div>
-                             </a>
-                             <a href="realease-deployment-managment.html">
-                                <div class="flex items-center gap-2 border-b-2 py-2">
-                                   <img class="w-[30px] h-[30px]" src="img/services-img/deployment.png" alt="" />
-                                   <li class="capitalize whitespace-nowrap  max-sm:text-sm">deployment and release managment</li>
-                                </div>
-                             </a>
-                          </ul>
-                       </div> 
-                    </div>
-                    <img class=""src="img/common-img/downward-arrow-2.svg" alt="dropMobile"id="serviceMobileArow_2" >
-                    <img class="hidden"  src="img/common-img/downward-arrow.svg" alt="dropMobile" id="serviceMobileArow" >
-                 </div>
-                 </li>
-                 <a href="team.html"><li class=" border-t-2 pt-3 capitalize cursor-pointer">Team</li></a>
-                 <a href="career.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Career</li></a>
-                 <a href="blogpost-search.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Blog</li></a>
-           </div>
-         </ul>
-     </nav>
+    <nav id="navbar" class=" navbar bg-wardGreen relative dark:bg-gray-900 border-b-2 border-b-gray-200">
+      <div class="flex items-center  w-11/12 m-auto justify-between 2xl:w-9/12 ">
+         <div class="flex items-center gap-12">
+            <div class="flex items-center gap-4">
+               <a href="index.html" class="flex items-center">
+               <img class="max-lg:py-2" src="img/common-img/logo.svg" alt="Ward IT Logo" />
+               </a>
+            </div>
+            <div class="items-center hidden lg:flex md:w-auto" id="navbar-sticky">
+               <ul class="flex font-[Roboto] font-normal text-lg leading-6">
+                  <div class=" dropdown relative hover:bg-wardSilver flex   hover:border-x hover:font-bold">
+                     <div>
+                        <button class="flex gap-1 items-end py-6 px-4 capitalize cursor-pointer"  onclick="scrollServices()">
+                        <a>services</a>
+                        <img src="img/common-img/downward-arrow.svg" alt="">
+                        </button>  
+                        <div class="dropdown-content hidden absolute z-10 top-[100%] left-[-1%] bg-wardSilver w-[370px]">
+                           <div class="flex flex-col  p-2 border-x border-b">
+                              <div>
+                                 <ul class="font-thin capitalize">
+                                    <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3 ">
+                                       <a href="network-service.html">Product & Service Operational Center</a>
+                                       <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                    </li>
+                                    <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                       <a href="incident-management.html">Incident Managment</a>
+                                       <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                    </li>
+                                    <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                       <a href="software-qa.html">Software QA</a>
+                                       <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                    </li>
+                                    <li class="flex gap-2 py-2 border-b-2 hover:text-wardGreen hover:gap-3">
+                                       <a href="robotic-process.html">Robotic Process Automation </a>
+                                       <img  src="img/common-img/right_sign.svg" alt="right-sign">
+                                    </li>
+                                    <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                      <a href="problem-management.html">problem managment</a>
+                                      <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                   </li>
+                                   <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                      <a href="change-management.html">change managment</a>
+                                      <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                   </li>
+                                   <li class="flex gap-2 border-b-2 py-2 hover:text-wardGreen hover:gap-3">
+                                      <a href="realease-deployment-managment.html">deployment and release managment</a>
+                                      <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                   </li>
+                                   <li class="flex gap-2  py-2 hover:text-wardGreen hover:gap-3">
+                                    <a href="tools-implementation.html">Tools Implementation, Integration and Support</a>
+                                    <img src="img/common-img/right_sign.svg" alt="right-sign">
+                                 </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
+                     <a href="team.html"><li class="mx-4 py-6 capitalize cursor-pointer">team </li></a>
+                  </div>
+                  <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
+                     <a href="career.html"><li class="mx-4 py-6 capitalize cursor-pointer">career</li></a>
+                  </div>
+                  <div class=" hover:bg-wardSilver hover:border-x hover:font-bold">
+                     <a href="blogpost-search.html"><li class="mx-4  py-6 capitalize blog-scroll cursor-pointer" >blog</li></a>
+                  </div>
+               </ul>
+            </div>
+         </div>
+         <div class="flex sm:py-1 max-sm:py-0 gap-4">
+            <a href="https://www.linkedin.com/in/nikoloz-tsulukidze-12a812230/" target="_blank">
+            <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2 md:mr-0 max-md:text-xs max-sm:px-2 max-sm:py-1 max-lg:hidden"> book consultation </button>
+            </a>
+            <div class="flex items-center justify-center lg:hidden">
+               <div class="flex flex-col  relative">
+                  <div class="relative">
+                     <div class="flex items-baseline cursor-pointer" id="navDrop">
+                        <img src="img/common-img/menu-drop.svg" alt="">
+                        <path fill-rule="evenodd" d="M10 13.333l6.667-6.666h-13.334L10 13.333zM10 16.667l-6.667-6.666h13.334L10 16.667z"/>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <ul class=" hidden duration-500 absolute z-50 pb-5 text-left bg-wardSilver w-full h-[150vh]  capitalize border-2 p-2 text-xl top-[-18%] right-0 mt-2" id="navDropInner">
+         <div class="w-11/12 m-auto flex flex-col gap-10">
+            <div class="flex pb-2 items-center  justify-between">
+               <a href="index.html"><img class="w-[150px]" src="img/common-img/logo-mobile.svg" alt="mobileLogo"></a>
+               <img class="cursor-pointer" src="img/common-img/navbar-down.svg"  alt="logo-mobile" id="navDropClose">
+            </div>
+            <li class="capitalize   cursor-pointer">
+               <div class=" flex flex-row justify-between  items-center w-full h-full" id="serviceMobileDropdown">
+                  <div class="">services 
+                     <div class="absolute w-11/12 hidden    " id="serviceMenuMobile"> 
+                        <ul class="flex flex-col gap-5 pt-2 ">
+                           <a href="network-service.html">
+                              <div class="flex items-center gap-2 border-b-2 py-2">
+                                 <img class="w-[30px] h-[30px]" src="img/services-img/Product service.png" alt="" />
+                                 <li class="capitalize whitespace-nowrap  max-sm:text-sm">Product & Service Operational Center</li>
+                              </div>
+                           </a>
+                           <a href="incident-management.html">
+                              <div class="flex items-center gap-2 border-b-2 py-2">
+                                 <img class="w-[30px] h-[30px]" src="img/services-img/incident management.png" alt="" />
+                                 <li class="capitalize whitespace-nowrap  max-sm:text-sm">Incident Managment</li>
+                              </div>
+                           </a>
+                           <a href="software-qa.html">
+                              <div class="flex items-center gap-2 border-b-2 py-2">
+                                 <img class="w-[30px] h-[30px]" src="img/services-img/sowftware-QA.png" alt="" />
+                                 <li class="capitalize whitespace-nowrap  max-sm:text-sm">software Qa</li>
+                              </div>
+                           </a>
+                           <a href="robotic-process.html">
+                              <div class="flex items-center gap-2 border-b-2 py-2">
+                                 <img class="w-[30px] h-[30px]" src="img/services-img/robotic-process.png" alt="" />
+                                 <li class="capitalize whitespace-nowrap  max-sm:text-sm">Robotic Process Automation</li>
+                              </div>
+                           </a>
+                           <a href="problem-management.html">
+                              <div class="flex items-center gap-2 border-b-2 py-2">
+                                 <img class="w-[30px] h-[30px]" src="img/services-img/problem-management.png" alt="" />
+                                 <li class="capitalize whitespace-nowrap  max-sm:text-sm">problem managment</li>
+                              </div>
+                           </a>
+                           <a href="change-management.html">
+                              <div class="flex items-center gap-2 border-b-2 py-2">
+                                 <img class="w-[30px] h-[30px]" src="img/services-img/change-management.png" alt="" />
+                                 <li class="capitalize whitespace-nowrap  max-sm:text-sm">change managment</li>
+                              </div>
+                           </a>
+                           <a href="realease-deployment-managment.html">
+                              <div class="flex items-center gap-2 border-b-2 py-2">
+                                 <img class="w-[30px] h-[30px]" src="img/services-img/deployment.png" alt="" />
+                                 <li class="capitalize whitespace-nowrap  max-sm:text-sm">deployment and release managment</li>
+                              </div>
+                           </a>
+                           <a href="tools-implementation.html">
+                              <div class="flex items-center gap-2 border-b-2 py-2">
+                                 <img class="w-[30px] h-[30px]" src="img/common-img/toolsImlepemtation.svg" alt="" />
+                                 <li class="capitalize whitespace-nowrap  max-sm:text-sm">Tools Implementation, Integration and Support</li>
+                              </div>
+                           </a>
+                        </ul>
+                     </div> 
+                  </div>
+                  <img class=""src="img/common-img/downward-arrow-2.svg" alt="dropMobile"id="serviceMobileArow_2" >
+                  <img class="hidden"  src="img/common-img/downward-arrow.svg" alt="dropMobile" id="serviceMobileArow" >
+               </div>
+               </li>
+               <a href="team.html"><li class=" border-t-2 pt-3 capitalize cursor-pointer">Team</li></a>
+               <a href="career.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Career</li></a>
+               <a href="blogpost-search.html"><li class="border-t-2 pt-3 capitalize cursor-pointer">Blog</li></a>
+         </div>
+       </ul>
+   </nav>
     <!-- inner -->
     <section class="bg-wardSilver w-full h-[28rem]">
         <div class="w-10/12 m-auto relative py-20">

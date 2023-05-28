@@ -44,6 +44,11 @@ var swiper = new Swiper(".mySwiper_main", {
   },
 });
 
+function goToSlide(slideIndex) {
+  var swiper = document.querySelector(".mySwiper_main").swiper;
+  swiper.slideTo(slideIndex);
+}
+
 var swiper = new Swiper(".mySwiper_1", {
   slidesPerView: 3,
   spaceBetween: 50,

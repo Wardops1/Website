@@ -721,6 +721,34 @@ video {
   top: 85%;
 }
 
+.left-\[5\%\] {
+  left: 5%;
+}
+
+.left-\[54\%\] {
+  left: 54%;
+}
+
+.left-\[57\%\] {
+  left: 57%;
+}
+
+.left-\[58\%\] {
+  left: 58%;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
+.left-\[60\%\] {
+  left: 60%;
+}
+
+.left-\[63\%\] {
+  left: 63%;
+}
+
 .z-0 {
   z-index: 0;
 }
@@ -908,6 +936,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[rem\] {
+  height: rem;
+}
+
+.h-\[40rem\] {
+  height: 40rem;
 }
 
 .min-h-\[auto\] {
@@ -2087,6 +2123,18 @@ video {
     top: 70%;
   }
 
+  .max-lg\:top-\[160\%\] {
+    top: 160%;
+  }
+
+  .max-lg\:top-\[165\%\] {
+    top: 165%;
+  }
+
+  .max-lg\:top-\[170\%\] {
+    top: 170%;
+  }
+
   .max-lg\:mt-16 {
     margin-top: 4rem;
   }
@@ -2105,6 +2153,30 @@ video {
 
   .max-lg\:h-full {
     height: 100%;
+  }
+
+  .max-lg\:h-\[60rem\] {
+    height: 60rem;
+  }
+
+  .max-lg\:h-\[55rem\] {
+    height: 55rem;
+  }
+
+  .max-lg\:h-\[5rem\] {
+    height: 5rem;
+  }
+
+  .max-lg\:h-\[50rem\] {
+    height: 50rem;
+  }
+
+  .max-lg\:h-\[45rem\] {
+    height: 45rem;
+  }
+
+  .max-lg\:h-\[4rem\] {
+    height: 4rem;
   }
 
   .max-lg\:w-\[30\%\] {
@@ -2246,6 +2318,22 @@ video {
     top: 80%;
   }
 
+  .max-md\:top-\[100\%\] {
+    top: 100%;
+  }
+
+  .max-md\:top-\[160\%\] {
+    top: 160%;
+  }
+
+  .max-md\:top-\[155\%\] {
+    top: 155%;
+  }
+
+  .max-md\:top-\[140\%\] {
+    top: 140%;
+  }
+
   .max-md\:mt-1 {
     margin-top: 0.25rem;
   }
@@ -2260,6 +2348,22 @@ video {
 
   .max-md\:h-\[150px\] {
     height: 150px;
+  }
+
+  .max-md\:h-\[60rem\] {
+    height: 60rem;
+  }
+
+  .max-md\:h-\[50rem\] {
+    height: 50rem;
+  }
+
+  .max-md\:h-\[55rem\] {
+    height: 55rem;
+  }
+
+  .max-md\:h-\[5rem\] {
+    height: 5rem;
   }
 
   .max-md\:w-1\/2 {
@@ -2384,12 +2488,52 @@ video {
     top: 80%;
   }
 
+  .max-sm\:top-\[16\%\] {
+    top: 16%;
+  }
+
+  .max-sm\:top-\[160\%\] {
+    top: 160%;
+  }
+
+  .max-sm\:top-\[170\%\] {
+    top: 170%;
+  }
+
+  .max-sm\:top-\[140\%\] {
+    top: 140%;
+  }
+
+  .max-sm\:top-0 {
+    top: 0px;
+  }
+
   .max-sm\:m-auto {
     margin: auto;
   }
 
   .max-sm\:mt-2 {
     margin-top: 0.5rem;
+  }
+
+  .max-sm\:h-\[60rem\] {
+    height: 60rem;
+  }
+
+  .max-sm\:h-\[56rem\] {
+    height: 56rem;
+  }
+
+  .max-sm\:h-\[50rem\] {
+    height: 50rem;
+  }
+
+  .max-sm\:h-\[55rem\] {
+    height: 55rem;
+  }
+
+  .max-sm\:h-\[59rem\] {
+    height: 59rem;
   }
 
   .max-sm\:w-11\/12 {

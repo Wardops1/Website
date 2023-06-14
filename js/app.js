@@ -149,7 +149,7 @@ navDrop.addEventListener("click", function () {
 // service drop down
 
 let clickCount = 0;
-let delayTime = 100; // in milliseconds
+let delayTime = 50; // in milliseconds
 
 serviceMobileDropdown.addEventListener("click", function () {
   clickCount++;
@@ -162,7 +162,7 @@ serviceMobileDropdown.addEventListener("click", function () {
       serviceMobileArow_2.classList.add("hidden");
       serviceMobileArow.classList.remove("hidden");
       serviceMenuMobile.style.transition =
-        "opacity 0.5s ease-in-out, transform 0.5s ease-in-out";
+        "opacity 0s ease-in-out, transform 0s ease-in-out";
       serviceMenuMobile.style.opacity = "1";
       serviceMenuMobile.style.transform = "translateY(10px)";
     }, delayTime);
@@ -170,7 +170,7 @@ serviceMobileDropdown.addEventListener("click", function () {
     // Second click: Hide the menu after delayTime
     setTimeout(function () {
       serviceMenuMobile.style.transition =
-        "opacity 1s ease-in-out, transform 0.5s ease-in-out";
+        "opacity 0s ease-in-out, transform 0s ease-in-out";
       serviceMenuMobile.style.opacity = "0";
       serviceMenuMobile.style.transform = "translateY(-50px)";
       setTimeout(function () {
@@ -178,7 +178,7 @@ serviceMobileDropdown.addEventListener("click", function () {
         serviceMobileArow_2.classList.remove("hidden");
         serviceMobileArow.classList.add("hidden");
         serviceMobileDropdown.classList.remove("mbServiceDrop");
-      }, 500);
+      });
     }, delayTime);
   }
 });

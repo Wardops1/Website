@@ -1,5 +1,4 @@
 .navbar {
-  position: fixed !important;
   top: 0;
   left: 0;
   right: 0;
@@ -59,9 +58,9 @@
 
 /* performace metrics */
 .mymove_2 {
-  color: #364557;
+  color: black;
   -webkit-text-fill-color: #dfdfdf;
-  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-width: 2px;
 
   letter-spacing: 5px;
   filter: drop-shadow(4px 0px 0px #38a58e) drop-shadow(1px 0px 0px #5ebba8);

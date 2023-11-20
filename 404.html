@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="icon" href="img/common-img/logo-tab.svg">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&family=Roboto&display=swap"
       rel="stylesheet"
@@ -88,8 +89,8 @@
             </div>
          </div>
          <div class="flex sm:py-1 max-sm:py-0 gap-4">
-            <a href="https://www.linkedin.com/in/nikoloz-tsulukidze-12a812230/" target="_blank">
-            <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2 md:mr-0 max-md:text-xs max-sm:px-2 max-sm:py-1 max-lg:hidden"> book consultation </button>
+            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/lasha-jojua/ward-ops-book-me'});return false;">
+               <button type="button" class="consultation text-white bg-wardSilver capitalize whitespace-nowrap font-medium border-2 text-sm px-8 py-2.5 text-center mr-2 md:mr-0 max-md:text-xs max-sm:px-2 max-sm:py-1 max-lg:hidden"> book consultation </button>
             </a>
             <div class="flex items-center justify-center lg:hidden">
                <div class="flex flex-col  relative">
@@ -391,5 +392,6 @@
          </div>
       </footer>
    </section>
+   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
   </body>
 </html>
